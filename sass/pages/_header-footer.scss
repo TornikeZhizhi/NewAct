@@ -1,0 +1,36 @@
+
+.header {
+
+	background-color: $bg-color;
+	padding: 20px 10px;
+
+	.header_container {
+		max-width: 1300px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.header_right {
+
+		nav {
+
+			ul {
+				display: flex;
+				margin-bottom: 0;
+
+				li {
+					&:not(:last-child){
+						margin-right: 30px;
+					}
+					a {
+						@include family(title);
+						font-size: 15px;
+						color: $text-color;
+					}
+				}
+			}
+		}
+	}
+}
