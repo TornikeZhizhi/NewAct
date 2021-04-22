@@ -1,0 +1,74 @@
+
+@font-face {
+    font-family: 'Mark';
+    src: url('../fonts/Mark-Regular.woff2') format('woff2'),
+        url('../fonts/Mark-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mark-Bold';
+    src: url('../fonts/Mark-Bold.woff2') format('woff2'),
+        url('../fonts/Mark-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+$mark: 'Mark';
+$mark-bold: 'Mark-Bold';
+
+$en-title: $mark-bold;
+$en-text : $mark;
+
+$ge-title: $mark-bold;
+$ge-text : $mark;
+
+$default-title: $ge-title;
+$default-text: $ge-text;
+
+
+
+
+
+@mixin family($name) {
+    @if($name == "title"){
+        font-family: $default-title, sans-serif;
+
+        &:lang(en){
+            font-family: $en-title, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-title, sans-serif;
+        }
+    }
+    @if($name == "text"){
+        font-family: $default-text, sans-serif;
+
+        &:lang(en){
+            font-family: $en-text, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-text, sans-serif;
+        }
+    }
+   /*  @if($name == "lestudio"){
+        font-family: $default-text, sans-serif;
+
+        &:lang(en){
+            font-family: $en-nav, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-nav, sans-serif;
+        }
+    }*/
+}
+
+
+$main-purple:#161340;
+$light-purple:#643695;
+
