@@ -25,6 +25,15 @@ a {
 a:hover {
   text-decoration: none; }
 
+select::-ms-expand {
+  display: none; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: ''; }
+
 @font-face {
   font-family: 'Mark';
   src: url("../fonts/Mark-Regular.woff2") format("woff2"), url("../fonts/Mark-Regular.woff") format("woff");
@@ -167,35 +176,141 @@ a:hover {
     .header .header_right .header_search {
       margin: 0 15px 0 30px;
       cursor: pointer; }
-    .header .header_right .language_bar .language_dropdown {
-      border: 1px solid #D1D1D1;
-      border-radius: 20px;
-      padding: 6px 7px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
-      cursor: pointer; }
-      .header .header_right .language_bar .language_dropdown span {
-        margin: 0 10px;
-        font-family: "Mark", sans-serif;
-     /*  @if($name == "lestudio"){
-          font-family: $default-text, sans-serif;
-  
-          &:lang(en){
-              font-family: $en-nav, sans-serif;
-          }
-          &:lang(ka){
-              font-family: $ge-nav, sans-serif;
-          }
-      }*/
-        font-size: 16px; }
-        .header .header_right .language_bar .language_dropdown span:lang(en) {
-          font-family: "Mark", sans-serif; }
-        .header .header_right .language_bar .language_dropdown span:lang(ka) {
-          font-family: "Mark", sans-serif; }
-      .header .header_right .language_bar .language_dropdown .language_dropdown_img {
-        margin-right: 5px; }
+    .header .header_right .language_bar {
+      position: relative; }
+      .header .header_right .language_bar .language_dropdown {
+        border: 1px solid #D1D1D1;
+        border-radius: 20px;
+        padding: 6px 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        cursor: pointer; }
+        .header .header_right .language_bar .language_dropdown span {
+          margin: 0 10px;
+          font-family: "Mark", sans-serif;
+       /*  @if($name == "lestudio"){
+            font-family: $default-text, sans-serif;
+    
+            &:lang(en){
+                font-family: $en-nav, sans-serif;
+            }
+            &:lang(ka){
+                font-family: $ge-nav, sans-serif;
+            }
+        }*/
+          font-size: 16px; }
+          .header .header_right .language_bar .language_dropdown span:lang(en) {
+            font-family: "Mark", sans-serif; }
+          .header .header_right .language_bar .language_dropdown span:lang(ka) {
+            font-family: "Mark", sans-serif; }
+        .header .header_right .language_bar .language_dropdown .language_dropdown_img {
+          margin-right: 5px; }
+      .header .header_right .language_bar .language_container {
+        position: absolute;
+        top: 61px;
+        right: -20px;
+        z-index: 10;
+        border: 1px solid #17004C;
+        width: 100%;
+        min-width: 350px;
+        padding: 25px 30px 50px 30px;
+        background-color: #F1F1F1;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s; }
+        .header .header_right .language_bar .language_container:after {
+          position: absolute;
+          top: -3px;
+          right: 50px;
+          content: "";
+          width: 15px;
+          height: 15px;
+          transform: rotate(45deg) translateX(-50%);
+          border-left: 1px solid #17004C;
+          border-top: 1px solid #17004C;
+          background-color: #f1f1f1;
+          z-index: 100;
+          transition: all .3s; }
+        .header .header_right .language_bar .language_container.active {
+          opacity: 1;
+          visibility: visible; }
+        .header .header_right .language_bar .language_container .language_link {
+          width: 100%; }
+          .header .header_right .language_bar .language_container .language_link a, .header .header_right .language_bar .language_container .language_link button {
+            background-color: #17004C;
+            border: none;
+            text-align: center;
+            padding: 15px 5px;
+            font-family: "Mark-Bold", sans-serif;
+         /*  @if($name == "lestudio"){
+              font-family: $default-text, sans-serif;
+      
+              &:lang(en){
+                  font-family: $en-nav, sans-serif;
+              }
+              &:lang(ka){
+                  font-family: $ge-nav, sans-serif;
+              }
+          }*/
+            font-size: 16px;
+            color: #fff;
+            width: 100%;
+            display: block; }
+            .header .header_right .language_bar .language_container .language_link a:lang(en), .header .header_right .language_bar .language_container .language_link button:lang(en) {
+              font-family: "Mark-Bold", sans-serif; }
+            .header .header_right .language_bar .language_container .language_link a:lang(ka), .header .header_right .language_bar .language_container .language_link button:lang(ka) {
+              font-family: "Mark-Bold", sans-serif; }
+        .header .header_right .language_bar .language_container .language_container_title {
+          text-align: center;
+          padding: 0 25px;
+          line-height: 19px; }
+          .header .header_right .language_bar .language_container .language_container_title * {
+            font-size: 22px;
+            font-family: "Mark-Bold", sans-serif;
+         /*  @if($name == "lestudio"){
+              font-family: $default-text, sans-serif;
+      
+              &:lang(en){
+                  font-family: $en-nav, sans-serif;
+              }
+              &:lang(ka){
+                  font-family: $ge-nav, sans-serif;
+              }
+          }*/
+            color: #17004C; }
+            .header .header_right .language_bar .language_container .language_container_title *:lang(en) {
+              font-family: "Mark-Bold", sans-serif; }
+            .header .header_right .language_bar .language_container .language_container_title *:lang(ka) {
+              font-family: "Mark-Bold", sans-serif; }
+        .header .header_right .language_bar .language_container > div {
+          margin-bottom: 20px; }
+        .header .header_right .language_bar .language_container select {
+          width: 100%;
+          background-color: #fff;
+          border: 1px solid #17004C;
+          padding: 13px 15px;
+          cursor: pointer;
+          background-image: url(../images/dropdown.svg);
+          background-repeat: no-repeat;
+          background-position: 95%;
+          font-family: "Mark-Bold", sans-serif;
+       /*  @if($name == "lestudio"){
+            font-family: $default-text, sans-serif;
+    
+            &:lang(en){
+                font-family: $en-nav, sans-serif;
+            }
+            &:lang(ka){
+                font-family: $ge-nav, sans-serif;
+            }
+        }*/
+          color: #17004C; }
+          .header .header_right .language_bar .language_container select:lang(en) {
+            font-family: "Mark-Bold", sans-serif; }
+          .header .header_right .language_bar .language_container select:lang(ka) {
+            font-family: "Mark-Bold", sans-serif; }
 
 .main_search {
   position: fixed;

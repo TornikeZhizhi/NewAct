@@ -24,12 +24,23 @@ $(document).ready(function(){
 	 })
 
 	 $(window).click(function(){
-	 	$(".nav_dropdown").removeClass("active")
+	 	$(".nav_dropdown").removeClass("active");
+	 	$(".language_container").removeClass("active")
 
 	 })
 
-	 $(".nav_dropdown_child").click(function(e){
+	 $(".nav_dropdown_child, .language_container").click(function(e){
 
 	 	e.stopPropagation()
+	 })
+
+
+	 //language js
+
+	 $(".language_dropdown").click(function(e){
+	 	e.preventDefault()
+	 	e.stopPropagation()
+
+	 	$(".language_container").addClass("active")
 	 })
 })

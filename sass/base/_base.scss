@@ -30,3 +30,13 @@ a {
 a:hover {
     text-decoration: none;
 }
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
