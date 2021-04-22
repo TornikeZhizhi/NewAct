@@ -122,4 +122,74 @@ a:hover {
       .header .header_right .language_bar .language_dropdown .language_dropdown_img {
         margin-right: 5px; }
 
+.main_search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background: rgba(255, 255, 255, 0.84);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform cubic-bezier(0.77, 0, 0.175, 1) 1s;
+  transform: translateX(0%) translateY(-100%); }
+  .main_search.active {
+    transform: translateX(0%) translateY(0%); }
+  .main_search .main_search_close {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .main_search .main_search_container {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; }
+  .main_search .main_search_title * {
+    font-family: "Mark-Bold", sans-serif;
+   /*  @if($name == "lestudio"){
+        font-family: $default-text, sans-serif;
+
+        &:lang(en){
+            font-family: $en-nav, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-nav, sans-serif;
+        }
+    }*/
+    font-size: 26px; }
+    .main_search .main_search_title *:lang(en) {
+      font-family: "Mark-Bold", sans-serif; }
+    .main_search .main_search_title *:lang(ka) {
+      font-family: "Mark-Bold", sans-serif; }
+  .main_search form {
+    width: 100%;
+    position: relative;
+    margin-top: 50px; }
+    .main_search form input {
+      width: 100%;
+      border-bottom: 1px solid #161340;
+      padding: 20px 20px 17px 20px;
+      color: #17004C;
+      font-size: 14px; }
+      .main_search form input::placeholder {
+        color: #17004C;
+        font-size: 14px; }
+    .main_search form button {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      z-index: 10;
+      border: none;
+      background: none;
+      cursor: pointer; }
+      .main_search form button img {
+        width: 26px; }
+
 /*# sourceMappingURL=main.css.map */
