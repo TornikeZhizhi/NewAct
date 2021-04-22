@@ -1,0 +1,11 @@
+.main_content {
+
+	height: calc(100vh - 86px);
+	width: 100%;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-position: cover;
+	}
+}

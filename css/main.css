@@ -34,6 +34,9 @@ select {
   text-indent: 1px;
   text-overflow: ''; }
 
+body {
+  padding-top: 86px; }
+
 @font-face {
   font-family: 'Mark';
   src: url("../fonts/Mark-Regular.woff2") format("woff2"), url("../fonts/Mark-Regular.woff") format("woff");
@@ -63,9 +66,24 @@ select {
   *:lang(ka) {
     font-family: "Mark", sans-serif; }
 
+.main_content {
+  height: calc(100vh - 86px);
+  width: 100%; }
+  .main_content img {
+    width: 100%;
+    height: 100%;
+    object-position: cover; }
+
 .header {
   background-color: #F1F1F1;
-  padding: 20px 10px; }
+  padding: 20px 10px;
+  background-color: #F1F1F1;
+  padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; }
   .header .header_container {
     max-width: 1300px;
     margin: 0 auto;
