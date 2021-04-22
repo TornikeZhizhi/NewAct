@@ -69,26 +69,101 @@ a:hover {
     .header .header_right nav ul {
       display: flex;
       margin-bottom: 0; }
-      .header .header_right nav ul li:not(:last-child) {
-        margin-right: 30px; }
-      .header .header_right nav ul li a {
-        font-family: "Mark-Bold", sans-serif;
-     /*  @if($name == "lestudio"){
-          font-family: $default-text, sans-serif;
-  
-          &:lang(en){
-              font-family: $en-nav, sans-serif;
-          }
-          &:lang(ka){
-              font-family: $ge-nav, sans-serif;
-          }
-      }*/
-        font-size: 15px;
-        color: #17004C; }
-        .header .header_right nav ul li a:lang(en) {
-          font-family: "Mark-Bold", sans-serif; }
-        .header .header_right nav ul li a:lang(ka) {
-          font-family: "Mark-Bold", sans-serif; }
+      .header .header_right nav ul li {
+        position: relative; }
+        .header .header_right nav ul li:not(:last-child) {
+          margin-right: 40px; }
+        .header .header_right nav ul li a {
+          font-family: "Mark-Bold", sans-serif;
+       /*  @if($name == "lestudio"){
+            font-family: $default-text, sans-serif;
+    
+            &:lang(en){
+                font-family: $en-nav, sans-serif;
+            }
+            &:lang(ka){
+                font-family: $ge-nav, sans-serif;
+            }
+        }*/
+          font-size: 15px;
+          color: #17004C; }
+          .header .header_right nav ul li a:lang(en) {
+            font-family: "Mark-Bold", sans-serif; }
+          .header .header_right nav ul li a:lang(ka) {
+            font-family: "Mark-Bold", sans-serif; }
+          .header .header_right nav ul li a.nav_dropdown {
+            position: relative; }
+            .header .header_right nav ul li a.nav_dropdown:after {
+              position: absolute;
+              top: 0;
+              right: -25px;
+              content: "";
+              background-image: url("../images/drop-down-arrow.svg");
+              width: 25px;
+              height: 20px;
+              z-index: 10;
+              z-index: 10;
+              background-repeat: no-repeat;
+              background-position: center; }
+            .header .header_right nav ul li a.nav_dropdown:before {
+              position: absolute;
+              top: 50px;
+              left: 50%;
+              content: "";
+              opacity: 0;
+              width: 15px;
+              height: 15px;
+              transform: rotate(45deg) translateX(-50%);
+              border-left: 1px solid #17004C;
+              border-top: 1px solid #17004C;
+              background-color: #FCFCFC;
+              z-index: 100;
+              visibility: hidden;
+              transition: all .3s; }
+            .header .header_right nav ul li a.nav_dropdown.active ~ .nav_dropdown_child {
+              visibility: visible;
+              opacity: 1; }
+            .header .header_right nav ul li a.nav_dropdown.active:before {
+              opacity: 1;
+              visibility: visible; }
+        .header .header_right nav ul li .nav_dropdown_child {
+          position: fixed;
+          top: 86px;
+          left: 0;
+          background: #FCFCFC;
+          width: 100vw;
+          padding: 28px 0 19px;
+          border: 1px solid #17004C;
+          visibility: hidden;
+          opacity: 0;
+          transition: all .4s; }
+          .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; }
+            .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box {
+              flex: 0 0 31%;
+              max-width: 31%;
+              margin-right: 2%;
+              margin-bottom: 15px; }
+              .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box a {
+                color: #8A7EA4;
+                font-size: 15px;
+             /*  @if($name == "lestudio"){
+                  font-family: $default-text, sans-serif;
+          
+                  &:lang(en){
+                      font-family: $en-nav, sans-serif;
+                  }
+                  &:lang(ka){
+                      font-family: $ge-nav, sans-serif;
+                  }
+              }*/
+                transition: all .3s; }
+                .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box a:hover {
+                  color: #17004C; }
     .header .header_right .header_search {
       margin: 0 15px 0 30px;
       cursor: pointer; }
