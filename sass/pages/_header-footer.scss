@@ -13,7 +13,8 @@
 	}
 
 	.header_right {
-
+		display: flex;
+		align-items: center;
 		nav {
 
 			ul {
@@ -29,6 +30,37 @@
 						font-size: 15px;
 						color: $text-color;
 					}
+				}
+			}
+		}
+
+		.header_search {
+			margin: 0 15px 0 30px;
+			cursor: pointer;
+		}
+
+		.language_bar {
+
+			.language_dropdown {
+
+				border: 1px solid $border-color;
+				border-radius: 20px;
+				    padding: 6px 7px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #fff;
+				cursor: pointer;
+
+				span {
+					margin: 0 10px;
+					@include family(text);
+					font-size: 16px;
+				}
+
+				.language_dropdown_img {
+
+					margin-right: 5px;
 				}
 			}
 		}
