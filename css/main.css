@@ -382,6 +382,7 @@ body {
     margin-top: 50px; }
     .main_search form input {
       width: 100%;
+      background: transparent;
       border-bottom: 1px solid #161340;
       padding: 20px 20px 17px 20px;
       color: #17004C;
