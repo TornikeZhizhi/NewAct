@@ -1,8 +1,8 @@
 .breadcrumb{
-    font-family: "Mark", sans-serif;
+    @include family(text);
     background-color: unset;
     padding: 0;
-    margin: 0 auto;
+    justify-content: center;
 
     
     li:not(:last-child):after {
@@ -16,4 +16,29 @@
     }
     
   
+}
+
+
+.main_title{
+    padding: 20px;
+    line-height: 30px;
+
+    span{
+        color: #17004C;
+        font-size: 38px;
+        @include family(title);
+    }
+
+    &:after{
+        content:"";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -2px;
+        width: 8px;
+        height:100%;
+        background-color: $text-color;
+    }
+
+
 }
