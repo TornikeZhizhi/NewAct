@@ -23,10 +23,15 @@
     padding: 20px;
     line-height: 30px;
 
-    span{
+    h1{
         color: #17004C;
         font-size: 38px;
         @include family(title);
+    }
+
+    span{
+        color: #17004C;
+        font-size: 38px;
     }
 
     &:after{
