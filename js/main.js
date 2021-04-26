@@ -21,6 +21,7 @@ $(document).ready(function(){
 	 	e.stopPropagation()
 	 	$(".nav_dropdown").removeClass("active")
 	 	$(this).addClass("active")
+	 	$(".language_container").removeClass("active")
 	 })
 
 	 $(window).click(function(){
