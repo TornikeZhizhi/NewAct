@@ -246,6 +246,58 @@ body {
 .insight_tab:not(:last-child) {
   border-right: unset; }
 
+.subscribe_fluid {
+  padding: 30px 20px 40px 20%;
+  background-image: url("../images/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 35px; }
+
+.subscribe_box {
+  max-width: 450px;
+  width: 100%; }
+  .subscribe_box .subscribe_text {
+    margin: 5px 0 20px; }
+  .subscribe_box form {
+    position: relative; }
+  .subscribe_box button {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    z-index: 10;
+    background-color: #17004C;
+    border: none;
+    padding: 9px 28px;
+    cursor: pointer;
+    outline: none; }
+  .subscribe_box input {
+    color: #17004C;
+    padding: 5px 5px 11px 15px;
+    border-bottom: 1px solid #17004C;
+    width: 100%;
+    background-color: transparent; }
+    .subscribe_box input::placeholder {
+      color: #17004C; }
+  .subscribe_box * {
+    color: #17004C; }
+  .subscribe_box .subscribe_box_title * {
+    font-family: "Mark-Bold", sans-serif;
+   /*  @if($name == "lestudio"){
+        font-family: $default-text, sans-serif;
+
+        &:lang(en){
+            font-family: $en-nav, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-nav, sans-serif;
+        }
+    }*/
+    font-size: 28px; }
+    .subscribe_box .subscribe_box_title *:lang(en) {
+      font-family: "Mark-Bold", sans-serif; }
+    .subscribe_box .subscribe_box_title *:lang(ka) {
+      font-family: "Mark-Bold", sans-serif; }
+
 .main_content {
   height: calc(100vh - 86px);
   width: 100%;
@@ -319,6 +371,9 @@ body {
           font-family: "Mark-Bold", sans-serif; }
         .main_content .main_bottom_title span.bold:lang(ka) {
           font-family: "Mark-Bold", sans-serif; }
+
+.home_news {
+  margin-top: 30px !important; }
 
 .news_container {
   padding: 2% 4%;

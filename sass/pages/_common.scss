@@ -191,3 +191,56 @@
 
     border-right: unset;
 }
+.subscribe_fluid {
+
+    padding: 30px 20px 40px 20%;
+    background-image: url("../images/subscribe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+        margin-top: 35px;
+}
+.subscribe_box {
+
+    max-width: 450px;
+    width: 100%;
+    .subscribe_text {
+           margin: 5px 0 20px;
+    }
+form {
+    position: relative;
+}
+
+button {
+      position: absolute;
+    top: -3px;
+    right: 0;
+    z-index: 10;
+    background-color: #17004C;
+    border: none;
+    padding: 9px 28px;
+    cursor: pointer;
+    outline: none;
+}
+    input{
+        color: $text-color;
+        padding: 5px 5px 11px 15px;
+        border-bottom: 1px solid $text-color;
+        width: 100%;
+        background-color: transparent;
+
+        &::placeholder{
+            color:$text-color;
+        }
+    }
+
+    * {
+        color: $text-color;
+    }
+    .subscribe_box_title {
+
+        * {
+            @include family(title);
+            font-size: 28px;
+        }
+    }
+}
