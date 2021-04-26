@@ -45,8 +45,20 @@ body {
     padding-top:86px;
 }
 
+$main-purple:#161340;
+$light-purple:#643695;
+$bg-color:#F1F1F1;
+$text-color:#17004C;
+ 
+$border-color:#D1D1D1;
+
 .c_container {
     
     max-width:1250px;
     margin:0 auto;
+}
+
+.c_bg {
+    
+    background-color:$bg-color;
 }

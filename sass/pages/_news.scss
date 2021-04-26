@@ -62,14 +62,7 @@
   .latest_news{
         margin-top: 60px;
 
-        .main_title{
-            padding: 20px 0;
-
-            .bold{
-                @include family(title);
-            }
-        }
-
+        
         .d_flex{
             display: flex;
             flex-wrap: wrap;

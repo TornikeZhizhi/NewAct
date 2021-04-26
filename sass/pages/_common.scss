@@ -23,6 +23,11 @@
     padding: 20px;
     line-height: 30px;
 
+    &.center {
+
+        text-align: center;
+    }
+
     h1{
         color: #17004C;
         font-size: 38px;
@@ -46,4 +51,99 @@
     }
 
 
+}
+
+
+.main_title{
+            padding: 20px 0;
+
+            .bold{
+                @include family(title);
+            }
+        }
+
+
+.insight_tab_wrapper {
+ 
+    .insight_tab {
+           padding: 30px;
+        border: 1px solid $text-color;
+        max-width: 33%;
+        flex:0 0 33%;
+
+        .insight_tab_text {
+
+            * {
+                color: $text-color;
+            }
+        }
+
+        .insight_tab_title {
+            padding-left: 30px;
+            margin-bottom: 30px;
+            h3 {
+            position: relative;
+
+            &:after{
+                position: absolute;
+                top: 50%;
+                left: -30px;
+                width: 8px;
+                background-color: $text-color;
+                content: "";
+                height: 110%;
+                transform: translateY(-50%);
+            }
+
+
+                a {
+                font-size: 33px;
+                @include family(title);
+                    color: $text-color;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .insight_tab_date{ 
+
+            display: flex;
+            justify-content: space-between;
+            margin:15px 0 20px;
+
+            span {
+
+                color: $text-color;
+            }
+
+         }
+
+        .insight_tab_img {
+
+            img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.common_share_boxes {
+    display: flex;
+    margin-top: 15px;
+
+    &>div:first-child{
+        margin-right:15px   ;
+    }
+}
+
+.d_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.insight_tab:not(:last-child){
+
+    border-right: unset;
 }
