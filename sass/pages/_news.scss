@@ -70,6 +70,7 @@
             .news_section{
                 border: 1px solid $text-color;
                 max-width: 33%;
+                margin-bottom: 20px;
     
                 .news{
                     position: relative;
@@ -85,8 +86,6 @@
                 .latest_news_info{
                     padding:30px 40px 30px 30px;
                     color: $text-color;
-    
-                   
                 }
     
                 .news_date{

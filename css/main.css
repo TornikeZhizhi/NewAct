@@ -334,7 +334,8 @@ body {
     flex-wrap: wrap; }
     .latest_news .d_flex .news_section {
       border: 1px solid #17004C;
-      max-width: 33%; }
+      max-width: 33%;
+      margin-bottom: 20px; }
       .latest_news .d_flex .news_section .news {
         position: relative;
         padding-left: 30px; }
