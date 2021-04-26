@@ -354,6 +354,37 @@ body {
         object-fit: cover;
         height: 100%; }
 
+.team_container {
+  padding: 2% 4%; }
+  .team_container .team_section {
+    display: flex;
+    flex-wrap: wrap; }
+    .team_container .team_section .team_member {
+      border: 1px solid #17004C;
+      padding: 20px;
+      width: 33%;
+      transition: .3s; }
+      .team_container .team_section .team_member a {
+        color: #17004C; }
+        .team_container .team_section .team_member a img {
+          width: 100%; }
+      .team_container .team_section .team_member .main_news {
+        position: relative;
+        padding: 5px 10px;
+        margin-top: 40px; }
+        .team_container .team_section .team_member .main_news .member_info {
+          padding: 0; }
+          .team_container .team_section .team_member .main_news .member_info h1 {
+            font-size: 28px; }
+      .team_container .team_section .team_member:hover {
+        background-color: #643695; }
+        .team_container .team_section .team_member:hover .member_info h1 {
+          color: white; }
+        .team_container .team_section .team_member:hover .member_info:after {
+          background-color: white; }
+        .team_container .team_section .team_member:hover span {
+          color: white; }
+
 .header {
   background-color: #F1F1F1;
   padding: 20px 10px;
