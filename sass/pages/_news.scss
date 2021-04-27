@@ -14,6 +14,7 @@
         .news_info{
             display: flex;
             align-items: center;
+            padding-bottom: 15px;
 
 
             span{
@@ -64,7 +65,27 @@
 }
   .latest_news{
         margin-top: 60px;
-        margin-bottom:50px;
+
+        .news_title{
+          
+
+            &:after{
+                display: none;
+            }
+        }
+
+        .insights_title{
+            text-align: center;
+
+            &:after{
+                display: none;
+            }
+        }
+
+      
+
+        
+
         
         .d_flex{
             display: flex;
@@ -78,6 +99,8 @@
                 .news{
                     position: relative;
                     padding-left: 30px;
+
+                  
                    
     
                     .share{
