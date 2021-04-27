@@ -8,7 +8,9 @@
         margin: 40px auto;
         position: relative;
 
-
+        .main_title {
+           padding: 7px 0 15px 21px; 
+        }
         .news_info{
             display: flex;
             align-items: center;
@@ -62,7 +64,7 @@
 }
   .latest_news{
         margin-top: 60px;
-
+        margin-bottom:50px;
         
         .d_flex{
             display: flex;
@@ -169,3 +171,4 @@
         }
     
     }
+

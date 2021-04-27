@@ -6,7 +6,7 @@
 
     
     li:not(:last-child):after {
-        content: url(../../images/Path.png);
+        content: url(../images/Path.png);
         padding: 0 15px;
     }
 	
@@ -55,7 +55,7 @@
 
 
 .main_title{
-            padding: 20px 0;
+            padding: 30px 0 15px;
 
             .bold{
                 @include family(title);
@@ -191,13 +191,18 @@
 
     border-right: unset;
 }
+
+.subscribe_fluid_wrapper {
+    padding: 40px 0;
+}
 .subscribe_fluid {
 
     padding: 30px 20px 40px 20%;
     background-image: url("../images/subscribe.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-        margin-top: 35px;
+
+   
 }
 .subscribe_box {
 
@@ -248,7 +253,7 @@ button {
 
 .bordered_title {
 
-    margin-top: 30px;
+
     border-bottom: 1px solid $text-color;
     border-top: 1px solid $text-color;
 }
@@ -257,3 +262,13 @@ button {
 }
 
 
+ 
+
+  .main_title.unborder {
+
+
+    &:after{
+        content:unset !important;
+    }
+
+  }

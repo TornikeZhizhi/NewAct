@@ -96,7 +96,7 @@ body {
   .breadcrumb:lang(ka) {
     font-family: "Mark", sans-serif; }
   .breadcrumb li:not(:last-child):after {
-    content: url(../../images/Path.png);
+    content: url(../images/Path.png);
     padding: 0 15px; }
   .breadcrumb a {
     color: #17004C;
@@ -139,7 +139,7 @@ body {
     background-color: #17004C; }
 
 .main_title {
-  padding: 20px 0; }
+  padding: 30px 0 15px; }
   .main_title .bold {
     font-family: "Mark-Bold", sans-serif;
    /*  @if($name == "lestudio"){
@@ -246,12 +246,14 @@ body {
 .insight_tab:not(:last-child) {
   border-right: unset; }
 
+.subscribe_fluid_wrapper {
+  padding: 40px 0; }
+
 .subscribe_fluid {
   padding: 30px 20px 40px 20%;
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 35px; }
+  background-size: cover; }
 
 .subscribe_box {
   max-width: 450px;
@@ -299,12 +301,14 @@ body {
       font-family: "Mark-Bold", sans-serif; }
 
 .bordered_title {
-  margin-top: 30px;
   border-bottom: 1px solid #17004C;
   border-top: 1px solid #17004C; }
 
 .main_title:after {
   top: 49%; }
+
+.main_title.unborder:after {
+  content: unset !important; }
 
 .main_content {
   height: calc(100vh - 86px);
@@ -381,7 +385,18 @@ body {
           font-family: "Mark-Bold", sans-serif; }
 
 .home_news {
-  margin-top: 0px !important; }
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 0 0 80px 0;
+  background-color: #F1F1F1; }
+  .home_news .news_info .share {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .news_container {
   padding: 2% 4%;
@@ -390,6 +405,8 @@ body {
   .news_container .main_news {
     margin: 40px auto;
     position: relative; }
+    .news_container .main_news .main_title {
+      padding: 7px 0 15px 21px; }
     .news_container .main_news .news_info {
       display: flex;
       align-items: center; }
@@ -416,7 +433,8 @@ body {
     padding-top: 30px; }
 
 .latest_news {
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin-bottom: 50px; }
   .latest_news .d_flex {
     display: flex;
     flex-wrap: wrap; }
