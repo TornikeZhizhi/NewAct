@@ -101,6 +101,8 @@ body {
   .breadcrumb a {
     color: #17004C;
     font-size: 16px; }
+    .breadcrumb a.opacity {
+      opacity: .7; }
 
 .main_title {
   padding: 20px;
@@ -434,7 +436,8 @@ body {
     padding-top: 30px; }
 
 .latest_news {
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin-bottom: 50px; }
   .latest_news .news_title:after {
     display: none; }
   .latest_news .insights_title {
@@ -467,7 +470,7 @@ body {
         height: 100%; }
 
 .team_container {
-  padding: 2% 4%; }
+  padding: 30px 10px 70px; }
   .team_container .team_section {
     display: flex;
     flex-wrap: wrap; }
@@ -475,7 +478,8 @@ body {
       border: 1px solid #17004C;
       padding: 20px;
       width: 33%;
-      transition: .3s; }
+      transition: .3s;
+      background-color: #fff; }
       .team_container .team_section .team_member .member_link {
         color: #17004C;
         display: block;
@@ -534,7 +538,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; }
+  z-index: 1000;
+  border-bottom: 1px solid #17004C; }
   .header .header_container {
     max-width: 1300px;
     margin: 0 auto;
