@@ -470,21 +470,49 @@ body {
       padding: 20px;
       width: 33%;
       transition: .3s; }
-      .team_container .team_section .team_member a {
-        color: #17004C; }
-        .team_container .team_section .team_member a img {
-          width: 100%; }
+      .team_container .team_section .team_member .member_link {
+        color: #17004C;
+        display: block;
+        height: 360px;
+        overflow: hidden; }
+        .team_container .team_section .team_member .member_link img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transform: scale(1.1);
+          transition: all .3s;
+          object-position: top; }
       .team_container .team_section .team_member .main_news {
         position: relative;
-        padding: 5px 10px;
+        padding: 5px 15px;
         margin-top: 40px; }
         .team_container .team_section .team_member .main_news .member_info {
           padding: 0; }
-          .team_container .team_section .team_member .main_news .member_info h1 {
+          .team_container .team_section .team_member .main_news .member_info h4 {
             font-size: 28px; }
+            .team_container .team_section .team_member .main_news .member_info h4 a {
+              color: #17004C;
+              font-family: "Mark-Bold", sans-serif;
+           /*  @if($name == "lestudio"){
+                font-family: $default-text, sans-serif;
+        
+                &:lang(en){
+                    font-family: $en-nav, sans-serif;
+                }
+                &:lang(ka){
+                    font-family: $ge-nav, sans-serif;
+                }
+            }*/
+              font-size: 28px; }
+              .team_container .team_section .team_member .main_news .member_info h4 a:lang(en) {
+                font-family: "Mark-Bold", sans-serif; }
+              .team_container .team_section .team_member .main_news .member_info h4 a:lang(ka) {
+                font-family: "Mark-Bold", sans-serif; }
       .team_container .team_section .team_member:hover {
         background-color: #643695; }
-        .team_container .team_section .team_member:hover .member_info h1 {
+        .team_container .team_section .team_member:hover .member_link img {
+          transform: scale(1); }
+        .team_container .team_section .team_member:hover .member_info h4 a {
           color: white; }
         .team_container .team_section .team_member:hover .member_info:after {
           background-color: white; }
