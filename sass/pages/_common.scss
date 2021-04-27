@@ -284,3 +284,49 @@ button {
     }
 
   }
+
+.share_click {
+    position: relative;
+     cursor: pointer;
+    &:hover{
+        .share_box_inner {
+            display:block !important;
+        }
+    }
+}
+
+  .share_box_inner {
+ position: absolute;
+    top: -99px;
+    left: 50%;
+    background: #fff;
+    padding: 15px;
+    z-index: 10;
+    display: none;
+    transform: translateX(-50%);
+
+
+
+    &:after{
+content: "";
+    background-color: #fff;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: calc(100% - 10px);
+    left: 45px;
+    transform: rotate(
+45deg
+);
+    }
+
+    &:before{
+       height: 12px;
+    width: 100%;
+    position: absolute;
+    top: calc(100% + 1px);
+    content: "";
+    left: 0;
+    background-color: transparent;
+    }
+  }
