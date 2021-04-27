@@ -61,4 +61,21 @@
 
 .home_news {
 	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding: 0 0 80px 0;
+	background-color: $bg-color;
+
+
+	.news_info {
+
+		.share {
+			    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+		}
+	}
 }
