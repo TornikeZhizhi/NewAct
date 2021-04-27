@@ -491,6 +491,56 @@ body {
     padding: 10px 15px;
     margin: 25px 0; }
 
+.team_member_container .team_member {
+  display: flex; }
+  .team_member_container .team_member .main_news {
+    padding-left: 15px; }
+    .team_member_container .team_member .main_news .share {
+      margin: 40px 0; }
+    .team_member_container .team_member .main_news .main_title {
+      position: relative;
+      padding: 0 15px; }
+      .team_member_container .team_member .main_news .main_title .bold {
+        color: #17004C;
+        font-size: 28px; }
+      .team_member_container .team_member .main_news .main_title span {
+        font-size: 16px; }
+    .team_member_container .team_member .main_news .competence h3 {
+      font-family: "Mark-Bold", sans-serif;
+   /*  @if($name == "lestudio"){
+        font-family: $default-text, sans-serif;
+
+        &:lang(en){
+            font-family: $en-nav, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-nav, sans-serif;
+        }
+    }*/
+      color: #17004C;
+      font-size: 28px; }
+      .team_member_container .team_member .main_news .competence h3:lang(en) {
+        font-family: "Mark-Bold", sans-serif; }
+      .team_member_container .team_member .main_news .competence h3:lang(ka) {
+        font-family: "Mark-Bold", sans-serif; }
+    .team_member_container .team_member .main_news .competence span {
+      font-family: "Mark-Bold", sans-serif;
+   /*  @if($name == "lestudio"){
+        font-family: $default-text, sans-serif;
+
+        &:lang(en){
+            font-family: $en-nav, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-nav, sans-serif;
+        }
+    }*/
+      color: #17004C; }
+      .team_member_container .team_member .main_news .competence span:lang(en) {
+        font-family: "Mark-Bold", sans-serif; }
+      .team_member_container .team_member .main_news .competence span:lang(ka) {
+        font-family: "Mark-Bold", sans-serif; }
+
 .team_container {
   padding: 30px 10px 70px; }
   .team_container .team_section {
