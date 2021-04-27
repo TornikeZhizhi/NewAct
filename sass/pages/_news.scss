@@ -63,6 +63,7 @@
 
     
 }
+
   .latest_news{
         margin-top: 60px;
 
@@ -134,4 +135,32 @@
     }
 
 
+    .product_container{
+        .main_img{
+            img{
+                width: 100%;
+                max-height: 400px;
+            }
+        }
+
+        .product_section{
+            width: 70%;
+            margin: 0 auto 70px;
+            position: relative;
+
+            .product_breadcrumb{    
+                position: absolute;
+                top: -55px;
+                background: white;
+                padding: 5px 10px;
+                border-radius: 0;
+            }
+
+            .main_title{
+                position: relative;
+                padding: 10px 15px;
+                margin: 25px 0;
+            }
+        }
+    }
 

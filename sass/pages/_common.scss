@@ -4,6 +4,14 @@
     padding: 0;
     justify-content: center;
 
+    li{
+        opacity: 0.5;
+    }
+
+    .active{
+        opacity: 1;
+    }
+
     
     li:not(:last-child):after {
         content: url(../images/Path.png);

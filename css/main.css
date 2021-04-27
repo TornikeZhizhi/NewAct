@@ -95,6 +95,10 @@ body {
     font-family: "Mark", sans-serif; }
   .breadcrumb:lang(ka) {
     font-family: "Mark", sans-serif; }
+  .breadcrumb li {
+    opacity: 0.5; }
+  .breadcrumb .active {
+    opacity: 1; }
   .breadcrumb li:not(:last-child):after {
     content: url(../images/Path.png);
     padding: 0 15px; }
@@ -465,6 +469,24 @@ body {
         width: 80%;
         object-fit: cover;
         height: 100%; }
+
+.product_container .main_img img {
+  width: 100%;
+  max-height: 400px; }
+.product_container .product_section {
+  width: 70%;
+  margin: 0 auto 70px;
+  position: relative; }
+  .product_container .product_section .product_breadcrumb {
+    position: absolute;
+    top: -55px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 0; }
+  .product_container .product_section .main_title {
+    position: relative;
+    padding: 10px 15px;
+    margin: 25px 0; }
 
 .team_container {
   padding: 2% 4%; }
