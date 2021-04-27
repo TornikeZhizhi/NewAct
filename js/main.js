@@ -44,4 +44,13 @@ $(document).ready(function(){
 
 	 	$(".language_container").addClass("active")
 	 })
+
+
+
+	 $(document).ready(function(){
+	$('#nav-icon2').click(function(){
+		$(this).toggleClass('open');
+		$(".mobile_header").toggleClass("active")
+	});
+});
 })
