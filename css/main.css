@@ -392,7 +392,8 @@ body {
     position: relative; }
     .news_container .main_news .news_info {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      padding-bottom: 15px; }
       .news_container .main_news .news_info span {
         padding: 0 20px;
         position: relative; }
@@ -417,6 +418,12 @@ body {
 
 .latest_news {
   margin-top: 60px; }
+  .latest_news .news_title:after {
+    display: none; }
+  .latest_news .insights_title {
+    text-align: center; }
+    .latest_news .insights_title:after {
+      display: none; }
   .latest_news .d_flex {
     display: flex;
     flex-wrap: wrap; }
