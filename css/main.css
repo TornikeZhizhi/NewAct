@@ -800,4 +800,101 @@ body {
       .main_search form button img {
         width: 26px; }
 
+.footer {
+  border-top: 1px solid #17004C;
+  border-bottom: 1px solid #17004C; }
+
+.footer_wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 5px; }
+  .footer_wrapper .footer_social_wrapper {
+    flex: 0 0 20%;
+    max-width: 20%; }
+    .footer_wrapper .footer_social_wrapper .footer_logo img {
+      width: 151px; }
+    .footer_wrapper .footer_social_wrapper .footer_social {
+      display: flex;
+      margin-top: 20px; }
+      .footer_wrapper .footer_social_wrapper .footer_social a {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #17004C;
+        border-radius: 50%;
+        transition: all .3s; }
+        .footer_wrapper .footer_social_wrapper .footer_social a:not(:last-child) {
+          margin-right: 5px; }
+        .footer_wrapper .footer_social_wrapper .footer_social a:hover {
+          background-color: #fff;
+          border: 1px solid #17004C; }
+          .footer_wrapper .footer_social_wrapper .footer_social a:hover svg {
+            fill: #17004C; }
+      .footer_wrapper .footer_social_wrapper .footer_social svg {
+        fill: #fff;
+        transition: all .3s;
+        width: 60%;
+        height: 60%; }
+  .footer_wrapper .footer_subscribe, .footer_wrapper .footer_contact {
+    max-width: 40%; }
+
+.footer_subscribe .subscribe_box .subscribe_text {
+  margin: 10px 0 20px; }
+.footer_subscribe button {
+  background-color: #F1F1F1 !important; }
+  .footer_subscribe button svg, .footer_subscribe button path {
+    fill: #17004C; }
+
+.footer_contact * {
+  color: #17004C; }
+.footer_contact h4 {
+  font-family: "Mark-Bold", sans-serif;
+   /*  @if($name == "lestudio"){
+        font-family: $default-text, sans-serif;
+
+        &:lang(en){
+            font-family: $en-nav, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-nav, sans-serif;
+        }
+    }*/
+  font-size: 28px;
+  margin-bottom: 10px; }
+  .footer_contact h4:lang(en) {
+    font-family: "Mark-Bold", sans-serif; }
+  .footer_contact h4:lang(ka) {
+    font-family: "Mark-Bold", sans-serif; }
+.footer_contact ul li {
+  margin-bottom: 20px; }
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #17004C; }
+  .copyright div {
+    flex: 0 0 33%;
+    max-width: 33%; }
+  .copyright * {
+    color: #fff; }
+  .copyright .footer_midle {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .copyright .footer_right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .copyright .footer_right svg {
+      width: 70px;
+      fill: #fff; }
+      .copyright .footer_right svg path {
+        fill: #fff; }
+
 /*# sourceMappingURL=main.css.map */
