@@ -1,7 +1,7 @@
     .team_container{
-        padding: 2% 4%;
+       
 
-
+        padding: 30px 10px 70px;
         .team_section{
             display: flex;
             flex-wrap: wrap;
@@ -11,6 +11,10 @@
                 padding: 20px;
                 width: 33%;
                 transition: .3s;
+                background-color: #fff;
+
+
+
                 .member_link{
                     color: $text-color;
                     display: block;
