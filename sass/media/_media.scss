@@ -160,8 +160,12 @@
    
     padding: 19px;
 }
-.latest_news .d_flex .news_section .news_img img{
+.latest_news .d_flex .news_section .news_img .news_main_img img{
 height: 200px;
+}
+
+.link_arrow_box {
+	opacity: 1 !important;
 }
 }
 
