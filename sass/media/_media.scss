@@ -52,6 +52,10 @@
 
 
 @media only screen and (max-width: 992px) {
+
+	.insight_tab_wrapper .insight_tab .insight_tab_img img {
+		height: 180px;
+	}
 	.copyright  {
 		padding: 13px;
 	}
@@ -105,7 +109,7 @@
 }
 
 .insight_tab_wrapper .insight_tab {
-    padding: 30px;
+ 
     border: 1px solid #17004C !important;
     max-width: 70%;
     flex: 0 0 70%;
@@ -118,6 +122,47 @@
     flex: 0 0 70%;
        margin: 0px auto;
 }
+.insight_tab_wrapper .insight_tab .insight_tab_title h3 {
+  
+    line-height: 26px;
+}
+.insight_tab_wrapper .insight_tab .insight_tab_title h3 a {
+    font-size: 28px;
+   
+}
+
+.subscribe_fluid {
+    padding: 29px 20px 30px 15px;
+}
+.latest_news .d_flex .news_section .news {
+ 
+    padding-left: 20px;
+}
+
+
+.news .main_title h1 {
+    color: #17004C;
+    font-size: 30px;
+    font-family: "Mark-Bold", sans-serif;
+}
+.news .main_title {
+    padding: 10px 0 15px;
+}
+.latest_news .d_flex .news_section .news .share {
+ 
+    bottom: -36px;
+}
+.latest_news .d_flex .news_section .latest_news_info {
+    padding: 46px 20px 5px 20px;
+ 
+}
+.latest_news .d_flex .news_section .news_date {
+   
+    padding: 19px;
+}
+.latest_news .d_flex .news_section .news_img img{
+height: 200px;
+}
 }
 
 
@@ -125,7 +170,7 @@
 @media only screen and (max-width: 576px) {
 
 .insight_tab_wrapper .insight_tab {
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #17004C !important;
     max-width: 100%;
     flex: 0 0 100%;
