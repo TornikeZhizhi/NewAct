@@ -339,7 +339,8 @@
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	padding: 30px 0 5px;
+	padding: 30px 10px 5px;
+	flex-wrap: wrap;
 
 	.footer_social_wrapper {
 		flex: 0 0 20%;
@@ -436,6 +437,7 @@
 	justify-content: space-between;
 	padding: 20px;
 	background-color: $text-color;
+	flex-wrap: wrap;
 	div {
 		flex: 0 0 33%;
 		max-width: 33%;
@@ -592,7 +594,7 @@
 
     .language_bar {
     position: relative;
-    max-width: 92px;
+    max-width: 100px;
     margin: 25px auto;
 
 
@@ -648,4 +650,70 @@
 
 
 
+}
+
+
+
+.mobile_nav {
+	display: flex;
+	justify-content: center;
+	height: calc(100vh - 240px);
+    overflow: auto;
+
+	li {
+		margin-bottom: 10px;
+
+		a {
+			@include family(title);
+			color: $text-color;
+			position: relative;
+			 margin-bottom: 15px;
+   			 display: inline-block;
+
+			&.dropdown_mobile_nav {
+				margin-bottom: 20px;
+
+			&:after{
+
+			content: "";
+	    position: absolute;
+	    top: 2px;
+	    right: -26px;
+	    width: 22px;
+	    height: 22px;
+	    background-image: url(../images/arrow_down.svg);
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: 12px;
+	    transition: all .3s;
+
+			}
+			}
+
+			&.active {
+
+				opacity: 1 !important;
+
+
+				&:after{
+					transform:rotate(180deg);
+					top: 0;
+				}
+			}
+
+		}
+	}
+}
+
+.dropdown_mobile_nav_inner {
+	display: none;
+	li {
+		margin-bottom: 10px;
+		padding-left: 15px;
+		a {
+
+			@include family(text);
+			margin-bottom: 10px;
+		}
+	}
 }

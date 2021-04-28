@@ -47,10 +47,21 @@ $(document).ready(function(){
 
 
 
-	 $(document).ready(function(){
+	
 	$('#nav-icon2').click(function(){
 		$(this).toggleClass('open');
 		$(".mobile_header").toggleClass("active")
 	});
-});
+
+
+
+	$(".dropdown_mobile_nav").click(function(e){
+
+		e.preventDefault()
+		$(".mobile_nav ul li a").css("opacity","0.7")
+		$(this).next().slideToggle()
+		$(this).toggleClass("active")
+
+	})
+
 })
