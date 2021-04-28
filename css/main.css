@@ -1416,7 +1416,19 @@ body {
     font-size: 30px; }
 
   .bordered_title .c_container {
-    padding-left: 25px; } }
+    padding-left: 25px; }
+
+  .main_search form {
+    width: 95%;
+    position: relative;
+    margin-top: 15px; }
+
+  .main_search .main_search_title * {
+    font-family: "Mark-Bold", sans-serif;
+    font-size: 14px; }
+
+  .home_news {
+    padding: 0 0 40px 0; } }
 @media only screen and (max-width: 576px) {
   .insight_tab_wrapper .insight_tab {
     padding: 15px;
