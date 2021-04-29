@@ -789,7 +789,7 @@ body {
                 display: flex;
                 flex-direction: column; }
                 .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links li {
-                  padding-left: 10px; }
+                  padding-left: 23px; }
                   .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links li:not(:last-child) {
                     margin-bottom: 5px; }
                 .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links a {
@@ -803,11 +803,23 @@ body {
                     &:lang(ka){
                         font-family: $ge-nav, sans-serif;
                     }
-                }*/ }
+                }*/
+                  position: relative; }
                   .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links a:lang(en) {
                     font-family: "Mark", sans-serif; }
                   .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links a:lang(ka) {
                     font-family: "Mark", sans-serif; }
+                  .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links a:after {
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    left: -17px;
+                    background-image: url(../images/Path.png);
+                    background-repeat: no-repeat;
+                    background-size: 6px;
+                    background-position: center;
+                    width: 20px;
+                    height: 20px; }
     .header .header_right .header_search {
       margin: 0 15px 0 30px;
       cursor: pointer; }

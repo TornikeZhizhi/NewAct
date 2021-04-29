@@ -144,7 +144,7 @@
 								flex-direction: column;
 
 								li {
-									padding-left: 10px;
+									padding-left:23px;
 
 									&:not(:last-child){
 										margin-bottom: 5px;
@@ -153,6 +153,20 @@
 
 								a{
 									@include family(text);
+									position: relative;
+
+									&:after{
+										    content: "";
+									    position: absolute;
+									    top: 0px;
+									    left: -17px;
+									    background-image: url(../images/Path.png);
+									    background-repeat: no-repeat;
+									    background-size: 6px;
+									    background-position: center;
+									    width: 20px;
+									    height: 20px;
+									}
 
 								}
 							}
