@@ -526,57 +526,99 @@ body {
     padding: 10px 15px;
     margin: 25px 0; }
 
-.team_member_container .team_member {
-  display: flex; }
-  .team_member_container .team_member .main_news {
-    padding-left: 15px; }
-    .team_member_container .team_member .main_news .share {
-      margin: 40px 0; }
-    .team_member_container .team_member .main_news .main_title {
-      position: relative;
-      padding: 0 15px; }
-      .team_member_container .team_member .main_news .main_title .bold {
+.team_member_container {
+  margin-top: 50px; }
+  .team_member_container .team_member {
+    display: flex; }
+    .team_member_container .team_member .main_news {
+      padding-left: 15px; }
+      .team_member_container .team_member .main_news .share {
+        margin: 40px 0; }
+      .team_member_container .team_member .main_news .main_title {
+        position: relative;
+        padding: 0 15px; }
+        .team_member_container .team_member .main_news .main_title .bold {
+          color: #17004C;
+          font-size: 28px; }
+        .team_member_container .team_member .main_news .main_title span {
+          font-size: 16px; }
+      .team_member_container .team_member .main_news .competence h3 {
+        font-family: "Mark-Bold", sans-serif;
+     /*  @if($name == "lestudio"){
+          font-family: $default-text, sans-serif;
+  
+          &:lang(en){
+              font-family: $en-nav, sans-serif;
+          }
+          &:lang(ka){
+              font-family: $ge-nav, sans-serif;
+          }
+      }*/
         color: #17004C;
         font-size: 28px; }
-      .team_member_container .team_member .main_news .main_title span {
-        font-size: 16px; }
-    .team_member_container .team_member .main_news .competence h3 {
-      font-family: "Mark-Bold", sans-serif;
-   /*  @if($name == "lestudio"){
-        font-family: $default-text, sans-serif;
-
-        &:lang(en){
-            font-family: $en-nav, sans-serif;
-        }
-        &:lang(ka){
-            font-family: $ge-nav, sans-serif;
-        }
-    }*/
-      color: #17004C;
+        .team_member_container .team_member .main_news .competence h3:lang(en) {
+          font-family: "Mark-Bold", sans-serif; }
+        .team_member_container .team_member .main_news .competence h3:lang(ka) {
+          font-family: "Mark-Bold", sans-serif; }
+      .team_member_container .team_member .main_news .competence span {
+        font-family: "Mark-Bold", sans-serif;
+     /*  @if($name == "lestudio"){
+          font-family: $default-text, sans-serif;
+  
+          &:lang(en){
+              font-family: $en-nav, sans-serif;
+          }
+          &:lang(ka){
+              font-family: $ge-nav, sans-serif;
+          }
+      }*/
+        color: #17004C; }
+        .team_member_container .team_member .main_news .competence span:lang(en) {
+          font-family: "Mark-Bold", sans-serif; }
+        .team_member_container .team_member .main_news .competence span:lang(ka) {
+          font-family: "Mark-Bold", sans-serif; }
+  .team_member_container .biography {
+    width: 85%;
+    margin: 50px auto 70px; }
+    .team_member_container .biography .bold {
       font-size: 28px; }
-      .team_member_container .team_member .main_news .competence h3:lang(en) {
-        font-family: "Mark-Bold", sans-serif; }
-      .team_member_container .team_member .main_news .competence h3:lang(ka) {
-        font-family: "Mark-Bold", sans-serif; }
-    .team_member_container .team_member .main_news .competence span {
-      font-family: "Mark-Bold", sans-serif;
-   /*  @if($name == "lestudio"){
-        font-family: $default-text, sans-serif;
-
-        &:lang(en){
-            font-family: $en-nav, sans-serif;
-        }
-        &:lang(ka){
-            font-family: $ge-nav, sans-serif;
-        }
-    }*/
+    .team_member_container .biography .text {
+      margin-top: 20px;
       color: #17004C; }
-      .team_member_container .team_member .main_news .competence span:lang(en) {
-        font-family: "Mark-Bold", sans-serif; }
-      .team_member_container .team_member .main_news .competence span:lang(ka) {
-        font-family: "Mark-Bold", sans-serif; }
-.team_member_container .main_title:after {
-  display: none; }
+  .team_member_container .slider_title:after {
+    display: none; }
+  .team_member_container .team_slider .slick-slide {
+    border: 1px solid #17004C;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.3s;
+    position: relative; }
+    .team_member_container .team_slider .slick-slide .bold a {
+      color: #17004C;
+      font-weight: bold; }
+    .team_member_container .team_slider .slick-slide:hover {
+      background-color: #643695; }
+      .team_member_container .team_slider .slick-slide:hover .member_link img {
+        transform: scale(1); }
+      .team_member_container .team_slider .slick-slide:hover .member_info h4 {
+        color: white; }
+        .team_member_container .team_slider .slick-slide:hover .member_info h4 a {
+          color: white; }
+      .team_member_container .team_slider .slick-slide:hover .member_info:after {
+        background-color: white; }
+      .team_member_container .team_slider .slick-slide:hover span {
+        color: white; }
+      .team_member_container .team_slider .slick-slide:hover .link_arrow_box {
+        opacity: 1; }
+  .team_member_container .team_slider .member_info {
+    position: relative;
+    padding: 0 15px;
+    margin-top: 30px;
+    color: #17004C; }
+  .team_member_container .team_slider span {
+    font-size: 16px; }
 
 .latest_news .d_flex .news_section .news_date * {
   color: #17004C; }
