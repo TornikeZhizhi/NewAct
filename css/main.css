@@ -595,6 +595,11 @@ body {
     padding: 20px;
     transition: 0.3s;
     position: relative; }
+    .team_member_container .team_slider .slick-slide a {
+      overflow: hidden; }
+      .team_member_container .team_slider .slick-slide a img {
+        transform: scale(1.1);
+        transition: 0.3s; }
     .team_member_container .team_slider .slick-slide .bold a {
       color: #17004C;
       font-weight: bold; }
@@ -619,6 +624,14 @@ body {
     color: #17004C; }
   .team_member_container .team_slider span {
     font-size: 16px; }
+  .team_member_container .about_img {
+    border: 1px solid #17004C;
+    padding: 20px; }
+    .team_member_container .about_img img {
+      width: 100%;
+      max-height: 400px; }
+  .team_member_container .about_text {
+    margin: 0px auto 70px; }
 
 .latest_news .d_flex .news_section .news_date * {
   color: #17004C; }
