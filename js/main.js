@@ -24,6 +24,19 @@ $(document).ready(function(){
 	 	$(".language_container").removeClass("active")
 	 })
 
+
+
+	  $(".inner_dropdown_links a").mouseenter(function(){
+
+	  	$(this).parent().parent().prev().addClass("active")
+	  })
+	  $(".inner_dropdown_links a").mouseleave(function(){
+
+	  	$(this).parent().parent().prev().removeClass("active")
+	  })
+
+
+
 	 $(window).click(function(){
 	 	$(".nav_dropdown").removeClass("active");
 	 	$(".language_container").removeClass("active")
@@ -70,4 +83,5 @@ $(document).ready(function(){
   slidesToScroll: 1
 });
 
+ 	
 })
