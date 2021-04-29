@@ -753,16 +753,19 @@ body {
           border: 1px solid #17004C;
           visibility: hidden;
           opacity: 0;
-          transition: all .4s; }
+          transition: all .4s;
+          height: calc(100vh - 85px);
+          overflow: auto; }
           .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper {
             max-width: 1080px;
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start; }
-            .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box {
+            .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper > div {
               flex: 0 0 31%;
-              max-width: 31%;
+              max-width: 31%; }
+            .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box {
               margin-right: 2%;
               margin-bottom: 15px; }
               .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box a {
@@ -781,6 +784,30 @@ body {
                 transition: all .3s; }
                 .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box a:hover {
                   color: #17004C; }
+              .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links {
+                margin-top: 5px;
+                display: flex;
+                flex-direction: column; }
+                .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links li {
+                  padding-left: 10px; }
+                  .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links li:not(:last-child) {
+                    margin-bottom: 5px; }
+                .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links a {
+                  font-family: "Mark", sans-serif;
+               /*  @if($name == "lestudio"){
+                    font-family: $default-text, sans-serif;
+            
+                    &:lang(en){
+                        font-family: $en-nav, sans-serif;
+                    }
+                    &:lang(ka){
+                        font-family: $ge-nav, sans-serif;
+                    }
+                }*/ }
+                  .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links a:lang(en) {
+                    font-family: "Mark", sans-serif; }
+                  .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links a:lang(ka) {
+                    font-family: "Mark", sans-serif; }
     .header .header_right .header_search {
       margin: 0 15px 0 30px;
       cursor: pointer; }
@@ -1298,6 +1325,9 @@ body {
         font-family: "Mark", sans-serif; }
       .dropdown_mobile_nav_inner li a:lang(ka) {
         font-family: "Mark", sans-serif; }
+
+.inner_dropdown > a.active {
+  color: #17004C !important; }
 
 @media only screen and (min-width: 992px) {
   .f_hide {
