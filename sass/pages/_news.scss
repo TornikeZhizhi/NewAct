@@ -218,9 +218,29 @@
                     color: $text-color;
                 };
             }
+
+            .competence_mobile{
+                display: none;
+            }
         }
 
         
+    }
+
+
+    .competence_mobile{
+        display: none;
+        
+        h3{
+            @include family(title);
+            color: $text-color;
+            font-size: 28px;
+        }
+
+        span{
+            @include family(title);
+            color: $text-color;
+        };
     }
 
     .biography{
