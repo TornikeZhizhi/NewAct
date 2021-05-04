@@ -106,7 +106,7 @@
 				    visibility: hidden;
 				    opacity: 0;
 				    transition: all .4s;
-				        height: calc(100vh - 85px);
+				        max-height: calc(100vh - 85px);
     overflow: auto;
 						.nav_dropdown_child_wrapper {
 							max-width: 1080px;
@@ -301,7 +301,7 @@
 	width: 100vw;
 	height: 100vh;
 	z-index: 10000;
-	background: rgba(255,255,255,.84);
+	background: rgba(255,255,255,.99);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -397,7 +397,7 @@
 
 		.footer_social {
 			display: flex;
-			margin-top: 20px;
+			margin-top: 30px;
 			a {
 				width: 28px;
 				height: 28px;
@@ -425,8 +425,8 @@
 		 svg{
 		 	fill: #fff;
 				transition: all .3s;
-		 	width: 60%;
-		 	height: 60%;
+		 	width: 50%;
+		 	height: 57%;
 		 	}	
 		}
 	}

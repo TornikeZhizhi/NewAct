@@ -175,8 +175,16 @@
             }
 
            .common_share_boxes .share_img {
-                background-color: $text-color;
+                /*background-color: $text-color;*/
+
+                #Ellipse_1 {
+                    fill: $text-color;
+                }
                 
+                #share_2_ path {
+
+                    fill: #fff !important;
+                }
             }
         }
     }
