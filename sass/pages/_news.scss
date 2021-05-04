@@ -151,9 +151,10 @@
     }
 
     .product_section{
-        max-width: 1000px;
-        margin: 0 auto 70px;
-        position: relative;
+            max-width: 1000px;
+    margin: 0 auto 0px;
+    position: relative;
+    padding-bottom: 70px;
 
         .product_breadcrumb{    
             position: absolute;

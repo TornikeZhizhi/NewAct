@@ -53,6 +53,35 @@
 
 @media only screen and (max-width: 992px) {
 
+.mobile_nav li a {
+    font-size: 18px;
+}
+
+.mobile_header .language_bar .language_container {
+    top: 67px;
+}
+
+.main_search {
+    position: fixed;
+    top: 87px;
+    width: 100vw;
+    height: calc(100vh - 87px);
+    z-index: 10000;
+    background: $bg-color;
+    visibility: hidden;
+    padding-top: 55px;
+    align-items: flex-start;
+    &.active {
+        visibility: visible;
+    }
+}
+.main_search .main_search_close {
+   
+    top: -69px;
+  
+}
+
+
     .team_container {
     padding: 0px 10px 70px;
 }

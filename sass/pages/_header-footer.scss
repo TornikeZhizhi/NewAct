@@ -542,7 +542,7 @@
 #nav-icon2 span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 7px;
   width: 50%;
   background: $text-color;
   opacity: 1;
@@ -558,12 +558,12 @@
 
 #nav-icon2 span:nth-child(even) {
   left: 50%;
-  border-radius: 0 9px 9px 0;
+ 
 }
 
 #nav-icon2 span:nth-child(odd) {
   left:0px;
-  border-radius: 9px 0 0 9px;
+  
 }
 
 #nav-icon2 span:nth-child(1), #nav-icon2 span:nth-child(2) {
