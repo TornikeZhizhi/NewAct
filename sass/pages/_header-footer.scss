@@ -25,6 +25,12 @@
 		align-items: center;
 		    flex-grow: 1;
     justify-content: flex-end;
+
+    sup {
+			font-size: 25px;
+		    position: absolute;
+		    top: 9px;
+		}
 		nav {
 
 			ul {

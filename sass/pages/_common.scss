@@ -335,3 +335,8 @@ content: "";
     background-color: transparent;
     }
   }
+
+
+  .insight_tab_date span:last-child, .news_date span:last-child{
+    display:  none;
+  }

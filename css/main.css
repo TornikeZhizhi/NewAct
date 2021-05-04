@@ -351,6 +351,9 @@ body {
     left: 0;
     background-color: transparent; }
 
+.insight_tab_date span:last-child, .news_date span:last-child {
+  display: none; }
+
 .main_content {
   height: calc(100vh - 86px);
   width: 100%;
@@ -781,6 +784,10 @@ body {
     align-items: center;
     flex-grow: 1;
     justify-content: flex-end; }
+    .header .header_right sup {
+      font-size: 25px;
+      position: absolute;
+      top: 9px; }
     .header .header_right nav ul {
       display: flex;
       margin-bottom: 0; }
