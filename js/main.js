@@ -81,6 +81,8 @@ $(document).ready(function(){
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
+  dots:true,
+  arrows:false,
 
   responsive: [
 	{
@@ -89,21 +91,24 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		infinite: true,
-		dots: true
+		
 	  }
 	},
 	{
 	  breakpoint: 992,
 	  settings: {
 		slidesToShow: 2,
-		slidesToScroll: 2
+		slidesToScroll: 2,
+	
+		
 	  }
 	},
 	{
 	  breakpoint: 768,
 	  settings: {
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		dots:true,
 	  }
 	}
 	

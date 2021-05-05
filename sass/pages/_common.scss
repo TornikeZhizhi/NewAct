@@ -340,3 +340,7 @@ content: "";
   .insight_tab_date span:last-child, .news_date span:last-child{
     display:  none;
   }
+
+  .team_container .slick-dots{
+      display: none  !important;
+  }

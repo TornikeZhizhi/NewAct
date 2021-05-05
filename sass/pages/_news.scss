@@ -276,11 +276,13 @@
                     @include family(title);
                     color: $text-color;
                     font-size: 28px;
+                    padding-bottom: 10px;
                 }
 
                 span{
                     @include family(title);
                     color: $text-color;
+                    padding-right: 20px;
                 };
             }
 

@@ -53,6 +53,30 @@
 
 @media only screen and (max-width: 992px) {
 
+    .white_bg {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        height: 60%;
+        background-color: white;
+    }
+
+    .team_container .slick-dots{
+        display: block !important;
+    }
+    
+    
+
+.insights_subscribe .subscribe_box{
+    max-width: 100%;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.insights_subscribe .subscribe_box .subscribe_form {
+    width: 90%;
+}
+
 .mobile_nav li a {
     font-size: 18px;
 }
