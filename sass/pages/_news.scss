@@ -272,6 +272,10 @@
 
             .competence{
 
+                .comp_text{
+                    line-height: 30px;
+                }
+
                 h3{
                     @include family(title);
                     color: $text-color;
@@ -288,6 +292,8 @@
 
             .competence_mobile{
                 display: none;
+
+               
             }
         }
 
@@ -308,6 +314,12 @@
             @include family(title);
             color: $text-color;
         };
+
+        .competence_text{
+            display: flex;
+            flex-direction: column;
+            line-height: 30px;
+        }
     }
 
     .biography{

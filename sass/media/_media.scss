@@ -65,12 +65,15 @@
         display: block !important;
     }
     
-    
+    .subscribe_box button  {
+        padding: 9px 15px
+    }
 
 .insights_subscribe .subscribe_box{
     max-width: 100%;
     flex-direction: column;
     padding: 20px;
+
 }
 
 .insights_subscribe .subscribe_box .subscribe_form {
@@ -404,6 +407,12 @@ height: 100%;
         text-align: center;
         padding-bottom: 10px
     }
+
+    span{
+        @include family(title);
+        color: $text-color;
+        padding-right: 20px;
+    };
 }
 
 

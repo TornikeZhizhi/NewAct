@@ -585,6 +585,8 @@ body {
           font-size: 28px; }
         .team_member_container .team_member .main_news .main_title span {
           font-size: 16px; }
+      .team_member_container .team_member .main_news .competence .comp_text {
+        line-height: 30px; }
       .team_member_container .team_member .main_news .competence h3 {
         font-family: "Mark-Bold", sans-serif;
      /*  @if($name == "lestudio"){
@@ -661,6 +663,10 @@ body {
         font-family: "Mark-Bold", sans-serif; }
       .team_member_container .competence_mobile span:lang(ka) {
         font-family: "Mark-Bold", sans-serif; }
+    .team_member_container .competence_mobile .competence_text {
+      display: flex;
+      flex-direction: column;
+      line-height: 30px; }
   .team_member_container .biography {
     width: 85%;
     margin: 50px auto 70px; }
@@ -1545,6 +1551,9 @@ body {
   .team_container .slick-dots {
     display: block !important; }
 
+  .subscribe_box button {
+    padding: 9px 15px; }
+
   .insights_subscribe .subscribe_box {
     max-width: 100%;
     flex-direction: column;
@@ -1795,7 +1804,25 @@ body {
     display: block !important; }
     .competence_mobile h3 {
       text-align: center;
-      padding-bottom: 10px; } }
+      padding-bottom: 10px; }
+    .competence_mobile span {
+      font-family: "Mark-Bold", sans-serif;
+   /*  @if($name == "lestudio"){
+        font-family: $default-text, sans-serif;
+
+        &:lang(en){
+            font-family: $en-nav, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-nav, sans-serif;
+        }
+    }*/
+      color: #17004C;
+      padding-right: 20px; }
+      .competence_mobile span:lang(en) {
+        font-family: "Mark-Bold", sans-serif; }
+      .competence_mobile span:lang(ka) {
+        font-family: "Mark-Bold", sans-serif; } }
 @media only screen and (max-width: 576px) {
   .product_container .main_img img {
     height: 170px; }
