@@ -109,9 +109,14 @@ $(document).ready(function(){
 	
   ]
 
+
+  
+
 });
-
-
-
- 	
+	
 })
+
+
+$(".exit").click(function () {
+    $(".insights_subscribe").css("display", "none");
+});

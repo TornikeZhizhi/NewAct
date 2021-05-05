@@ -64,9 +64,73 @@
     
 }
 
+.insights_subscribe{
+    width: 100%;
+    background: #41AD49;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    
+
+    .subscribe_box{
+        max-width: 60%;
+        width: 100%;
+       
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+
+        .subscribe_box_title{
+
+            span{
+                color: white;
+
+            }
+        }
+
+        .subscribe_form{
+            width: 60%;
+
+            .exit{
+                position: absolute;
+                right: -40px;
+                top: 5px;
+
+                img{
+                    padding: 5px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+
+    }
+
+    .subscribe_box button{
+        background-color: white;
+    }
+
+    .subscribe_box input{
+        border-bottom:1px solid white;
+        color: white;
+
+      
+        &::placeholder{
+            color:white;
+        }
+    }
+}
+
 .latest_news{
     margin-top: 60px;
     margin-bottom: 50px;
+
+
+  
+        
+    
 
     .news_title{
         
