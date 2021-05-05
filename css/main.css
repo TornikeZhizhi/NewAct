@@ -747,6 +747,8 @@ body {
   opacity: 1; }
 
 .team_container {
+  position: relative;
+  z-index: 10;
   padding: 30px 10px 70px; }
   .team_container .breadcrumb li {
     z-index: 999; }
