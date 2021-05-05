@@ -26,16 +26,24 @@ $(document).ready(function(){
 
 
 
-	  $(".inner_dropdown_links a").mouseenter(function(){
+	  // $(".inner_dropdown_links a").mouseenter(function(){
 
-	  	$(this).parent().parent().prev().addClass("active")
-	  })
-	  $(".inner_dropdown_links a").mouseleave(function(){
+	  // 	$(this).parent().parent().prev().addClass("active")
+	  // })
+	  // $(".inner_dropdown_links a").mouseleave(function(){
 
-	  	$(this).parent().parent().prev().removeClass("active")
-	  })
+	  // 	$(this).parent().parent().prev().removeClass("active")
+	  // })
 
+  $(".inner_dropdown").mouseenter(function(){
 
+	  $(this).find("a").addClass("active")
+})
+
+   $(".inner_dropdown").mouseleave(function(){
+
+	  $(this).find("a").removeClass("active")
+})
 
 	 $(window).click(function(){
 	 	$(".nav_dropdown").removeClass("active");
