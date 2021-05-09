@@ -85,6 +85,8 @@ $(document).ready(function(){
 
 	})
 
+
+
 	  $('.team_slider').slick({
   infinite: true,
   slidesToShow: 3,
@@ -126,6 +128,28 @@ $(document).ready(function(){
   
 
 });
+
+$('.insight_tab').each(function(index){
+
+
+  var txt = $('.insight_tab .insight_tab_text').eq(index).text()
+ 
+  if(txt.length > 200) {
+    $('.insight_tab .insight_tab_text').eq(index).text(txt.substring(0,200) + '...')
+
+  }
+})
+
+$('.news_section').each(function(index){
+
+  var txt = $('.news_section .latest_news_info').eq(index).text()
+ 
+  if(txt.length > 200) {
+    $('.news_section .latest_news_info').eq(index).text(txt.substring(0,200) + '...')
+
+  }
+})
+
 	
 })
 
