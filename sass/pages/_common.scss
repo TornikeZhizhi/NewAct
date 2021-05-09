@@ -164,6 +164,9 @@
             .insight_tab_text * {
                 color: #fff;
             }
+            .insight_tab_text {
+                color: #fff;
+            }
 
             .insight_tab_title h3:after{
                 background-color: #fff !important;
@@ -337,10 +340,7 @@ content: "";
   }
 
 
-  .insight_tab_date span:last-child, .news_date span:last-child{
-    display:  none;
-  }
-
+ 
   .team_container .slick-dots{
       display: none  !important;
   }
