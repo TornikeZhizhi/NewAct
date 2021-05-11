@@ -26,16 +26,24 @@ $(document).ready(function(){
 
 
 
-	  $(".inner_dropdown_links a").mouseenter(function(){
+	  // $(".inner_dropdown_links a").mouseenter(function(){
 
-	  	$(this).parent().parent().prev().addClass("active")
-	  })
-	  $(".inner_dropdown_links a").mouseleave(function(){
+	  // 	$(this).parent().parent().prev().addClass("active")
+	  // })
+	  // $(".inner_dropdown_links a").mouseleave(function(){
 
-	  	$(this).parent().parent().prev().removeClass("active")
-	  })
+	  // 	$(this).parent().parent().prev().removeClass("active")
+	  // })
 
+  $(".inner_dropdown").mouseenter(function(){
 
+	  $(this).find("a").addClass("active")
+})
+
+   $(".inner_dropdown").mouseleave(function(){
+
+	  $(this).find("a").removeClass("active")
+})
 
 	 $(window).click(function(){
 	 	$(".nav_dropdown").removeClass("active");
@@ -76,6 +84,8 @@ $(document).ready(function(){
 		$(this).toggleClass("active")
 
 	})
+
+
 
 	  $('.team_slider').slick({
   infinite: true,
@@ -118,6 +128,28 @@ $(document).ready(function(){
   
 
 });
+
+$('.insight_tab').each(function(index){
+
+
+  var txt = $('.insight_tab .insight_tab_text').eq(index).text()
+ 
+  if(txt.length > 200) {
+    $('.insight_tab .insight_tab_text').eq(index).text(txt.substring(0,200) + '...')
+
+  }
+})
+
+$('.news_section').each(function(index){
+
+  var txt = $('.news_section .latest_news_info').eq(index).text()
+ 
+  if(txt.length > 200) {
+    $('.news_section .latest_news_info').eq(index).text(txt.substring(0,200) + '...')
+
+  }
+})
+
 	
 })
 

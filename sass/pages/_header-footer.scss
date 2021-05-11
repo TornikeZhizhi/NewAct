@@ -60,7 +60,7 @@
 							position: absolute;
 						    top: 0;
 						    right: -25px;
-						    content: "";	
+						    /*content: "";	*/
 								background-image: url("../images/drop-down-arrow.svg");
 								width: 25px;
 								height: 20px;
@@ -172,6 +172,13 @@
 									    background-position: center;
 									    width: 20px;
 									    height: 20px;
+									    opacity: 0;
+									}
+
+									&:hover{
+										&:after{
+											opacity:1;
+										}
 									}
 
 								}
