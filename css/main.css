@@ -1585,6 +1585,11 @@ s
     margin: 0 9px 0 8px;
     cursor: pointer; } }
 @media only screen and (max-width: 992px) {
+  .news_page {
+    flex-direction: column; }
+    .news_page .news_section {
+      max-width: 100% !important; }
+
   .white_bg {
     position: absolute;
     top: 70px;
@@ -1679,7 +1684,7 @@ s
   .latest_news .d_flex .news_section {
     max-width: 70%;
     flex: 0 0 70%;
-    margin: 0px auto; }
+    margin: 10px auto; }
 
   .insight_tab_wrapper .insight_tab .insight_tab_title h3 {
     line-height: 26px; }
@@ -1868,6 +1873,9 @@ s
       .competence_mobile span:lang(ka) {
         font-family: "Mark-Bold", sans-serif; } }
 @media only screen and (max-width: 576px) {
+  .pagination a {
+    padding: 4px 12px; }
+
   .product_container .main_img img {
     height: 170px; }
 
