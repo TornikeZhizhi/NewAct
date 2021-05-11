@@ -66,3 +66,29 @@ $border-color:#D1D1D1;
 .p_left20 {
     padding-left:20px !important;
 }
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .pagination a {
+    color: $text-color;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid $text-color;
+    font-weight: bold;
+   
+  }
+  
+  .pag_active {
+    background-color: $text-color;
+    color: white !important;
+  
+  }
+  
+ 
