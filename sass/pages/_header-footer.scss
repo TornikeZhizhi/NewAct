@@ -135,7 +135,7 @@
 								font-size: 15px;
 								@include family(bold);
 								transition: all .3s;
-
+								position: relative;
 
 								&:hover{
 									color:#17004C;
@@ -240,6 +240,14 @@
 				visibility: hidden;
 				opacity: 0;
 				transition: all .3s;
+
+				form {
+
+					&>div {
+						margin-bottom: 20px;
+					}
+				}
+
 				&:after{
 					    position: absolute;
 					    top: -3px;

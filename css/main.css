@@ -955,7 +955,8 @@ body {
                       font-family: $ge-nav, sans-serif;
                   }
               }*/
-                transition: all .3s; }
+                transition: all .3s;
+                position: relative; }
                 .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box a:hover {
                   color: #17004C; }
               .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper .nav_dropdown_link_box .inner_dropdown_links {
@@ -1045,6 +1046,8 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: all .3s; }
+    .language_bar .language_container form > div {
+      margin-bottom: 20px; }
     .language_bar .language_container:after {
       position: absolute;
       top: -3px;
