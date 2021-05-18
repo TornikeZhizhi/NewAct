@@ -264,6 +264,27 @@
     }
 }
 
+ .product_section{
+            max-width: 1000px;
+    margin: 0 auto 0px;
+    position: relative;
+    padding-bottom: 70px;
+
+        .product_breadcrumb{    
+            position: absolute;
+            top: -55px;
+            background: white;
+            padding: 5px 10px;
+            border-radius: 0;
+        }
+
+        .main_title{
+            position: relative;
+            padding: 10px 15px;
+            margin: 25px 0;
+        }
+    }
+
 
 .team_member_container{
 

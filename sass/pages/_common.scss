@@ -83,6 +83,8 @@
 
         .insight_tab_text {
 
+            word-break: break-word;
+
             * {
                 color: $text-color;
                 transition: all .3s;
