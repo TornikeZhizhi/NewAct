@@ -541,15 +541,16 @@
 
 .error_page{
     position: relative;
-    height: calc(100vh - 362px);
+    height: calc(100vh - 358px);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 23%;
     background-color: #F1F1F1;
-    color: $text-color;
+    color: #17004C;
     padding-bottom: 5%;
+    min-height: 500px;
 
     .main_title{
         padding: unset;

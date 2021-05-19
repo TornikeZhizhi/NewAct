@@ -805,7 +805,7 @@ s
 
 .error_page {
   position: relative;
-  height: calc(100vh - 362px);
+  height: calc(100vh - 358px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -813,7 +813,8 @@ s
   padding-left: 23%;
   background-color: #F1F1F1;
   color: #17004C;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  min-height: 500px; }
   .error_page .main_title {
     padding: unset; }
     .error_page .main_title .bold, .error_page .main_title span {
@@ -1646,7 +1647,8 @@ s
 @media only screen and (max-width: 992px) {
   .error_page {
     height: 60vh;
-    padding: 5%; }
+    padding: 5%;
+    min-height: unset; }
     .error_page .error img {
       display: none; }
     .error_page .b_img {
