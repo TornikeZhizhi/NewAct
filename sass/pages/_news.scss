@@ -537,3 +537,65 @@
 
     }
 }
+
+
+.error_page{
+    position: relative;
+    height: calc(100vh - 362px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 23%;
+    background-color: #F1F1F1;
+    color: $text-color;
+    padding-bottom: 5%;
+
+    .main_title{
+        padding: unset;
+
+        .bold, span{
+            font-size: 42px;
+        }
+
+       
+
+        &:after{
+            display: none;
+        }
+    }
+
+    .error{
+        img{
+            margin-left: 30px;
+        }
+    }
+
+    .home_button{
+        margin-top: 40px;
+
+        a{
+            color: $text-color;
+            border: 1px solid $text-color;
+            padding: 15px 25px;
+            font-size: 18px;
+            background: white;
+            transition: .3s;
+
+            &:hover{
+                background: $light-purple;
+                color:white
+            }
+        }
+    }
+
+    .b_img{
+        position: absolute;
+        top: -80px;
+        right: -60px;
+
+        img{
+            height: 60vh;
+        }
+    }
+}

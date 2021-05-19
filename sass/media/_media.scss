@@ -53,6 +53,22 @@
 
 @media only screen and (max-width: 992px) {
 
+    .error_page {
+        height: 60vh;
+        padding: 5%;
+
+        .error{
+            img{
+                display: none;
+            }
+        }
+
+        .b_img {
+            display: none;
+        }
+
+    }
+
     .news_page{
         flex-direction: column;
 
