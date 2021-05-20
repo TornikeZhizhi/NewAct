@@ -97,6 +97,8 @@
             h3 {
             position: relative;
 
+          
+
             &:after{
                 position: absolute;
                 top: 50%;
@@ -115,7 +117,18 @@
                 transition: all .3s;
                 @include family(title);
                     color: $text-color;
-                    line-height: 20px;
+                  
+
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    line-height: 35px;
+                    padding-bottom: 3px;
+                    
+    
+
                 }
             }
         }

@@ -441,6 +441,32 @@ height: 100%;
 }
 
 
+    .search_result{
+        visibility: unset;  
+
+
+        form{
+            width: 100% !important;
+        }
+
+      
+    }
+
+    .search_container{
+        .d_flex .news_section {
+            
+            max-width: 100% !important;
+            
+        }
+    }
+
+    .search_result .main_search_container {
+        width: 100% !important;
+        max-width: unset !important;
+        padding: 3%;
+    }
+
+
 
 
 }
