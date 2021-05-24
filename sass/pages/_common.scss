@@ -246,9 +246,9 @@
     .subscribe_text {
            margin: 5px 0 20px;
     }
-form {
-    position: relative;
-}
+    form {
+        position: relative;
+    }
 
 button {
       position: absolute;
@@ -282,6 +282,19 @@ button {
             @include family(title);
             font-size: 28px;
         }
+    }
+
+
+    .subscribed{
+        padding: 8px 14px;
+
+        span{
+            color:#058809 ;
+        }
+    }
+
+    .disable{
+        display: none;
     }
 }
 

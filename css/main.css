@@ -335,6 +335,12 @@ body {
       font-family: "Mark-Bold", sans-serif; }
     .subscribe_box .subscribe_box_title *:lang(ka) {
       font-family: "Mark-Bold", sans-serif; }
+  .subscribe_box .subscribed {
+    padding: 8px 14px; }
+    .subscribe_box .subscribed span {
+      color: #058809; }
+  .subscribe_box .disable {
+    display: none; }
 
 .bordered_title {
   border-bottom: 1px solid #17004C;
@@ -541,6 +547,8 @@ body {
         .insights_subscribe .subscribe_box .subscribe_form .exit img {
           padding: 5px;
           cursor: pointer; }
+    .insights_subscribe .subscribe_box .subscribed span {
+      color: white; }
   .insights_subscribe .subscribe_box button {
     background-color: white; }
   .insights_subscribe .subscribe_box input {
