@@ -157,3 +157,27 @@ $('.news_section').each(function(index){
 $(".exit").click(function () {
     $(".insights_subscribe").css("display", "none");
 });
+
+
+$(document).ready(function(){
+	// $(".office_box").click(function(){
+
+	//   $("img").toggleClass("rotate");
+
+
+	// });
+
+
+	$(".main_box").on("click", function () {
+		$(this)
+		  .find($(".office_info"))
+		  .slideToggle();
+
+		
+		  
+		  
+		
+	});
+
+  });
+

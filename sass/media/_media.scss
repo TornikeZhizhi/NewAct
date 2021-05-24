@@ -53,6 +53,10 @@
 
 @media only screen and (max-width: 992px) {
 
+    .office-container, .office_info{
+        width: 90% !important;
+    }
+
     .error_page {
         height: 60vh;
         padding: 5%;

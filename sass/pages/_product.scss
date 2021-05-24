@@ -1,0 +1,95 @@
+.office_section{
+    background: $bg-color;
+    padding-bottom: 150px;
+
+
+    .main_title:after{
+        display: none;
+    }
+
+
+    .page_container {
+        margin-bottom: 50px;
+    }
+
+    .office-container{
+        width: 65%;
+        margin: 15px auto 0;
+        background: $text-color;
+
+        .office_box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            cursor: pointer;
+
+
+           span{
+            color: white;
+            font-size: 28px;
+            @include family(text);
+            font-weight: bold;
+           }
+
+           img{
+               transition: .4s;
+           };
+
+           .rotate{
+               transform: rotate(180deg);
+           
+           }
+            
+        }
+
+      
+    }
+
+    
+
+    .office_info{
+        width: 65%;
+        margin: 0 auto;
+        background: white;
+        padding: 30px 60px;
+        color: $text-color;
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+        display: none;
+
+        .main_text{
+            font-size: 22px;
+        }
+
+        a{
+            color: $text-color;
+        }
+
+
+        .map_button{
+            
+            margin-top: 30px;
+           
+
+            a{
+                font-size: 22px;
+                border: 1px solid;
+                padding: 15px 30px;
+                transition: .3s;
+
+                &:hover{
+                    color: white;
+                    background: $text-color;
+                }
+            }
+
+           
+        }
+    }
+
+    .active{
+        display: block;
+    }
+}
