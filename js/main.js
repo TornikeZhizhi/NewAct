@@ -173,11 +173,15 @@ $(document).ready(function(){
 		  .find($(".office_info"))
 		  .slideToggle();
 
-		
-		  
-		  
-		
+	
 	});
+
+
+	$(".main_box").on("click", function () {
+		$(this)
+		  .find($("img"))
+		  .toggleClass("rotate");
+	  });
 
   });
 
