@@ -1729,6 +1729,9 @@ s
 .inner_dropdown > a.active {
   color: #17004C !important; }
 
+.language_bar .language_container select:lang(ka) {
+  line-height: 24px; }
+
 @media only screen and (min-width: 992px) {
   .f_hide {
     display: none; } }
