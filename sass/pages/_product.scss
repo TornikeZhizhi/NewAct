@@ -12,86 +12,88 @@
         margin-bottom: 50px;
     }
 
-    .office-container{
-        width: 65%;
-        margin: 15px auto 0;
-        background: $text-color;
+   
+}
 
-        .office_box{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 40px;
-            cursor: pointer;
+.office-container{
+    width: 65%;
+    margin: 15px auto 0;
+    background: $text-color;
+
+    .office_box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+        cursor: pointer;
 
 
-           span{
-            color: white;
-            font-size: 28px;
-            @include family(text);
-            font-weight: bold;
-           }
+       span{
+        color: white;
+        font-size: 28px;
+        @include family(text);
+        font-weight: bold;
+       }
 
-           img{
-               transition: .4s;
-           };
+       img{
+           transition: .4s;
+       };
 
-           .rotate{
-               transform: rotate(180deg);
-           
-           }
-            
-        }
-
-      
+       .rotate{
+           transform: rotate(180deg);
+       
+       }
+        
     }
 
-    
+  
+}
 
-    .office_info{
-        width: 65%;
-        margin: 0 auto;
-        background: white;
-        padding: 30px 60px;
+
+
+.office_info{
+    width: 65%;
+    margin: 0 auto;
+    background: white;
+    padding: 30px 60px;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    display: none;
+
+    .main_text{
+        font-size: 22px;
+    }
+
+    a{
         color: $text-color;
-        display: flex;
-        flex-direction: column;
-        line-height: 25px;
-        display: none;
+    }
 
-        .main_text{
-            font-size: 22px;
-        }
+
+    .map_button{
+        
+        margin-top: 30px;
+       
 
         a{
-            color: $text-color;
-        }
+            font-size: 22px;
+            border: 1px solid;
+            padding: 15px 30px;
+            transition: .3s;
 
-
-        .map_button{
-            
-            margin-top: 30px;
-           
-
-            a{
-                font-size: 22px;
-                border: 1px solid;
-                padding: 15px 30px;
-                transition: .3s;
-
-                &:hover{
-                    color: white;
-                    background: $text-color;
-                }
+            &:hover{
+                color: white;
+                background: $text-color;
             }
-
-           
         }
-    }
 
-    .active{
-        display: block;
+       
     }
+}
+
+.active{
+    display: block;
 }
 
 // .vacancy_container{
@@ -157,3 +159,64 @@
 
    
 // }
+
+
+
+
+.vacancy_container .main_title:after {
+    height: 100%;
+}
+
+
+.product_container  .main_img img{
+    width: 100%;
+}
+
+.whatsapp_icon{
+
+    svg{
+        width: 100% !important;
+        height: 100% !important;
+        fill:$text-color !important;
+        background: white;
+        border-radius: 50%;
+
+        &:hover{
+            fill:white !important;
+            background:$text-color;
+        }
+    }
+}
+
+
+.common_dropdown{
+    background: $bg-color;
+    padding-bottom: 70px;
+
+
+    .office-container {
+        margin: 0 auto;
+        background: unset;
+        max-width: 1000px;
+        width: unset;
+        border-bottom: 1px solid #D5D5D5;
+
+        .office_box{
+
+            span{
+                font-size: 22px;
+                color: $text-color;
+            }
+        }
+    }
+
+    .office_info {
+        width: unset;
+        max-width: 1000px;
+        margin: 0 auto;
+        background: $bg-color;
+        padding: 30px 40px;
+
+    }
+    
+}

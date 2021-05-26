@@ -981,65 +981,103 @@ s
     display: none; }
   .office_section .page_container {
     margin-bottom: 50px; }
-  .office_section .office-container {
-    width: 65%;
-    margin: 15px auto 0;
-    background: #17004C; }
-    .office_section .office-container .office_box {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 15px 40px;
-      cursor: pointer; }
-      .office_section .office-container .office_box span {
-        color: white;
-        font-size: 28px;
-        font-family: "Mark", sans-serif;
-     /*  @if($name == "lestudio"){
-          font-family: $default-text, sans-serif;
-  
-          &:lang(en){
-              font-family: $en-nav, sans-serif;
-          }
-          &:lang(ka){
-              font-family: $ge-nav, sans-serif;
-          }
-      }*/
-        font-weight: bold; }
-        .office_section .office-container .office_box span:lang(en) {
-          font-family: "Mark", sans-serif; }
-        .office_section .office-container .office_box span:lang(ka) {
-          font-family: "Mark", sans-serif; }
-      .office_section .office-container .office_box img {
-        transition: .4s; }
-      .office_section .office-container .office_box .rotate {
-        transform: rotate(180deg); }
-  .office_section .office_info {
-    width: 65%;
-    margin: 0 auto;
-    background: white;
-    padding: 30px 60px;
-    color: #17004C;
+
+.office-container {
+  width: 65%;
+  margin: 15px auto 0;
+  background: #17004C; }
+  .office-container .office_box {
     display: flex;
-    flex-direction: column;
-    line-height: 25px;
-    display: none; }
-    .office_section .office_info .main_text {
-      font-size: 22px; }
-    .office_section .office_info a {
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    cursor: pointer; }
+    .office-container .office_box span {
+      color: white;
+      font-size: 28px;
+      font-family: "Mark", sans-serif;
+   /*  @if($name == "lestudio"){
+        font-family: $default-text, sans-serif;
+
+        &:lang(en){
+            font-family: $en-nav, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-nav, sans-serif;
+        }
+    }*/
+      font-weight: bold; }
+      .office-container .office_box span:lang(en) {
+        font-family: "Mark", sans-serif; }
+      .office-container .office_box span:lang(ka) {
+        font-family: "Mark", sans-serif; }
+    .office-container .office_box img {
+      transition: .4s; }
+    .office-container .office_box .rotate {
+      transform: rotate(180deg); }
+
+.office_info {
+  width: 65%;
+  margin: 0 auto;
+  background: white;
+  padding: 30px 60px;
+  color: #17004C;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  display: none; }
+  .office_info .main_text {
+    font-size: 22px; }
+  .office_info a {
+    color: #17004C; }
+  .office_info .map_button {
+    margin-top: 30px; }
+    .office_info .map_button a {
+      font-size: 22px;
+      border: 1px solid;
+      padding: 15px 30px;
+      transition: .3s; }
+      .office_info .map_button a:hover {
+        color: white;
+        background: #17004C; }
+
+.active {
+  display: block; }
+
+.vacancy_container .main_title:after {
+  height: 100%; }
+
+.product_container .main_img img {
+  width: 100%; }
+
+.whatsapp_icon svg {
+  width: 100% !important;
+  height: 100% !important;
+  fill: #17004C !important;
+  background: white;
+  border-radius: 50%; }
+  .whatsapp_icon svg:hover {
+    fill: white !important;
+    background: #17004C; }
+
+.common_dropdown {
+  background: #F1F1F1;
+  padding-bottom: 70px; }
+  .common_dropdown .office-container {
+    margin: 0 auto;
+    background: unset;
+    max-width: 1000px;
+    width: unset;
+    border-bottom: 1px solid #D5D5D5; }
+    .common_dropdown .office-container .office_box span {
+      font-size: 22px;
       color: #17004C; }
-    .office_section .office_info .map_button {
-      margin-top: 30px; }
-      .office_section .office_info .map_button a {
-        font-size: 22px;
-        border: 1px solid;
-        padding: 15px 30px;
-        transition: .3s; }
-        .office_section .office_info .map_button a:hover {
-          color: white;
-          background: #17004C; }
-  .office_section .active {
-    display: block; }
+  .common_dropdown .office_info {
+    width: unset;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #F1F1F1;
+    padding: 30px 40px; }
 
 .header {
   background-color: #F1F1F1;
@@ -2002,7 +2040,13 @@ s
     height: 270px; }
 
   .product_container .product_section {
-    padding: 0 10px; }
+    padding: 0 20px; }
+
+  .common_dropdown .office_info {
+    padding: 10px 10px; }
+
+  .office-container .office_box {
+    padding: 15px 10px; }
 
   .product_container .product_section .main_title {
     margin: 10px 0; }
