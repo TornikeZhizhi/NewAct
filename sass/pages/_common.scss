@@ -323,7 +323,7 @@ button {
 
 .share_click {
     position: relative;
-     cursor: pointer;
+    
     &:hover{
         .share_box_inner {
             display:block !important;
@@ -340,6 +340,14 @@ button {
     z-index: 10;
     display: none;
     transform: translateX(-50%);
+    border-radius: 5px;
+    line-height: 25px;
+
+    span:hover{
+        border-bottom: 1px solid #643695;
+        cursor: pointer;
+        color: #643695;
+    }
 
 
 

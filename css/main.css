@@ -353,8 +353,7 @@ body {
   content: unset !important; }
 
 .share_click {
-  position: relative;
-  cursor: pointer; }
+  position: relative; }
   .share_click:hover .share_box_inner {
     display: block !important; }
 
@@ -366,7 +365,13 @@ body {
   padding: 15px;
   z-index: 10;
   display: none;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  border-radius: 5px;
+  line-height: 25px; }
+  .share_box_inner span:hover {
+    border-bottom: 1px solid #643695;
+    cursor: pointer;
+    color: #643695; }
   .share_box_inner:after {
     content: "";
     background-color: #fff;
