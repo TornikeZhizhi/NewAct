@@ -1052,8 +1052,12 @@ s
 .vacancy_container .main_title:after {
   height: 100%; }
 
-.product_container .main_img img {
-  width: 100%; }
+.product_container .main_img {
+  width: 100%;
+  overflow: hidden; }
+  .product_container .main_img img {
+    width: 100%;
+    max-height: 70vh; }
 
 .whatsapp_icon svg {
   width: 100% !important;

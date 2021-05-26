@@ -168,9 +168,22 @@
 }
 
 
-.product_container  .main_img img{
+.product_container  .main_img{
     width: 100%;
+    overflow: hidden;
+
+    img{
+  
+        width: 100%;
+        max-height: 70vh;
+    }
+    
+
+
 }
+
+
+
 
 .whatsapp_icon{
 
