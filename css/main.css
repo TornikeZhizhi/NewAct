@@ -1041,45 +1041,6 @@ s
   .office_section .active {
     display: block; }
 
-.vacancy_container {
-  width: 90%;
-  margin: 0 auto; }
-  .vacancy_container .main_logo {
-    position: absolute;
-    top: 0;
-    width: 90%;
-    text-align: center;
-    padding: 20px; }
-    .vacancy_container .main_logo img {
-      height: 60px; }
-  .vacancy_container .news_container .date {
-    text-align: end;
-    margin-top: 20px; }
-  .vacancy_container .news_container .button {
-    text-align: center;
-    margin-top: 50px; }
-    .vacancy_container .news_container .button a {
-      color: #17004C;
-      padding: 15px 45px;
-      border: 1px solid #17004C;
-      font-size: 18px;
-      transition: .3s; }
-      .vacancy_container .news_container .button a:hover {
-        background: #17004C;
-        color: white; }
-  .vacancy_container .news_container .share_button {
-    display: flex;
-    justify-content: center;
-    margin-top: 70px; }
-    .vacancy_container .news_container .share_button a {
-      margin: 8px; }
-  .vacancy_container .news_container .vacancy_footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 50px 0;
-    line-height: 30px; }
-
 .header {
   background-color: #F1F1F1;
   padding: 20px 10px;

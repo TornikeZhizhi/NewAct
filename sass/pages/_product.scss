@@ -94,66 +94,66 @@
     }
 }
 
-.vacancy_container{
-    width: 90%;
-    margin: 0 auto;
+// .vacancy_container{
+//     width: 90%;
+//     margin: 0 auto;
 
-    .main_logo{
-        position: absolute;
-        top: 0;
-        width: 90%;
-        text-align:center;
-        padding: 20px;
+//     .main_logo{
+//         position: absolute;
+//         top: 0;
+//         width: 90%;
+//         text-align:center;
+//         padding: 20px;
 
-        img{
-            height: 60px;
-        }
-    }
+//         img{
+//             height: 60px;
+//         }
+//     }
 
-    .news_container{
+//     .news_container{
 
-        .date{
-            text-align: end;
-            margin-top: 20px;
-        }
+//         .date{
+//             text-align: end;
+//             margin-top: 20px;
+//         }
 
-        .button{
-            text-align: center;
-            margin-top:50px;
+//         .button{
+//             text-align: center;
+//             margin-top:50px;
 
-            a{
-                color: $text-color;
-                padding: 15px 45px;
-                border: 1px solid $text-color;
-                font-size: 18px;
-                transition: .3s;
+//             a{
+//                 color: $text-color;
+//                 padding: 15px 45px;
+//                 border: 1px solid $text-color;
+//                 font-size: 18px;
+//                 transition: .3s;
 
-                &:hover{
-                    background: $text-color;
-                    color: white;
-                }
-            }
-        }
+//                 &:hover{
+//                     background: $text-color;
+//                     color: white;
+//                 }
+//             }
+//         }
 
-        .share_button{
-            display: flex;
-            justify-content: center;
-            margin-top: 70px;
+//         .share_button{
+//             display: flex;
+//             justify-content: center;
+//             margin-top: 70px;
 
-            a{
-                margin: 8px;
-            }
-        }
+//             a{
+//                 margin: 8px;
+//             }
+//         }
 
 
-        .vacancy_footer{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            margin: 50px 0;
-            line-height: 30px;
-        }
-    }
+//         .vacancy_footer{
+//             display: flex;
+//             flex-direction: column;
+//             text-align: center;
+//             margin: 50px 0;
+//             line-height: 30px;
+//         }
+//     }
 
    
-}
+// }
