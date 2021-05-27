@@ -348,6 +348,7 @@ button {
     transform: translateX(-50%);
     border-radius: 5px;
     line-height: 25px;
+    max-width: 110px;
 
     span:hover{
         border-bottom: 1px solid #643695;
@@ -386,3 +387,37 @@ content: "";
   .team_container .slick-dots{
       display: none  !important;
   }
+
+
+  .slick-dots{
+    bottom: -35px;
+
+    li{
+        margin: 0 5px;
+    }
+}
+
+
+.product_slider{
+
+
+    .slick-dots {
+        bottom: 15px;
+    }
+
+
+    .slick-dots li.slick-active button:before{
+        border-radius: 50%;
+        color: white;
+        border: 1px solid white;
+    }
+    
+    .slick-dots li button:before {
+        opacity: 1;
+        font-size: 30px;
+        color: white;
+    
+        
+    }
+}
+

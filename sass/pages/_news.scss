@@ -38,16 +38,7 @@
             }
 
 
-            .share{
-                margin-left: 20px;
-                display: flex;
-
-                img{
-                    width: 26px;
-                    height: 28px;
-                    margin-right: 10px;
-                }
-            }
+           
         }
 
     }
@@ -158,6 +149,19 @@
     margin-bottom: 50px;
 
 
+    .share_click{
+         max-width: 40px;
+
+        .share_box_inner {
+          
+            left: 10px !important;
+            padding: 8px;
+            max-width: 100px;
+        }
+       
+    }
+
+
   
         
     
@@ -186,6 +190,12 @@
    
 
     
+}
+
+.insights_page_title{
+    &:after{
+        display: none !important;
+    }
 }
 
 .news_page{
@@ -219,6 +229,10 @@
             padding-left: 30px;
 
             
+            .bold{
+                max-height: 140px;
+                overflow: hidden;
+            }
             
 
             .share{
@@ -249,6 +263,10 @@
             }
            
         }
+
+        &:hover{
+            background:#F1F1F1 ;
+        }
     }
 }s
 
@@ -264,9 +282,9 @@
 
     .product_section{
             max-width: 1000px;
-    margin: 0 auto 0px;
-    position: relative;
-    padding-bottom: 70px;
+            margin: 0 auto 0px;
+            position: relative;
+            padding-bottom: 70px;
 
         .product_breadcrumb{    
             position: absolute;
@@ -280,6 +298,10 @@
             position: relative;
             padding: 10px 15px;
             margin: 25px 0;
+        }
+
+        .main_news_text{
+            color: $text-color;
         }
     }
 }
