@@ -485,7 +485,7 @@ body {
   top: 50%;
   right: -35px; }
   .slick-next:before {
-    content: url(../../images/next.png);
+    content: url(../images/next.png);
     position: absolute;
     left: 17px;
     top: 25px; }
@@ -501,7 +501,7 @@ body {
   top: 50%;
   right: -35px; }
   .slick-prev:before {
-    content: url(../../images/prev.png);
+    content: url(../images/prev.png);
     position: absolute;
     right: 17px;
     top: 25px; }
