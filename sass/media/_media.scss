@@ -187,12 +187,12 @@
 }
 
 
-.main_content .main_large_title * {
+.slider_content .main_large_title * {
   
     font-size: 28px;
     line-height: 36px;
 }
-.main_content .main_bottom_title span {
+.slider_content .main_bottom_title span {
   
     font-size: 30px;
 }
@@ -479,6 +479,10 @@ height: 100%;
         width: 100% !important;
         max-width: unset !important;
         padding: 3%;
+    }
+
+    .slider_content > div {
+        height: 60vh; 
     }
 
 

@@ -62,6 +62,12 @@
 
 }
 
+.bordered_title, .center{
+    &:after{
+        display: none;
+    }
+}
+
 
 .main_title{
             padding: 30px 0 15px;
