@@ -72,6 +72,7 @@
                     .member_info{
                         padding: 0;
 
+
                         h4{
                             font-size: 28px;
 
@@ -138,4 +139,8 @@
     }
 
    
+    .team_container .team_section .team_member .main_news  .news_info {
+        max-height: 43px;
+        overflow: hidden;
+    }
 
