@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 	 // dropdown js
 
-	 $(".nav_dropdown").click(function(e){
+	 $(".nav_dropdown").mouseenter(function(e){
 	 	e.preventDefault()
 	 	e.stopPropagation()
 	 	$(".nav_dropdown").removeClass("active")
@@ -63,7 +63,7 @@ $(document).ready(function(){
 	 	e.preventDefault()
 	 	e.stopPropagation()
 
-	 	$(".language_container").addClass("active")
+	 	$(".language_container").toggleClass("active")
 	 })
 
 
