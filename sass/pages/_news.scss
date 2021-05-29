@@ -99,7 +99,7 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        padding: 15px;
+        padding-top: 16px;
 
         .subscribe_box_title{
 
@@ -315,7 +315,7 @@
             max-width: 1000px;
     margin: 0 auto 0px;
     position: relative;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
 
         .product_breadcrumb{    
             position: absolute;
@@ -590,6 +590,9 @@
 
 .news_info .share {
    display: flex;
+   align-items: center;
+   padding-right: 7px;
+   
 
    a{
        padding: 5px 0;
