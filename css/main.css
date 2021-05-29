@@ -1145,7 +1145,7 @@ s
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
-            justify-content: flex-start; }
+            justify-content: space-between; }
             .header .header_right nav ul li .nav_dropdown_child .nav_dropdown_child_wrapper > div {
               flex: 0 0 31%;
               max-width: 31%; }
