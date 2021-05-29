@@ -86,6 +86,9 @@ $(document).ready(function(){
 	})
 
 
+	
+
+
 
 	  $('.team_slider').slick({
   infinite: true,
@@ -128,6 +131,16 @@ $(document).ready(function(){
   
 
 });
+
+$('.main_slider').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	dots:true,
+	arrows:true,
+
+  });
+  
 
 $('.insight_tab').each(function(index){
 
