@@ -597,6 +597,10 @@
    a{
        padding: 5px 0;
        color: $text-color !important;
+
+       img{
+        padding-right: 5px;
+       }
    }
 
    .share_box_inner {
