@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 99000;
     border-bottom:1px solid $text-color;
 
 	.header_container {
@@ -321,7 +321,7 @@
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	z-index: 10000;
+	z-index: 99999;
 	background: rgba(255,255,255,.99);
 	display: flex;
 	align-items: center;
@@ -339,6 +339,7 @@
 		top: 18px;
 		left: 50%;
 		transform: translateX(-50%);
+		cursor: pointer;
 	}
 
 	.main_search_container {

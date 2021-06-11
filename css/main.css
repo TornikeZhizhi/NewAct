@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  list-style-type: none;
+  /*list-style-type:none;*/
   border: none;
   text-decoration: none; }
 
@@ -16,8 +16,19 @@
 ul, h1, h2, h3, h4 {
   margin: 0px; }
 
-li {
+header li, footer li {
   list-style-type: none; }
+
+ul {
+  margin-left: 40px; }
+
+blockquote {
+  margin: 20px 10px 20px 24px;
+  border-left: 3px solid #17004c;
+  padding-left: 5px; }
+
+header ul, footer ul {
+  margin-left: 0; }
 
 a {
   text-decoration: none; }
@@ -123,6 +134,10 @@ body {
     font-size: 16px; }
     .breadcrumb a.opacity {
       opacity: .7; }
+
+.main_news_text {
+  list-style: disc !important;
+  margin-left: 18px; }
 
 .main_title {
   padding: 20px;
@@ -365,10 +380,10 @@ body {
   top: -99px;
   left: 50%;
   background: #fff;
-  padding: 11px 0px;
+  padding: 11px 8px;
   z-index: 10;
   display: none;
-  transform: translateX(-50%);
+  transform: translateX(-53%);
   border-radius: 5px;
   line-height: 25px;
   max-width: 110px; }
@@ -511,7 +526,7 @@ body {
 
 .slick-prev {
   background-color: #F1F1F1 !important;
-  z-index: 9999;
+  z-index: 999;
   padding: 34px 30px;
   border-radius: 50%;
   position: absolute;
@@ -598,7 +613,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 15px; }
+    padding-top: 16px; }
     .insights_subscribe .subscribe_box .subscribe_box_title span {
       color: white; }
     .insights_subscribe .subscribe_box .subscribe_form {
@@ -714,7 +729,7 @@ s
   max-width: 1000px;
   margin: 0 auto 0px;
   position: relative;
-  padding-bottom: 70px; }
+  padding-bottom: 20px; }
   .product_section .product_breadcrumb {
     position: absolute;
     top: -55px;
@@ -911,10 +926,14 @@ s
     border-color: #F1F1F1; }
 
 .news_info .share {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  padding-right: 7px; }
   .news_info .share a {
     padding: 5px 0;
     color: #17004C !important; }
+    .news_info .share a img {
+      padding-right: 5px; }
   .news_info .share .share_box_inner {
     padding: 10px !important;
     max-width: 130px !important; }
@@ -1201,7 +1220,7 @@ s
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 99000;
   border-bottom: 1px solid #17004C; }
   .header .header_container {
     max-width: 1300px;
@@ -1507,7 +1526,7 @@ s
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 10000;
+  z-index: 99999;
   background: rgba(255, 255, 255, 0.99);
   display: flex;
   align-items: center;
@@ -1522,7 +1541,8 @@ s
     position: absolute;
     top: 18px;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    cursor: pointer; }
   .main_search .main_search_container {
     max-width: 550px;
     width: 100%;
