@@ -1213,9 +1213,7 @@ s
 
 .header {
   background-color: #F1F1F1;
-  padding: 20px 10px;
   background-color: #F1F1F1;
-  padding: 20px 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1232,6 +1230,7 @@ s
     display: flex;
     align-items: center;
     flex-grow: 1;
+    padding: 20px 10px;
     justify-content: flex-end; }
     .header .header_right sup {
       font-size: 25px;
@@ -1278,7 +1277,7 @@ s
               background-position: center; }
             .header .header_right nav ul li a.nav_dropdown:before {
               position: absolute;
-              top: 50px;
+              top: 51px;
               left: 50%;
               content: "";
               opacity: 0;
@@ -1932,6 +1931,12 @@ s
     margin: 0 9px 0 8px;
     cursor: pointer; } }
 @media only screen and (max-width: 992px) {
+  .header .header_right {
+    padding: 0; }
+
+  .header {
+    padding: 20px 10px; }
+
   .office-container, .office_info {
     width: 90% !important; }
 
@@ -1981,7 +1986,7 @@ s
     top: 87px;
     width: 100vw;
     height: calc(100vh - 87px);
-    z-index: 10000;
+    z-index: 99999;
     background: #F1F1F1;
     visibility: hidden;
     padding-top: 55px;

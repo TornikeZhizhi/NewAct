@@ -40,7 +40,7 @@ $(document).ready(function(){
 	  $(this).find("a").addClass("active")
 })
 
-   $(".inner_dropdown").mouseleave(function(){
+   $(".header_right").mouseleave(function(){
 
 	  $(this).find("a").removeClass("active")
 })
@@ -55,6 +55,12 @@ $(document).ready(function(){
 
 	 	e.stopPropagation()
 	 })
+
+	 var headerX = false;
+
+
+
+
 
 
 	 //language js
