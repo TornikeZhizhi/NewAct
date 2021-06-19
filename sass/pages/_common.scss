@@ -427,3 +427,129 @@ content: "";
     }
 }
 
+
+.form_container{
+    background-color: #F1F1F1;
+    padding: 70px;
+    
+
+    
+    form{
+        width: 60%;
+        margin: 0 auto;
+        background: white;
+        text-align: center;
+        padding: 30px;
+
+
+        .file{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            height: 2.5rem;
+            width: 70%;
+
+            .file-custom{
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                z-index: 5;
+                height:52px;
+                padding: .5rem 1rem;
+                line-height: 1.5;
+                color: #555;
+                background-color: #fff;
+                border: 1px solid $border-color;
+                display: flex;
+                align-items: center;
+              
+                
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                &:before{
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    bottom: -.075rem;
+                    z-index: 6;
+                    display: block;
+                    content: "Browse";
+                    height: 2.5rem;
+                    padding: 7px 20px;
+                    line-height: 1.5;
+                    color: white;
+                    background-color:$text-color;
+                    border: .075rem solid #ddd;
+                   
+                }
+
+                &:after {
+                    content: "File Upload";
+                    position: absolute;
+                    left: 12px;
+                    font-size: 16px;
+                }
+            }
+            
+        }
+
+
+        .error{
+
+            input{
+                border: 1px solid #FFB4BB !important;
+            }
+
+            .error_text{
+                width: 65%;
+                text-align: left;
+                margin: 0 auto;
+                color: #FF243A;
+                font-size: 14px;              
+                padding-bottom: 8px;
+                display: block !important;
+            }
+        }
+
+        .text{
+
+            input{
+                font-size:16px;
+                color: $text-color;
+                border: 1px solid $border-color;
+                padding: 15px;
+                width: 70%;
+                margin: 10px 0;
+            }
+
+            .error_text{
+               display: none;
+            }
+
+            
+
+
+        }
+
+        .form_text{
+            width: 70%;
+            text-align: left;
+            margin: 20px auto;
+            color: $text-color;
+        }
+
+        button{
+            background: $text_color;
+            color: white;
+            padding: 15px 65px;
+            outline: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    }
+}
+

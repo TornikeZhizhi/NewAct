@@ -53,7 +53,7 @@ body {
   margin: 0 auto; }
 
 .c_bg {
-  background-color: #F1F1F1; }
+  background-color: #acacac; }
 
 .p_left20 {
   padding-left: 20px !important; }
@@ -428,6 +428,90 @@ body {
   font-size: 30px;
   color: white; }
 
+.form_container {
+  background-color: #F1F1F1;
+  padding: 70px; }
+  .form_container form {
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    text-align: center;
+    padding: 30px; }
+    .form_container form .file {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      height: 2.5rem;
+      width: 70%; }
+      .form_container form .file .file-custom {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 5;
+        height: 52px;
+        padding: .5rem 1rem;
+        line-height: 1.5;
+        color: #555;
+        background-color: #fff;
+        border: 1px solid #D1D1D1;
+        display: flex;
+        align-items: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        .form_container form .file .file-custom:before {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          bottom: -.075rem;
+          z-index: 6;
+          display: block;
+          content: "Browse";
+          height: 2.5rem;
+          padding: 7px 20px;
+          line-height: 1.5;
+          color: white;
+          background-color: #17004C;
+          border: .075rem solid #ddd; }
+        .form_container form .file .file-custom:after {
+          content: "File Upload";
+          position: absolute;
+          left: 12px;
+          font-size: 16px; }
+    .form_container form .error input {
+      border: 1px solid #FFB4BB !important; }
+    .form_container form .error .error_text {
+      width: 65%;
+      text-align: left;
+      margin: 0 auto;
+      color: #FF243A;
+      font-size: 14px;
+      padding-bottom: 8px;
+      display: block !important; }
+    .form_container form .text input {
+      font-size: 16px;
+      color: #17004C;
+      border: 1px solid #D1D1D1;
+      padding: 15px;
+      width: 70%;
+      margin: 10px 0; }
+    .form_container form .text .error_text {
+      display: none; }
+    .form_container form .form_text {
+      width: 70%;
+      text-align: left;
+      margin: 20px auto;
+      color: #17004C; }
+    .form_container form button {
+      background: #17004C;
+      color: white;
+      padding: 15px 65px;
+      outline: none;
+      cursor: pointer;
+      margin-top: 10px; }
+
 .slider_content {
   width: 100%;
   position: relative; }
@@ -544,7 +628,7 @@ body {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
   padding: 0 0 80px 0;
-  background-color: #F1F1F1; }
+  background-color: #acacac; }
   .home_news .news_info .share {
     border-radius: 50%;
     border: 1px solid #fff;
@@ -923,7 +1007,7 @@ s
 .home_news .news_section:hover {
   background-color: #fff; }
   .home_news .news_section:hover .news_info .share {
-    border-color: #F1F1F1; }
+    border-color: #acacac; }
 
 .news_info .share {
   display: flex;
@@ -1103,7 +1187,7 @@ s
   overflow: hidden; }
 
 .office_section {
-  background: #F1F1F1;
+  background: #acacac;
   padding-bottom: 150px; }
   .office_section .main_title:after {
     display: none; }
@@ -1193,7 +1277,7 @@ s
     background: #17004C; }
 
 .common_dropdown {
-  background: #F1F1F1;
+  background: #acacac;
   padding-bottom: 30px; }
   .common_dropdown .office-container {
     margin: 0 auto;
@@ -1208,11 +1292,11 @@ s
     width: unset;
     max-width: 1000px;
     margin: 0 auto;
-    background: #F1F1F1;
+    background: #acacac;
     padding: 20px 35px; }
 
 .header {
-  background-color: #F1F1F1;
+  background-color: #acacac;
   background-color: #F1F1F1;
   position: fixed;
   top: 0;
@@ -1421,7 +1505,7 @@ s
     width: 100%;
     min-width: 350px;
     padding: 25px 30px 50px 30px;
-    background-color: #F1F1F1;
+    background-color: #acacac;
     visibility: hidden;
     opacity: 0;
     transition: all .3s; }
@@ -1777,7 +1861,7 @@ s
   top: 86px;
   width: 100vw;
   height: calc(100vh - 86px);
-  background-color: #F1F1F1;
+  background-color: #acacac;
   left: 0;
   opacity: 0;
   visibility: hidden;
@@ -1987,7 +2071,7 @@ s
     width: 100vw;
     height: calc(100vh - 87px);
     z-index: 99999;
-    background: #F1F1F1;
+    background: #acacac;
     visibility: hidden;
     padding-top: 55px;
     align-items: flex-start; }
@@ -2159,7 +2243,7 @@ s
     padding-top: 0px; }
 
   body {
-    background-color: #F1F1F1; }
+    background-color: #acacac; }
 
   .team_container .team_section .team_member {
     border: 1px solid #17004C;
