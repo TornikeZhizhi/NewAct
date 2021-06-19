@@ -526,6 +526,12 @@ content: "";
                 margin: 10px 0;
             }
 
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+            }
+
             .error_text{
                display: none;
             }
@@ -550,6 +556,67 @@ content: "";
             cursor: pointer;
             margin-top: 10px;
         }
+
+        .form-group{
+            width: 70%;
+            margin: 10px auto;
+            height: 60px;
+        }
+
+                 
+                .form-control
+                {
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    z-index: 5;
+                    height:52px;
+                    padding: .5rem 1rem;
+                    line-height: 1.5;
+                    color: #555;
+                    background-color: #fff;
+                    border: 1px solid $border-color;
+                    display: flex;
+                    align-items: center;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    box-shadow: none;
+                }
+
+                
+              
+
+                .fileUpload {
+                    overflow: hidden;
+                    position: absolute;
+                    top: 6px;
+                    right: 5px;
+                    bottom: -.075rem;
+                    z-index: 6;
+                    display: block;
+                    content: "Browse";
+                    height: 2.5rem;
+                    padding: 7px 20px;
+                    line-height: 1.5;
+                    color: white;
+                    background-color:$text-color;
+                    border: .075rem solid #ddd;
+                }
+                .fileUpload input.upload {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 20px;
+                    cursor: pointer;
+                    opacity: 0;
+                    filter: alpha(opacity=0);
+                }
     }
 }
 

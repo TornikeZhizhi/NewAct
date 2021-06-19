@@ -399,10 +399,17 @@
                 <input type="number" placeholder="Phone">
             </div>
 
-            <label class="file">
-                <input type="file" id="file" aria-label="File browser example">
-                <span class="file-custom"></span>
-            </label>
+			<div class="form-group">
+				<div class="input-group">
+				  <input type="text" class="form-control" readonly placeholder="File Upload">
+					<div class="input-group-btn">
+						<span class="fileUpload btn btn-success">
+							<span class="upl" id="upload">Browse</span>
+							<input type="file" class="upload up" id="up" onchange="readURL(this);" placeholder="" />
+						</span>
+					</div>
+				 </div>
+			</div>
 
 
             <div class="form_text">
