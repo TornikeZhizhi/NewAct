@@ -53,6 +53,39 @@
 
 @media only screen and (max-width: 992px) {
 
+    .vac_apply_button_box {
+        display: block !important;
+    }
+
+    .vacancy_inner_container {
+    
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+   
+}
+
+.vacancy_inner_container .vac_inner_text {
+    flex-grow: 1;
+    padding-right: 0px;
+}
+
+    .vacancy_list_container {
+  
+    margin: 20px auto 0px;
+    padding-bottom: 50px;
+}
+
+    .vacancy_dropdowns .vacancy_dropdowns_box {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .vacancy_dropdowns {
+        flex-wrap: wrap;
+    }
+
     .form_container{
         padding: 40px 10px;
 

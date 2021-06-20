@@ -207,7 +207,7 @@
 
 				border: 1px solid $border-color;
 				border-radius: 20px;
-				    padding: 6px 7px;
+				padding: 6px 9px 7px 6px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -791,4 +791,14 @@
 .language_bar .language_container select:lang(ka) {
   
     line-height: 24px;
+}
+
+.language_dropdown img:nth-child(1){
+
+	display: none;
+}
+
+.language_container div:nth-child(2){
+
+	display: none;
 }

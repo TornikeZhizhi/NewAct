@@ -1422,6 +1422,9 @@ s
   border-bottom: 1px solid #17004C;
   padding: 25px 0; }
 
+.vacancy_inner_fluid, .vacancy_fluid {
+  padding: 0px 10px; }
+
 .office_section {
   background: #F1F1F1;
   padding-bottom: 150px; }
@@ -1706,7 +1709,7 @@ s
   .language_bar .language_dropdown {
     border: 1px solid #D1D1D1;
     border-radius: 20px;
-    padding: 6px 7px;
+    padding: 6px 9px 7px 6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2222,6 +2225,12 @@ s
 .language_bar .language_container select:lang(ka) {
   line-height: 24px; }
 
+.language_dropdown img:nth-child(1) {
+  display: none; }
+
+.language_container div:nth-child(2) {
+  display: none; }
+
 @media only screen and (min-width: 992px) {
   .f_hide {
     display: none; } }
@@ -2251,6 +2260,30 @@ s
     margin: 0 9px 0 8px;
     cursor: pointer; } }
 @media only screen and (max-width: 992px) {
+  .vac_apply_button_box {
+    display: block !important; }
+
+  .vacancy_inner_container {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 10px;
+    flex-wrap: wrap; }
+
+  .vacancy_inner_container .vac_inner_text {
+    flex-grow: 1;
+    padding-right: 0px; }
+
+  .vacancy_list_container {
+    margin: 20px auto 0px;
+    padding-bottom: 50px; }
+
+  .vacancy_dropdowns .vacancy_dropdowns_box {
+    max-width: 100%;
+    flex: 0 0 100%; }
+
+  .vacancy_dropdowns {
+    flex-wrap: wrap; }
+
   .form_container {
     padding: 40px 10px; }
     .form_container form {
