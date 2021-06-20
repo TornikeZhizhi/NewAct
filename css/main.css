@@ -241,7 +241,7 @@ body {
         transform: translateY(-50%);
         transition: all .3s; }
       .insight_tab_wrapper .insight_tab .insight_tab_title h3 a {
-        font-size: 33px;
+        font-size: 29px;
         transition: all .3s;
         font-family: "Mark-Bold", sans-serif;
      /*  @if($name == "lestudio"){
