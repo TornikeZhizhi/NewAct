@@ -1010,7 +1010,7 @@ s
       color: #17004C; }
   .team_member_container .slider_title:after {
     display: none; }
-  .team_member_container .team_slider .slick-slide {
+  .team_member_container .team_slider .slick-slide, .team_member_container .team_slider2 .slick-slide {
     border: 1px solid #17004C;
     background: white;
     display: flex;
@@ -1018,37 +1018,37 @@ s
     padding: 20px;
     transition: 0.3s;
     position: relative; }
-    .team_member_container .team_slider .slick-slide a {
+    .team_member_container .team_slider .slick-slide a, .team_member_container .team_slider2 .slick-slide a {
       overflow: hidden;
       width: 100%;
       max-height: 350px; }
-      .team_member_container .team_slider .slick-slide a img {
+      .team_member_container .team_slider .slick-slide a img, .team_member_container .team_slider2 .slick-slide a img {
         transform: scale(1.1);
         transition: 0.3s;
         width: 100%; }
-    .team_member_container .team_slider .slick-slide .bold a {
+    .team_member_container .team_slider .slick-slide .bold a, .team_member_container .team_slider2 .slick-slide .bold a {
       color: #17004C;
       font-weight: bold; }
-    .team_member_container .team_slider .slick-slide:hover {
+    .team_member_container .team_slider .slick-slide:hover, .team_member_container .team_slider2 .slick-slide:hover {
       background-color: #643695; }
-      .team_member_container .team_slider .slick-slide:hover .member_link img {
+      .team_member_container .team_slider .slick-slide:hover .member_link img, .team_member_container .team_slider2 .slick-slide:hover .member_link img {
         transform: scale(1); }
-      .team_member_container .team_slider .slick-slide:hover .member_info h4 {
+      .team_member_container .team_slider .slick-slide:hover .member_info h4, .team_member_container .team_slider2 .slick-slide:hover .member_info h4 {
         color: white; }
-        .team_member_container .team_slider .slick-slide:hover .member_info h4 a {
+        .team_member_container .team_slider .slick-slide:hover .member_info h4 a, .team_member_container .team_slider2 .slick-slide:hover .member_info h4 a {
           color: white; }
-      .team_member_container .team_slider .slick-slide:hover .member_info:after {
+      .team_member_container .team_slider .slick-slide:hover .member_info:after, .team_member_container .team_slider2 .slick-slide:hover .member_info:after {
         background-color: white; }
-      .team_member_container .team_slider .slick-slide:hover span {
+      .team_member_container .team_slider .slick-slide:hover span, .team_member_container .team_slider2 .slick-slide:hover span {
         color: white; }
-      .team_member_container .team_slider .slick-slide:hover .link_arrow_box {
+      .team_member_container .team_slider .slick-slide:hover .link_arrow_box, .team_member_container .team_slider2 .slick-slide:hover .link_arrow_box {
         opacity: 1; }
-  .team_member_container .team_slider .member_info {
+  .team_member_container .team_slider .member_info, .team_member_container .team_slider2 .member_info {
     position: relative;
     padding: 0 15px;
     margin-top: 30px;
     color: #17004C; }
-  .team_member_container .team_slider span {
+  .team_member_container .team_slider span, .team_member_container .team_slider2 span {
     font-size: 16px; }
   .team_member_container .about_img {
     border: 1px solid #17004C;
@@ -1537,6 +1537,11 @@ s
     margin: 0 auto;
     background: #F1F1F1;
     padding: 20px 35px; }
+
+.products_bottom_content .team_member_container {
+  margin-top: 0; }
+.products_bottom_content .team_member_container.c_container {
+  padding-bottom: 50px; }
 
 .header {
   background-color: #F1F1F1;
