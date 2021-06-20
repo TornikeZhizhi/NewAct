@@ -1417,17 +1417,41 @@ s
 .vacancy_inner_fluid, .vacancy_fluid {
   padding: 0px 10px; }
 
-.vac_apply_button_box {
-  display: flex;
-  height: 0;
-  overflow: hidden;
-  transition: all .5s; }
-  .vac_apply_button_box img {
-    width: 30px;
-    object-fit: contain; }
-
-.vacancy_list_box:hover .vac_apply_button_box {
-  height: 90px; }
+.main_container {
+  background-color: #F1F1F1;
+  padding: 100px 20px; }
+  .main_container section {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #D1D1D1;
+    padding: 10px 15px;
+    background: white; }
+    .main_container section .close {
+      opacity: 1;
+      transition: .3s; }
+      .main_container section .close img {
+        background: #F1F1F1;
+        padding: 7px;
+        width: 30px; }
+    .main_container section .resume_info {
+      text-align: center;
+      padding: 50px 0 90px; }
+      .main_container section .resume_info img {
+        background: #3BB54A;
+        padding: 24px 21px;
+        border-radius: 50%; }
+      .main_container section .resume_info .text {
+        color: #187B0D; }
+  .main_container .vac_apply_button_box {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s; }
+    .main_container .vac_apply_button_box img {
+      width: 30px;
+      object-fit: contain; }
+  .main_container .vacancy_list_box:hover .vac_apply_button_box {
+    height: 90px; }
 
 .office_section {
   background: #F1F1F1;
@@ -2272,6 +2296,9 @@ s
     margin: 0 9px 0 8px;
     cursor: pointer; } }
 @media only screen and (max-width: 992px) {
+  .main_container section {
+    width: 100%; }
+
   .vac_apply_button_box {
     display: block !important; }
 
