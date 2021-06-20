@@ -1361,14 +1361,6 @@ s
     margin-top: 30px;
     margin-bottom: 0; }
 
-.vac_apply_button_box {
-  display: flex;
-  justify-content: space-between;
-  display: none; }
-  .vac_apply_button_box img {
-    width: 30px;
-    object-fit: contain; }
-
 .vac_apply_button_box_wrapper {
   display: flex;
   justify-content: space-between;
@@ -1424,6 +1416,18 @@ s
 
 .vacancy_inner_fluid, .vacancy_fluid {
   padding: 0px 10px; }
+
+.vac_apply_button_box {
+  display: flex;
+  height: 0;
+  overflow: hidden;
+  transition: all .5s; }
+  .vac_apply_button_box img {
+    width: 30px;
+    object-fit: contain; }
+
+.vacancy_list_box:hover .vac_apply_button_box {
+  height: 90px; }
 
 .office_section {
   background: #F1F1F1;
@@ -2271,6 +2275,9 @@ s
     padding-bottom: 40px;
     margin-top: 10px;
     flex-wrap: wrap; }
+
+  .vac_apply_button_box {
+    height: auto !important; }
 
   .vacancy_inner_container .vac_inner_text {
     flex-grow: 1;
