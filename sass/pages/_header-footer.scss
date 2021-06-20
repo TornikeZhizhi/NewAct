@@ -50,7 +50,7 @@
 						@include family(title);
 						font-size: 15px;
 						color: $text-color;
-
+						font-weight: bold;
 						&.nav_dropdown {
 
 							position: relative;
@@ -293,6 +293,7 @@
 						font-size: 22px;
 						@include family(title);
 						color: $text-color;
+						font-weight: bold;
 					}
 				}
 
@@ -304,13 +305,14 @@
 					width: 100%;
 					background-color: #fff;
 					border: 1px solid $text-color;
-					padding:13px 15px;
+					padding:14px 16px;
 					cursor: pointer;
 				    background-image: url(../images/dropdown.svg);
 				    background-repeat: no-repeat;
 				    background-position: 95%;
 					@include family(title);
 					color: $text-color;
+					font-weight: bold;
 				}
 			}
 		}

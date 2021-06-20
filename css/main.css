@@ -1579,7 +1579,8 @@ s
             }
         }*/
           font-size: 15px;
-          color: #17004C; }
+          color: #17004C;
+          font-weight: bold; }
           .header .header_right nav ul li a:lang(en) {
             font-family: "Mark-Bold", sans-serif; }
           .header .header_right nav ul li a:lang(ka) {
@@ -1809,7 +1810,8 @@ s
               font-family: $ge-nav, sans-serif;
           }
       }*/
-        color: #17004C; }
+        color: #17004C;
+        font-weight: bold; }
         .language_bar .language_container .language_container_title *:lang(en) {
           font-family: "Mark-Bold", sans-serif; }
         .language_bar .language_container .language_container_title *:lang(ka) {
@@ -1820,7 +1822,7 @@ s
       width: 100%;
       background-color: #fff;
       border: 1px solid #17004C;
-      padding: 13px 15px;
+      padding: 14px 16px;
       cursor: pointer;
       background-image: url(../images/dropdown.svg);
       background-repeat: no-repeat;
@@ -1836,7 +1838,8 @@ s
             font-family: $ge-nav, sans-serif;
         }
     }*/
-      color: #17004C; }
+      color: #17004C;
+      font-weight: bold; }
       .language_bar .language_container select:lang(en) {
         font-family: "Mark-Bold", sans-serif; }
       .language_bar .language_container select:lang(ka) {
