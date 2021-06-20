@@ -248,3 +248,9 @@
 
 }
 
+.insight_tabs_container  {
+
+    .main_title:after {
+        content:unset;
+    }
+}

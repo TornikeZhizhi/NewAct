@@ -1572,6 +1572,9 @@ s
 .products_bottom_content .team_member_container.c_container {
   padding-bottom: 50px; }
 
+.insight_tabs_container .main_title:after {
+  content: unset; }
+
 .header {
   background-color: #F1F1F1;
   background-color: #F1F1F1;
