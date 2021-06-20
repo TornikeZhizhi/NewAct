@@ -2068,6 +2068,20 @@ s
     margin: 0 9px 0 8px;
     cursor: pointer; } }
 @media only screen and (max-width: 992px) {
+  .form_container {
+    padding: 40px 10px; }
+    .form_container form {
+      width: 100%;
+      padding: 15px; }
+      .form_container form input {
+        width: 100% !important; }
+      .form_container form .error_text {
+        width: 95% !important; }
+      .form_container form .form-group, .form_container form .form_text {
+        width: 100%; }
+      .form_container form .fileUpload {
+        padding: 7px 10px; }
+
   .header .header_right {
     padding: 0; }
 
