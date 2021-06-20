@@ -144,3 +144,44 @@
 	padding: 0px 10px;
     
   } 
+
+
+  .main_container{
+	background-color: $bg_color;
+	padding: 100px 20px;
+
+	section{
+		width: 50%;
+		margin: 0 auto;
+		border: 1px solid $border-color;
+		padding: 10px 15px;
+		background: white;
+
+		.close{
+			opacity: 1;
+			transition: .3s;
+
+			img{
+				background: $bg_color;
+				padding: 7px;
+				width: 30px;
+    
+			}
+		}
+
+		.resume_info{
+			text-align: center;
+			padding: 50px 0 90px;
+
+			img{
+				background: #3BB54A;
+				padding: 24px 21px;
+				border-radius: 50%;
+			}
+
+			.text{
+				color: #187B0D;
+			}
+		}
+	}
+  }

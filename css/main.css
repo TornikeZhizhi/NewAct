@@ -1425,6 +1425,32 @@ s
 .vacancy_inner_fluid, .vacancy_fluid {
   padding: 0px 10px; }
 
+.main_container {
+  background-color: #F1F1F1;
+  padding: 100px 20px; }
+  .main_container section {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #D1D1D1;
+    padding: 10px 15px;
+    background: white; }
+    .main_container section .close {
+      opacity: 1;
+      transition: .3s; }
+      .main_container section .close img {
+        background: #F1F1F1;
+        padding: 7px;
+        width: 30px; }
+    .main_container section .resume_info {
+      text-align: center;
+      padding: 50px 0 90px; }
+      .main_container section .resume_info img {
+        background: #3BB54A;
+        padding: 24px 21px;
+        border-radius: 50%; }
+      .main_container section .resume_info .text {
+        color: #187B0D; }
+
 .office_section {
   background: #F1F1F1;
   padding-bottom: 150px; }
@@ -2260,6 +2286,9 @@ s
     margin: 0 9px 0 8px;
     cursor: pointer; } }
 @media only screen and (max-width: 992px) {
+  .main_container section {
+    width: 100%; }
+
   .vac_apply_button_box {
     display: block !important; }
 
