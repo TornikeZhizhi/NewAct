@@ -53,7 +53,7 @@ body {
   margin: 0 auto; }
 
 .c_bg {
-  background-color: #acacac; }
+  background-color: #F1F1F1; }
 
 .p_left20 {
   padding-left: 20px !important; }
@@ -75,6 +75,23 @@ body {
 .pag_active {
   background-color: #17004C;
   color: white !important; }
+
+.breadcrumb {
+  margin-left: 0; }
+
+.common_button {
+  margin-top: 30px; }
+  .common_button a {
+    font-size: 22px;
+    border: 1px solid;
+    padding: 15px 70px;
+    transition: .3s;
+    color: #17004C;
+    display: inline-block;
+    background-color: #fff; }
+    .common_button a:hover {
+      color: white;
+      background: #17004C; }
 
 @font-face {
   font-family: 'Mark';
@@ -681,7 +698,7 @@ body {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
   padding: 0 0 80px 0;
-  background-color: #acacac; }
+  background-color: #F1F1F1; }
   .home_news .news_info .share {
     border-radius: 50%;
     border: 1px solid #fff;
@@ -1060,7 +1077,7 @@ s
 .home_news .news_section:hover {
   background-color: #fff; }
   .home_news .news_section:hover .news_info .share {
-    border-color: #acacac; }
+    border-color: #F1F1F1; }
 
 .news_info .share {
   display: flex;
@@ -1239,8 +1256,81 @@ s
   max-height: 43px;
   overflow: hidden; }
 
+.vacancy_inner_container {
+  display: flex;
+  border-top: 1px solid #17004C;
+  padding-top: 30px;
+  padding-bottom: 75px;
+  margin-top: 25px; }
+  .vacancy_inner_container .vac_inner_right {
+    min-width: 350px; }
+  .vacancy_inner_container .vac_inner_text {
+    flex-grow: 1;
+    padding-right: 40px; }
+    .vacancy_inner_container .vac_inner_text p {
+      margin-bottom: 15px; }
+    .vacancy_inner_container .vac_inner_text * {
+      font-family: "Mark", sans-serif;
+   /*  @if($name == "lestudio"){
+        font-family: $default-text, sans-serif;
+
+        &:lang(en){
+            font-family: $en-nav, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-nav, sans-serif;
+        }
+    }*/
+      color: #17004C; }
+      .vacancy_inner_container .vac_inner_text *:lang(en) {
+        font-family: "Mark", sans-serif; }
+      .vacancy_inner_container .vac_inner_text *:lang(ka) {
+        font-family: "Mark", sans-serif; }
+  .vacancy_inner_container .vac_inner_description {
+    border-left: 1px solid #17004C;
+    padding-left: 15px; }
+    .vacancy_inner_container .vac_inner_description div {
+      display: flex;
+      flex-direction: column; }
+      .vacancy_inner_container .vac_inner_description div:not(:last-child) {
+        margin-bottom: 20px; }
+      .vacancy_inner_container .vac_inner_description div span {
+        font-family: "Mark", sans-serif;
+     /*  @if($name == "lestudio"){
+          font-family: $default-text, sans-serif;
+  
+          &:lang(en){
+              font-family: $en-nav, sans-serif;
+          }
+          &:lang(ka){
+              font-family: $ge-nav, sans-serif;
+          }
+      }*/
+        color: #17004C;
+        font-size: 22px; }
+        .vacancy_inner_container .vac_inner_description div span:lang(en) {
+          font-family: "Mark", sans-serif; }
+        .vacancy_inner_container .vac_inner_description div span:lang(ka) {
+          font-family: "Mark", sans-serif; }
+        .vacancy_inner_container .vac_inner_description div span:last-child {
+          font-family: "Mark-Bold", sans-serif;
+       /*  @if($name == "lestudio"){
+            font-family: $default-text, sans-serif;
+    
+            &:lang(en){
+                font-family: $en-nav, sans-serif;
+            }
+            &:lang(ka){
+                font-family: $ge-nav, sans-serif;
+            }
+        }*/ }
+          .vacancy_inner_container .vac_inner_description div span:last-child:lang(en) {
+            font-family: "Mark-Bold", sans-serif; }
+          .vacancy_inner_container .vac_inner_description div span:last-child:lang(ka) {
+            font-family: "Mark-Bold", sans-serif; }
+
 .office_section {
-  background: #acacac;
+  background: #F1F1F1;
   padding-bottom: 150px; }
   .office_section .main_title:after {
     display: none; }
@@ -1330,7 +1420,7 @@ s
     background: #17004C; }
 
 .common_dropdown {
-  background: #acacac;
+  background: #F1F1F1;
   padding-bottom: 30px; }
   .common_dropdown .office-container {
     margin: 0 auto;
@@ -1345,11 +1435,11 @@ s
     width: unset;
     max-width: 1000px;
     margin: 0 auto;
-    background: #acacac;
+    background: #F1F1F1;
     padding: 20px 35px; }
 
 .header {
-  background-color: #acacac;
+  background-color: #F1F1F1;
   background-color: #F1F1F1;
   position: fixed;
   top: 0;
@@ -1558,7 +1648,7 @@ s
     width: 100%;
     min-width: 350px;
     padding: 25px 30px 50px 30px;
-    background-color: #acacac;
+    background-color: #F1F1F1;
     visibility: hidden;
     opacity: 0;
     transition: all .3s; }
@@ -1914,7 +2004,7 @@ s
   top: 86px;
   width: 100vw;
   height: calc(100vh - 86px);
-  background-color: #acacac;
+  background-color: #F1F1F1;
   left: 0;
   opacity: 0;
   visibility: hidden;
@@ -2124,7 +2214,7 @@ s
     width: 100vw;
     height: calc(100vh - 87px);
     z-index: 99999;
-    background: #acacac;
+    background: #F1F1F1;
     visibility: hidden;
     padding-top: 55px;
     align-items: flex-start; }
@@ -2296,7 +2386,7 @@ s
     padding-top: 0px; }
 
   body {
-    background-color: #acacac; }
+    background-color: #F1F1F1; }
 
   .team_container .team_section .team_member {
     border: 1px solid #17004C;
