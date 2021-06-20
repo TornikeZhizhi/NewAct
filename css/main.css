@@ -656,9 +656,11 @@ body {
         .slider_content .main_bottom_title span.bold:lang(ka) {
           font-family: "Mark-Bold", sans-serif; }
 
+@media only screen and (min-width: 992px) {
+  .slick-dotted.slick-slider {
+    overflow: hidden; } }
 .slick-dotted.slick-slider {
-  margin-bottom: unset !important;
-  overflow: hidden; }
+  margin-bottom: unset !important; }
 
 .product_slider {
   margin-bottom: 30px !important; }
@@ -1452,6 +1454,9 @@ s
       object-fit: contain; }
   .main_container .vacancy_list_box:hover .vac_apply_button_box {
     height: 90px; }
+
+.products_bottom_content {
+  padding-top: 50px; }
 
 .office_section {
   background: #F1F1F1;
@@ -2296,6 +2301,30 @@ s
     margin: 0 9px 0 8px;
     cursor: pointer; } }
 @media only screen and (max-width: 992px) {
+  .products_bottom_content .slick-dots li {
+    margin: 0 5px;
+    background: #00003c;
+    border-radius: 50%; }
+    .products_bottom_content .slick-dots li.slick-active:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      border: 1px solid #00003c;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px; }
+  .products_bottom_content .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+
   .main_container section {
     width: 100%; }
 
