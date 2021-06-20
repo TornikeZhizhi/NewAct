@@ -233,17 +233,29 @@ $(document).on('change','.up', function(){
 	}
  });
 
+var vac = true;
 
-$(".vacancy_list_box").mouseenter(function(){
 
-	$(this).find(".vac_apply_button_box").slideDown()
+// $(".vacancy_list_box").mouseenter(function(){
 
-})
-$(".vacancy_list_box").mouseleave(function(){
+// 	if (vac) {
+
+// 	$(this).find(".vac_apply_button_box").slideDown()
+// 	vac = false;
+// 	}		
+
+// 	setTimeout(function(){
+
+// 		vac = true;
+// 	},500)
+// })
+
+
+// $(".vacancy_list_box").mouseleave(function(){
 	
-	$(".vac_apply_button_box").slideUp()
+// 	$(".vac_apply_button_box").slideUp()
 
-})
+// })
 
 
  

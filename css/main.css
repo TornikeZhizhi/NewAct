@@ -1361,14 +1361,6 @@ s
     margin-top: 30px;
     margin-bottom: 0; }
 
-.vac_apply_button_box {
-  display: flex;
-  justify-content: space-between;
-  display: none; }
-  .vac_apply_button_box img {
-    width: 30px;
-    object-fit: contain; }
-
 .vac_apply_button_box_wrapper {
   display: flex;
   justify-content: space-between;
@@ -1450,6 +1442,16 @@ s
         border-radius: 50%; }
       .main_container section .resume_info .text {
         color: #187B0D; }
+  .main_container .vac_apply_button_box {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s; }
+    .main_container .vac_apply_button_box img {
+      width: 30px;
+      object-fit: contain; }
+  .main_container .vacancy_list_box:hover .vac_apply_button_box {
+    height: 90px; }
 
 .office_section {
   background: #F1F1F1;
@@ -1605,7 +1607,8 @@ s
             }
         }*/
           font-size: 15px;
-          color: #17004C; }
+          color: #17004C;
+          font-weight: bold; }
           .header .header_right nav ul li a:lang(en) {
             font-family: "Mark-Bold", sans-serif; }
           .header .header_right nav ul li a:lang(ka) {
@@ -1835,7 +1838,8 @@ s
               font-family: $ge-nav, sans-serif;
           }
       }*/
-        color: #17004C; }
+        color: #17004C;
+        font-weight: bold; }
         .language_bar .language_container .language_container_title *:lang(en) {
           font-family: "Mark-Bold", sans-serif; }
         .language_bar .language_container .language_container_title *:lang(ka) {
@@ -1846,7 +1850,7 @@ s
       width: 100%;
       background-color: #fff;
       border: 1px solid #17004C;
-      padding: 13px 15px;
+      padding: 14px 16px;
       cursor: pointer;
       background-image: url(../images/dropdown.svg);
       background-repeat: no-repeat;
@@ -1862,7 +1866,8 @@ s
             font-family: $ge-nav, sans-serif;
         }
     }*/
-      color: #17004C; }
+      color: #17004C;
+      font-weight: bold; }
       .language_bar .language_container select:lang(en) {
         font-family: "Mark-Bold", sans-serif; }
       .language_bar .language_container select:lang(ka) {
@@ -2297,6 +2302,9 @@ s
     padding-bottom: 40px;
     margin-top: 10px;
     flex-wrap: wrap; }
+
+  .vac_apply_button_box {
+    height: auto !important; }
 
   .vacancy_inner_container .vac_inner_text {
     flex-grow: 1;

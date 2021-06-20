@@ -92,15 +92,7 @@
 	}
 }
 
-.vac_apply_button_box {
-	display: flex;
-	justify-content: space-between;
-	display: none;
-	img {
-		width: 30px;
-		object-fit: contain;
-	}
-}
+
 .vac_apply_button_box_wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -184,4 +176,24 @@
 			}
 		}
 	}
+  .vac_apply_button_box {
+	display: flex;
+		height: 0;
+		overflow: hidden;
+		transition: all .5s;
+	img {
+		width: 30px;
+		object-fit: contain;
+	}
+}
+
+  .vacancy_list_box {
+
+  	&:hover{
+
+  			.vac_apply_button_box {
+  				height:90px;
+  			}
+  	}
+}
   }
