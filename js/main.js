@@ -234,6 +234,17 @@ $(document).on('change','.up', function(){
  });
 
 
+$(".vacancy_list_box").mouseenter(function(){
+
+	$(this).find(".vac_apply_button_box").slideDown()
+
+})
+$(".vacancy_list_box").mouseleave(function(){
+	
+	$(".vac_apply_button_box").slideUp()
+
+})
+
 
  
 
