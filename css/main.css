@@ -241,7 +241,7 @@ body {
         transform: translateY(-50%);
         transition: all .3s; }
       .insight_tab_wrapper .insight_tab .insight_tab_title h3 a {
-        font-size: 33px;
+        font-size: 29px;
         transition: all .3s;
         font-family: "Mark-Bold", sans-serif;
      /*  @if($name == "lestudio"){
@@ -656,9 +656,11 @@ body {
         .slider_content .main_bottom_title span.bold:lang(ka) {
           font-family: "Mark-Bold", sans-serif; }
 
+@media only screen and (min-width: 992px) {
+  .slick-dotted.slick-slider {
+    overflow: hidden; } }
 .slick-dotted.slick-slider {
-  margin-bottom: unset !important;
-  overflow: hidden; }
+  margin-bottom: unset !important; }
 
 .product_slider {
   margin-bottom: 30px !important; }
@@ -1010,7 +1012,7 @@ s
       color: #17004C; }
   .team_member_container .slider_title:after {
     display: none; }
-  .team_member_container .team_slider .slick-slide {
+  .team_member_container .team_slider .slick-slide, .team_member_container .team_slider2 .slick-slide {
     border: 1px solid #17004C;
     background: white;
     display: flex;
@@ -1018,37 +1020,37 @@ s
     padding: 20px;
     transition: 0.3s;
     position: relative; }
-    .team_member_container .team_slider .slick-slide a {
+    .team_member_container .team_slider .slick-slide a, .team_member_container .team_slider2 .slick-slide a {
       overflow: hidden;
       width: 100%;
       max-height: 350px; }
-      .team_member_container .team_slider .slick-slide a img {
+      .team_member_container .team_slider .slick-slide a img, .team_member_container .team_slider2 .slick-slide a img {
         transform: scale(1.1);
         transition: 0.3s;
         width: 100%; }
-    .team_member_container .team_slider .slick-slide .bold a {
+    .team_member_container .team_slider .slick-slide .bold a, .team_member_container .team_slider2 .slick-slide .bold a {
       color: #17004C;
       font-weight: bold; }
-    .team_member_container .team_slider .slick-slide:hover {
+    .team_member_container .team_slider .slick-slide:hover, .team_member_container .team_slider2 .slick-slide:hover {
       background-color: #643695; }
-      .team_member_container .team_slider .slick-slide:hover .member_link img {
+      .team_member_container .team_slider .slick-slide:hover .member_link img, .team_member_container .team_slider2 .slick-slide:hover .member_link img {
         transform: scale(1); }
-      .team_member_container .team_slider .slick-slide:hover .member_info h4 {
+      .team_member_container .team_slider .slick-slide:hover .member_info h4, .team_member_container .team_slider2 .slick-slide:hover .member_info h4 {
         color: white; }
-        .team_member_container .team_slider .slick-slide:hover .member_info h4 a {
+        .team_member_container .team_slider .slick-slide:hover .member_info h4 a, .team_member_container .team_slider2 .slick-slide:hover .member_info h4 a {
           color: white; }
-      .team_member_container .team_slider .slick-slide:hover .member_info:after {
+      .team_member_container .team_slider .slick-slide:hover .member_info:after, .team_member_container .team_slider2 .slick-slide:hover .member_info:after {
         background-color: white; }
-      .team_member_container .team_slider .slick-slide:hover span {
+      .team_member_container .team_slider .slick-slide:hover span, .team_member_container .team_slider2 .slick-slide:hover span {
         color: white; }
-      .team_member_container .team_slider .slick-slide:hover .link_arrow_box {
+      .team_member_container .team_slider .slick-slide:hover .link_arrow_box, .team_member_container .team_slider2 .slick-slide:hover .link_arrow_box {
         opacity: 1; }
-  .team_member_container .team_slider .member_info {
+  .team_member_container .team_slider .member_info, .team_member_container .team_slider2 .member_info {
     position: relative;
     padding: 0 15px;
     margin-top: 30px;
     color: #17004C; }
-  .team_member_container .team_slider span {
+  .team_member_container .team_slider span, .team_member_container .team_slider2 span {
     font-size: 16px; }
   .team_member_container .about_img {
     border: 1px solid #17004C;
@@ -1453,6 +1455,9 @@ s
   .main_container .vacancy_list_box:hover .vac_apply_button_box {
     height: 90px; }
 
+.products_bottom_content {
+  padding-top: 50px; }
+
 .office_section {
   background: #F1F1F1;
   padding-bottom: 150px; }
@@ -1561,6 +1566,11 @@ s
     margin: 0 auto;
     background: #F1F1F1;
     padding: 20px 35px; }
+
+.products_bottom_content .team_member_container {
+  margin-top: 0; }
+.products_bottom_content .team_member_container.c_container {
+  padding-bottom: 50px; }
 
 .header {
   background-color: #F1F1F1;
@@ -2291,6 +2301,30 @@ s
     margin: 0 9px 0 8px;
     cursor: pointer; } }
 @media only screen and (max-width: 992px) {
+  .products_bottom_content .slick-dots li {
+    margin: 0 5px;
+    background: #00003c;
+    border-radius: 50%; }
+    .products_bottom_content .slick-dots li.slick-active:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      border: 1px solid #00003c;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px; }
+  .products_bottom_content .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+
   .main_container section {
     width: 100%; }
 

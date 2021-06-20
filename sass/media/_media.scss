@@ -53,6 +53,39 @@
 
 @media only screen and (max-width: 992px) {
 
+.products_bottom_content {
+  .slick-dots li {
+    margin: 0 5px;
+    background: #00003c;
+    border-radius: 50%;
+    
+    &.slick-active:after{
+
+         content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border: 1px solid #00003c;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    }
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+  
+}
+
+
     .main_container section{
         width: 100%;
     }
