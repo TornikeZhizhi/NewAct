@@ -61,7 +61,7 @@ body {
 
 $main-purple:#161340;
 $light-purple:#643695;
-$bg-color:#acacac;
+$bg-color:#F1F1F1;
 $text-color:#17004C;
  
 $border-color:#D1D1D1;
@@ -105,4 +105,27 @@ $border-color:#D1D1D1;
   
   }
   
+
+  .breadcrumb {
+    margin-left: 0;
+  }
  
+
+ .common_button {
+    margin-top: 30px;
+
+   a {
+        font-size: 22px;
+    border: 1px solid;
+    padding: 15px 70px;
+    transition: .3s;
+    color: #17004C;
+    display: inline-block;
+    background-color: #fff;
+
+    &:hover{
+          color: white;
+    background: #17004C;
+    }
+   }
+ }

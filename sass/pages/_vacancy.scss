@@ -1,0 +1,50 @@
+.vacancy_inner_container {
+	display: flex;
+	border-top:1px solid #17004C;
+	padding-top: 30px;
+	padding-bottom: 75px;
+	margin-top: 25px;
+	.vac_inner_right {
+
+		min-width: 350px;
+	}
+
+	.vac_inner_text {
+		flex-grow: 1;
+		padding-right: 40px;
+		p {
+			margin-bottom: 15px;
+		}
+		* {
+			 @include family(text);
+                    color: $text-color;
+		}
+	}
+
+	.vac_inner_description {
+
+		border-left: 1px solid #17004C;
+		padding-left: 15px;
+
+		div {
+
+			display: flex;
+			flex-direction: column;
+			&:not(:last-child){
+				margin-bottom: 20px;
+			}
+
+			span {
+
+				 @include family(text);
+                    color: $text-color;
+                    font-size: 22px;
+
+                    &:last-child{
+                    		 @include family(title);
+                    }
+			}
+		}
+	}
+
+}
