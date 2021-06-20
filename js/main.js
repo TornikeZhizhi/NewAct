@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	
+
 
 	 $(".main_search_close img").css("marginLeft",$(".header_search").offset().left)
 
@@ -259,6 +261,8 @@ $(document).ready(function(){
 });
 
 
+
+
 $(document).on('change','.up', function(){
 	var names = [];
 	var length = $(this).get(0).files.length;
@@ -276,6 +280,9 @@ $(document).on('change','.up', function(){
  });
 
 var vac = true;
+
+
+
 
 
 // $(".vacancy_list_box").mouseenter(function(){
@@ -300,7 +307,7 @@ var vac = true;
 // })
 
 
- 
+
 
 
  
