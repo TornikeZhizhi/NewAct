@@ -2459,7 +2459,8 @@ s
     font-size: 18px; }
 
   .mobile_header .language_bar .language_container {
-    top: 48px; }
+    top: 48px;
+    padding: 10px 18px 10px 16px; }
 
   .main_search {
     position: fixed;
