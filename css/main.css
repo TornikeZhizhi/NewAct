@@ -1468,6 +1468,11 @@ s
 .products_bottom_content {
   padding-top: 50px; }
 
+.add_text {
+  font-style: normal;
+  margin-left: 40px;
+  font-family: "Mark", sans-serif !important; }
+
 .office_section {
   background: #F1F1F1;
   padding-bottom: 150px; }
