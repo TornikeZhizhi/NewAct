@@ -2330,6 +2330,18 @@ s
   .header .header_right nav ul li a {
     font-size: 12px; } }
 @media only screen and (max-width: 992px) {
+  .main_news_text p img {
+    width: 90% !important; }
+  .main_news_text table img {
+    width: 90% !important; }
+  .main_news_text table tr {
+    display: flex;
+    flex-direction: column; }
+    .main_news_text table tr img {
+      width: 90% !important; }
+    .main_news_text table tr td {
+      width: 100% !important; }
+
   .products_bottom_content .slick-dots li {
     margin: 0 5px;
     background: #00003c;

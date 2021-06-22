@@ -79,6 +79,35 @@
 }
 @media only screen and (max-width: 992px) {
 
+    .main_news_text {
+        p {
+            img {
+                
+                    width: 90% !important;
+            }
+        }
+        table {
+            img {
+                    width: 90% !important;
+
+            }
+
+            tr {
+                display: flex;
+                flex-direction: column;
+
+
+                img {
+                    width: 90% !important;
+                }
+
+                td {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
 .products_bottom_content {
   .slick-dots li {
     margin: 0 5px;
