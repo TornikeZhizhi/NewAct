@@ -1875,12 +1875,13 @@ s
     .language_bar .language_container select {
       width: 100%;
       background-color: #fff;
-      border: 1px solid #17004C;
+      /*border: 1px solid $text-color;*/
       padding: 14px 16px;
       cursor: pointer;
       background-image: url(../images/dropdown.svg);
       background-repeat: no-repeat;
-      background-position: 95%;
+      background-size: 15px;
+      background-position: 90%;
       font-family: "Mark-Bold", sans-serif;
    /*  @if($name == "lestudio"){
         font-family: $default-text, sans-serif;
