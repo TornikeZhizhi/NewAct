@@ -234,19 +234,14 @@
 				z-index: 10;
 				border: 1px solid $text-color;
 				width: 100%;
-				min-width: 350px;
-				padding: 25px 30px;
+				min-width: 107px;
+  				padding: 10px 10px;
 				background-color: #F1F1F1;
 				visibility: hidden;
 				opacity: 0;
 				transition: all .3s;
 
-				form {
-
-					&>div {
-						margin-bottom: 20px;
-					}
-				}
+				
 
 				&:after{
 					    position: absolute;
@@ -272,13 +267,13 @@
 					width: 100%;
 
 					a,button {
-						background-color: $text-color;
+					
 						border: none;
-						text-align: center;
-						padding: 15px 5px;
-						@include family(title);
+					    text-align: left;
+   						 padding: 5px 8px;
+						@include family(text);
 						font-size: 16px;
-						color: #fff;
+						color: $text-color;
 						width: 100%;
 						display: block;
 					}
@@ -297,9 +292,7 @@
 					}
 				}
 
-				&>div {
-					margin-bottom: 20px;
-				}
+				
 
 				select {
 					width: 100%;
@@ -405,7 +398,7 @@
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	padding: 30px 10px 5px;
+	padding: 30px 10px 30px;
 	flex-wrap: wrap;
 
 	.footer_social_wrapper {
@@ -421,7 +414,7 @@
 
 		.footer_social {
 			display: flex;
-			margin-top: 30px;
+			margin-top: 15px;
 			a {
 				width: 28px;
 				height: 28px;
@@ -464,7 +457,7 @@
 
 .footer_subscribe {
 .subscribe_box .subscribe_text {
-    margin: 10px 0 20px;
+    margin: 5px 0 8px;
 }
 
 	button {
@@ -492,7 +485,7 @@
 	ul {
 
 		li {
-			margin-bottom: 20px;
+			margin-bottom: 5px;
 		}
 	}
 }

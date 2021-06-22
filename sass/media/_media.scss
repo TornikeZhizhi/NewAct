@@ -50,7 +50,33 @@
 }
 }
 
+@media only screen and (max-width: 1272px) {
 
+
+.header .header_right nav ul li a {
+    font-family: "Mark-Bold", sans-serif;
+    font-size: 14px;
+    color: #17004C;
+    font-weight: bold;
+}
+}
+
+
+@media only screen and (max-width: 1145px) {
+.header .header_right nav ul li a {
+    font-size: 13px;
+}
+
+
+}
+
+@media only screen and (max-width: 1030px) {
+.header .header_right nav ul li a {
+    font-size: 12px;
+}
+
+
+}
 @media only screen and (max-width: 992px) {
 
 .products_bottom_content {

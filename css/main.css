@@ -921,7 +921,12 @@ s
         .team_member_container .team_member .main_news .main_title span {
           font-size: 16px; }
       .team_member_container .team_member .main_news .competence .comp_text {
-        line-height: 30px; }
+        line-height: 30px;
+        display: flex;
+        flex-wrap: wrap; }
+        .team_member_container .team_member .main_news .competence .comp_text span {
+          flex: 0 0 50%;
+          max-width: 50%; }
       .team_member_container .team_member .main_news .competence h3 {
         font-family: "Mark-Bold", sans-serif;
      /*  @if($name == "lestudio"){
@@ -1165,6 +1170,11 @@ s
   padding: 3%; }
   .search_container .news_section {
     margin-bottom: unset; }
+
+.team_member_container > .team_member .member_link {
+  max-width: 280px;
+  max-height: 365px;
+  width: 100%; }
 
 .team_container {
   position: relative;
@@ -1784,14 +1794,12 @@ s
     z-index: 10;
     border: 1px solid #17004C;
     width: 100%;
-    min-width: 350px;
-    padding: 25px 30px;
+    min-width: 107px;
+    padding: 10px 10px;
     background-color: #F1F1F1;
     visibility: hidden;
     opacity: 0;
     transition: all .3s; }
-    .language_bar .language_container form > div {
-      margin-bottom: 20px; }
     .language_bar .language_container:after {
       position: absolute;
       top: -3px;
@@ -1811,11 +1819,10 @@ s
     .language_bar .language_container .language_link {
       width: 100%; }
       .language_bar .language_container .language_link a, .language_bar .language_container .language_link button {
-        background-color: #17004C;
         border: none;
-        text-align: center;
-        padding: 15px 5px;
-        font-family: "Mark-Bold", sans-serif;
+        text-align: left;
+        padding: 5px 8px;
+        font-family: "Mark", sans-serif;
      /*  @if($name == "lestudio"){
           font-family: $default-text, sans-serif;
   
@@ -1827,13 +1834,13 @@ s
           }
       }*/
         font-size: 16px;
-        color: #fff;
+        color: #17004C;
         width: 100%;
         display: block; }
         .language_bar .language_container .language_link a:lang(en), .language_bar .language_container .language_link button:lang(en) {
-          font-family: "Mark-Bold", sans-serif; }
+          font-family: "Mark", sans-serif; }
         .language_bar .language_container .language_link a:lang(ka), .language_bar .language_container .language_link button:lang(ka) {
-          font-family: "Mark-Bold", sans-serif; }
+          font-family: "Mark", sans-serif; }
     .language_bar .language_container .language_container_title {
       text-align: center;
       padding: 0 25px;
@@ -1857,8 +1864,6 @@ s
           font-family: "Mark-Bold", sans-serif; }
         .language_bar .language_container .language_container_title *:lang(ka) {
           font-family: "Mark-Bold", sans-serif; }
-    .language_bar .language_container > div {
-      margin-bottom: 20px; }
     .language_bar .language_container select {
       width: 100%;
       background-color: #fff;
@@ -1967,7 +1972,7 @@ s
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 30px 10px 5px;
+  padding: 30px 10px 30px;
   flex-wrap: wrap; }
   .footer_wrapper .footer_social_wrapper {
     flex: 0 0 20%;
@@ -1976,7 +1981,7 @@ s
       width: 151px; }
     .footer_wrapper .footer_social_wrapper .footer_social {
       display: flex;
-      margin-top: 30px; }
+      margin-top: 15px; }
       .footer_wrapper .footer_social_wrapper .footer_social a {
         width: 28px;
         height: 28px;
@@ -2002,7 +2007,7 @@ s
     max-width: 40%; }
 
 .footer_subscribe .subscribe_box .subscribe_text {
-  margin: 10px 0 20px; }
+  margin: 5px 0 8px; }
 .footer_subscribe button {
   background-color: #F1F1F1 !important; }
   .footer_subscribe button svg, .footer_subscribe button path {
@@ -2029,7 +2034,7 @@ s
   .footer_contact h4:lang(ka) {
     font-family: "Mark-Bold", sans-serif; }
 .footer_contact ul li {
-  margin-bottom: 20px; }
+  margin-bottom: 5px; }
 
 .copyright {
   display: flex;
@@ -2303,6 +2308,18 @@ s
   .header .header_right .header_search {
     margin: 0 9px 0 8px;
     cursor: pointer; } }
+@media only screen and (max-width: 1272px) {
+  .header .header_right nav ul li a {
+    font-family: "Mark-Bold", sans-serif;
+    font-size: 14px;
+    color: #17004C;
+    font-weight: bold; } }
+@media only screen and (max-width: 1145px) {
+  .header .header_right nav ul li a {
+    font-size: 13px; } }
+@media only screen and (max-width: 1030px) {
+  .header .header_right nav ul li a {
+    font-size: 12px; } }
 @media only screen and (max-width: 992px) {
   .products_bottom_content .slick-dots li {
     margin: 0 5px;
