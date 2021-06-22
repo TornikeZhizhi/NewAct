@@ -913,7 +913,7 @@ s
       .team_member_container .team_member .main_news .main_title {
         position: relative;
         padding: 0 15px;
-        height: 65px;
+        height: 69px;
         overflow: hidden; }
         .team_member_container .team_member .main_news .main_title .bold {
           color: #17004C;
@@ -1785,7 +1785,7 @@ s
     border: 1px solid #17004C;
     width: 100%;
     min-width: 350px;
-    padding: 25px 30px 50px 30px;
+    padding: 25px 30px;
     background-color: #F1F1F1;
     visibility: hidden;
     opacity: 0;
