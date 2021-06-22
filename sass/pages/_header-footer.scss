@@ -205,13 +205,13 @@
 			position: relative;
 			.language_dropdown {
 
-				border: 1px solid $border-color;
+				/*border: 1px solid $border-color;*/
 				border-radius: 20px;
 				padding: 6px 9px 7px 6px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				background: #fff;
+				/*background: #fff;*/
 				cursor: pointer;
 
 				span {
@@ -229,33 +229,32 @@
 
 			.language_container {
 				position: absolute;
-				top:61px;
-				right: -20px;
-				z-index: 10;
-				border: 1px solid $text-color;
-				width: 100%;
-				min-width: 107px;
-  				padding: 10px 10px;
-				background-color: #F1F1F1;
-				visibility: hidden;
-				opacity: 0;
-				transition: all .3s;
-
-				
+			    top: 45px;
+			    right: -20px;
+			    z-index: 10;
+			    width: 100%;
+			    min-width: 130px;
+			    padding: 10px 0px;
+			    background-color: #fff;
+			    visibility: hidden;
+			    opacity: 0;
+				    transition: all .3s;
+				 box-shadow: -2px 3px 5px 0px #00000017;
+					
 
 				&:after{
-					    position: absolute;
-					    top: -3px;
-					    right: 50px;
-					    content: "";
-					    width: 15px;
-					    height: 15px;
-					    transform: rotate(45deg) translateX(-50%);
-					    border-left: 1px solid #17004C;
-					    border-top: 1px solid #17004C;
-					    background-color: #f1f1f1;
-					    z-index: 100;
-					    transition: all .3s;
+					  position: absolute;
+				    top: -2px;
+				    right: 56px;
+				    content: "";
+				    width: 10px;
+				    height: 10px;
+   				    transform: rotate(45deg) translateX(-50%);
+				    border-left: 1px solid #fff;
+				    border-top: 1px solid #fff;
+				    background-color: #fff;
+				    z-index: 100;
+				    transition: all .3s;
 				}
 
 				&.active {
@@ -270,12 +269,17 @@
 					
 						border: none;
 					    text-align: left;
-   						 padding: 5px 8px;
+   						 padding: 5px 15px;
 						@include family(text);
 						font-size: 16px;
 						color: $text-color;
 						width: 100%;
 						display: block;
+						transition: all .4s;
+
+						&:hover{
+							background-color:#F1F1F1;
+						}
 					}
 				}
 
@@ -667,14 +671,16 @@
     width: 100%;
     max-width: 100%;
     z-index: 10;
-    border: 1px solid #17004C;
+    border: 1px solid #fff;
     width: 100%;
-    min-width: 300px;
+    min-width: 243px;
     padding: 22px 20px 25px 16px;
-    background-color: #F1F1F1;
+    background-color: #fff;
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
+    box-shadow: -2px 3px 5px 0px #00000017;
+
 
     &.active {
     	    opacity: 1 !important;
@@ -698,9 +704,9 @@
     transform: rotate(
 45deg
 ) translateX(-50%);
-    border-left: 1px solid #17004C;
-    border-top: 1px solid #17004C;
-    background-color: #f1f1f1;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    background-color: #fff;
     z-index: 100;
     transition: all .3s;
     }

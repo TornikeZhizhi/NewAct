@@ -1759,13 +1759,13 @@ s
 .language_bar {
   position: relative; }
   .language_bar .language_dropdown {
-    border: 1px solid #D1D1D1;
+    /*border: 1px solid $border-color;*/
     border-radius: 20px;
     padding: 6px 9px 7px 6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
+    /*background: #fff;*/
     cursor: pointer; }
     .language_bar .language_dropdown span {
       margin: 0 10px;
@@ -1789,28 +1789,28 @@ s
       margin-right: 5px; }
   .language_bar .language_container {
     position: absolute;
-    top: 61px;
+    top: 45px;
     right: -20px;
     z-index: 10;
-    border: 1px solid #17004C;
     width: 100%;
-    min-width: 107px;
-    padding: 10px 10px;
-    background-color: #F1F1F1;
+    min-width: 130px;
+    padding: 10px 0px;
+    background-color: #fff;
     visibility: hidden;
     opacity: 0;
-    transition: all .3s; }
+    transition: all .3s;
+    box-shadow: -2px 3px 5px 0px #00000017; }
     .language_bar .language_container:after {
       position: absolute;
-      top: -3px;
-      right: 50px;
+      top: -2px;
+      right: 56px;
       content: "";
-      width: 15px;
-      height: 15px;
+      width: 10px;
+      height: 10px;
       transform: rotate(45deg) translateX(-50%);
-      border-left: 1px solid #17004C;
-      border-top: 1px solid #17004C;
-      background-color: #f1f1f1;
+      border-left: 1px solid #fff;
+      border-top: 1px solid #fff;
+      background-color: #fff;
       z-index: 100;
       transition: all .3s; }
     .language_bar .language_container.active {
@@ -1821,7 +1821,7 @@ s
       .language_bar .language_container .language_link a, .language_bar .language_container .language_link button {
         border: none;
         text-align: left;
-        padding: 5px 8px;
+        padding: 5px 15px;
         font-family: "Mark", sans-serif;
      /*  @if($name == "lestudio"){
           font-family: $default-text, sans-serif;
@@ -1836,11 +1836,14 @@ s
         font-size: 16px;
         color: #17004C;
         width: 100%;
-        display: block; }
+        display: block;
+        transition: all .4s; }
         .language_bar .language_container .language_link a:lang(en), .language_bar .language_container .language_link button:lang(en) {
           font-family: "Mark", sans-serif; }
         .language_bar .language_container .language_link a:lang(ka), .language_bar .language_container .language_link button:lang(ka) {
           font-family: "Mark", sans-serif; }
+        .language_bar .language_container .language_link a:hover, .language_bar .language_container .language_link button:hover {
+          background-color: #F1F1F1; }
     .language_bar .language_container .language_container_title {
       text-align: center;
       padding: 0 25px;
@@ -2170,14 +2173,15 @@ s
       width: 100%;
       max-width: 100%;
       z-index: 10;
-      border: 1px solid #17004C;
+      border: 1px solid #fff;
       width: 100%;
-      min-width: 300px;
+      min-width: 243px;
       padding: 22px 20px 25px 16px;
-      background-color: #F1F1F1;
+      background-color: #fff;
       visibility: hidden;
       opacity: 0;
-      transition: all .3s; }
+      transition: all .3s;
+      box-shadow: -2px 3px 5px 0px #00000017; }
       .mobile_header .language_bar .language_container.active {
         opacity: 1 !important;
         visibility: visible !important; }
@@ -2192,9 +2196,9 @@ s
         width: 15px;
         height: 15px;
         transform: rotate(45deg) translateX(-50%);
-        border-left: 1px solid #17004C;
-        border-top: 1px solid #17004C;
-        background-color: #f1f1f1;
+        border-left: 1px solid #fff;
+        border-top: 1px solid #fff;
+        background-color: #fff;
         z-index: 100;
         transition: all .3s; }
 
@@ -2437,7 +2441,7 @@ s
     font-size: 18px; }
 
   .mobile_header .language_bar .language_container {
-    top: 67px; }
+    top: 48px; }
 
   .main_search {
     position: fixed;
