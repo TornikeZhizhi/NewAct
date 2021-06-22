@@ -2290,6 +2290,11 @@ s
 .language_container div:nth-child(2) {
   display: none; }
 
+.language_dropdown select {
+  background: transparent;
+  min-width: 40px;
+  cursor: pointer; }
+
 @media only screen and (min-width: 992px) {
   .f_hide {
     display: none; } }

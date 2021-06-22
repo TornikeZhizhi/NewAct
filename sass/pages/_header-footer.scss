@@ -804,3 +804,10 @@
 
 	display: none;
 }
+
+
+.language_dropdown select {
+	background: transparent;
+	min-width: 40px;
+	cursor: pointer;
+}
