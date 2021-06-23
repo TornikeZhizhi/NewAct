@@ -1794,17 +1794,18 @@ s
       margin-right: 5px; }
   .language_bar .language_container {
     position: absolute;
-    top: 45px;
+    top: 59px;
     right: -20px;
     z-index: 10;
     width: 100%;
-    min-width: 130px;
-    padding: 10px 0px;
-    background-color: #fff;
+    min-width: 164px;
+    padding: 25px 19px;
+    background-color: #F1F1F1;
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
-    box-shadow: -2px 3px 5px 0px #00000017; }
+    box-shadow: -2px 3px 5px 0px #00000017;
+    border: 1px solid #17004C; }
     .language_bar .language_container:after {
       position: absolute;
       top: -2px;
@@ -1813,9 +1814,9 @@ s
       width: 10px;
       height: 10px;
       transform: rotate(45deg) translateX(-50%);
-      border-left: 1px solid #fff;
-      border-top: 1px solid #fff;
-      background-color: #fff;
+      border-left: 1px solid #17004C;
+      border-top: 1px solid #17004C;
+      background-color: #F1F1F1;
       z-index: 100;
       transition: all .3s; }
     .language_bar .language_container.active {
@@ -1875,7 +1876,7 @@ s
     .language_bar .language_container select {
       width: 100%;
       background-color: #fff;
-      /*border: 1px solid $text-color;*/
+      border: 1px solid #17004C;
       padding: 14px 16px;
       cursor: pointer;
       background-image: url(../images/dropdown.svg);
@@ -2179,11 +2180,11 @@ s
       width: 100%;
       max-width: 100%;
       z-index: 10;
-      border: 1px solid #fff;
+      border: 1px solid #17004C;
       width: 100%;
       min-width: 243px;
       padding: 22px 20px 25px 16px;
-      background-color: #fff;
+      background-color: #F1F1F1;
       visibility: hidden;
       opacity: 0;
       transition: all .3s;
@@ -2202,9 +2203,9 @@ s
         width: 15px;
         height: 15px;
         transform: rotate(45deg) translateX(-50%);
-        border-left: 1px solid #fff;
-        border-top: 1px solid #fff;
-        background-color: #fff;
+        border-left: 1px solid #17004C;
+        border-top: 1px solid #17004C;
+        background-color: #F1F1F1;
         z-index: 100;
         transition: all .3s; }
 
