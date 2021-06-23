@@ -919,7 +919,7 @@ s
           color: #17004C;
           font-size: 27px; }
         .team_member_container .team_member .main_news .main_title span {
-          font-size: 16px; }
+          font-size: 14px; }
       .team_member_container .team_member .main_news .competence .comp_text {
         line-height: 30px;
         display: flex;
@@ -1071,8 +1071,8 @@ s
 
 .link_arrow_box {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: 10px;
+  bottom: 15px;
   z-index: 10;
   opacity: 0;
   transition: all .3s; }
