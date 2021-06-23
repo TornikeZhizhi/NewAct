@@ -913,11 +913,11 @@ s
       .team_member_container .team_member .main_news .main_title {
         position: relative;
         padding: 0 15px;
-        height: 69px;
+        /*height: 69px;*/
         overflow: hidden; }
         .team_member_container .team_member .main_news .main_title .bold {
           color: #17004C;
-          font-size: 28px; }
+          font-size: 27px; }
         .team_member_container .team_member .main_news .main_title span {
           font-size: 16px; }
       .team_member_container .team_member .main_news .competence .comp_text {
@@ -1078,7 +1078,7 @@ s
   transition: all .3s; }
   .link_arrow_box img {
     width: 30px;
-    height: 30px;
+    height: 25px;
     object-fit: contain; }
 
 .home_news .news_section:hover {

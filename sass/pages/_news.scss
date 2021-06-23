@@ -362,12 +362,12 @@
             .main_title{
                 position: relative;
                 padding: 0 15px;
-                height: 69px;
+                /*height: 69px;*/
                 overflow: hidden;
     
                 .bold{
                     color: $text-color;
-                    font-size: 28px;
+                    font-size: 27px;
 
     
                 }
@@ -584,7 +584,7 @@
     transition: all .3s;
     img {
         width: 30px;
-        height: 30px;
+        height: 25px;
         object-fit: contain;
     }
 }
