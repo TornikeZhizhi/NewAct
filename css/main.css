@@ -1635,7 +1635,7 @@ s
                 font-family: $ge-nav, sans-serif;
             }
         }*/
-          font-size: 15px;
+          font-size: 14px;
           color: #17004C;
           font-weight: bold; }
           .header .header_right nav ul li a:lang(en) {
@@ -2296,6 +2296,10 @@ s
   background: transparent;
   min-width: 40px;
   cursor: pointer; }
+
+.header .header_right nav ul li a:lang(ka) {
+  font-family: "Mark", sans-serif !important;
+  font-weight: normal; }
 
 @media only screen and (min-width: 992px) {
   .f_hide {

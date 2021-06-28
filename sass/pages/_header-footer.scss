@@ -48,7 +48,7 @@
 
 					a {
 						@include family(title);
-						font-size: 15px;
+						font-size: 14px;
 						color: $text-color;
 						font-weight: bold;
 						&.nav_dropdown {
@@ -811,4 +811,11 @@
 	background: transparent;
 	min-width: 40px;
 	cursor: pointer;
+}
+
+
+.header .header_right nav ul li a:lang(ka) {
+  
+    font-family: "Mark", sans-serif !important;
+    font-weight: normal;
 }
