@@ -1018,6 +1018,8 @@ s
       color: #17004C; }
   .team_member_container .slider_title:after {
     display: none; }
+  .team_member_container .team_slider2 .slick-slide {
+    height: 550px; }
   .team_member_container .team_slider .slick-slide, .team_member_container .team_slider2 .slick-slide {
     border: 1px solid #17004C;
     background: white;

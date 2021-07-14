@@ -457,6 +457,12 @@
         display: none;
     }
 
+    .team_slider2{
+        .slick-slide{
+            height: 550px;
+        }
+    }
+
     .team_slider, .team_slider2{
 
         .slick-slide{
@@ -467,6 +473,7 @@
             padding: 20px;
             transition: 0.3s;
             position: relative;
+            
 
 
             a{
