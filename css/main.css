@@ -1179,6 +1179,12 @@ s
   max-height: 365px;
   width: 100%; }
 
+.team_member_container .team_slider2 .slick-slide {
+  height: 550px; }
+
+@media only screen and (max-width: 992px) {
+  .team_member_container .team_slider2 .slick-slide {
+    height: unset; } }
 .team_container {
   position: relative;
   z-index: 10;

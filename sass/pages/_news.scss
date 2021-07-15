@@ -765,3 +765,15 @@
         }
 
     }
+
+
+
+    .team_member_container .team_slider2 .slick-slide{
+        height: 550px;
+    }
+
+    @media only screen and (max-width: 992px){
+        .team_member_container .team_slider2 .slick-slide{
+            height: unset;
+        }
+    }
