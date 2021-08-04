@@ -196,7 +196,6 @@ body {
   display: none; }
 
 .main_title {
-  text-align: center;
   padding: 30px 0 15px; }
   .main_title .bold {
     font-family: "Mark-Bold", sans-serif;
@@ -582,6 +581,34 @@ body {
       cursor: pointer;
       opacity: 0;
       filter: alpha(opacity=0); }
+
+.main_large_title {
+  font-size: 75px !important; }
+
+.team_container .team_section .team_member .main_news .news_info {
+  font-weight: bold; }
+
+.team_member_container .team_member .main_news .competence .comp_text span {
+  font-weight: bold; }
+
+.team_member_container .biography {
+  width: 85%;
+  margin: 20px auto 70px !important; }
+
+.news_container .main_news_text p img {
+  width: 100% !important; }
+
+.main_title h1 {
+  font-size: 29px !important; }
+
+.d_flex .news_section .news .main_title {
+  min-height: 180px; }
+
+@media only screen and (max-width: 992px) {
+  .d_flex .news_section .news .main_title {
+    min-height: unset !important; } }
+.product_section .main_title {
+  text-align: center; }
 
 .slider_content {
   width: 100%;
