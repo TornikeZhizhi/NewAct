@@ -163,7 +163,7 @@ body {
     text-align: center; }
   .main_title h1 {
     color: #17004C;
-    font-size: 38px;
+    font-size: 29px;
     font-family: "Mark-Bold", sans-serif;
    /*  @if($name == "lestudio"){
         font-family: $default-text, sans-serif;
@@ -196,6 +196,7 @@ body {
   display: none; }
 
 .main_title {
+  text-align: center;
   padding: 30px 0 15px; }
   .main_title .bold {
     font-family: "Mark-Bold", sans-serif;
@@ -616,7 +617,7 @@ body {
         }
     }*/
       color: #17004C;
-      font-size: 85px;
+      font-size: 80px;
       line-height: 73px; }
       .slider_content .main_large_title *:lang(en) {
         font-family: "Mark-Bold", sans-serif; }
@@ -746,6 +747,8 @@ body {
       text-align: inherit !important; }
     .news_container .main_news_text p {
       text-align: inherit !important; }
+      .news_container .main_news_text p img {
+        width: 100% !important; }
 
 .main_news_text {
   color: #17004C; }
@@ -927,7 +930,8 @@ s
         flex-wrap: wrap; }
         .team_member_container .team_member .main_news .competence .comp_text span {
           flex: 0 0 50%;
-          max-width: 50%; }
+          max-width: 50%;
+          font-weight: bold; }
       .team_member_container .team_member .main_news .competence h3 {
         font-family: "Mark-Bold", sans-serif;
      /*  @if($name == "lestudio"){
@@ -1010,7 +1014,7 @@ s
       line-height: 30px; }
   .team_member_container .biography {
     width: 85%;
-    margin: 50px auto 70px; }
+    margin: 20px auto 70px; }
     .team_member_container .biography .bold {
       font-size: 28px; }
     .team_member_container .biography .text {
@@ -1275,7 +1279,8 @@ s
 
 .team_container .team_section .team_member .main_news .news_info {
   max-height: 43px;
-  overflow: hidden; }
+  overflow: hidden;
+  font-weight: bold; }
 
 .vacancy_inner_container {
   display: flex;
