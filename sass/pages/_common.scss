@@ -256,7 +256,7 @@
 
 .subscribe_box {
 
-    max-width: 450px;
+    max-width: 570px;
     width: 100%;
     .subscribe_text {
            margin: 5px 0 20px;
@@ -269,6 +269,10 @@
     .sub-bottom{
         display: flex;
         justify-content: space-between;
+
+        .multiselect{
+            border: 1px solid #E6E6E6;
+        }
 
         select{
             width: 100%;
@@ -284,17 +288,25 @@
 
     .top-form{
         border: unset;
+        display: flex;
 
         input{
-            border-bottom: 1px solid #17004C;
+            border:1px solid #17004C;
+        }
+
+        .sub-form-input{
+            width:100%;
         }
         
     }
+
+
 
     .sub-top{
         
         display: flex;
         justify-content: space-between;
+        width: 100%;
 
         select{
             width: 100%;
@@ -320,7 +332,7 @@ button {
 }
     input{
         color: $text-color;
-        padding: 5px 5px 11px 15px;
+        padding: 6px 5px 11px 15px;
         border-bottom: 1px solid #E6E6E6;
         width: 100%;
         background-color: transparent;
@@ -709,6 +721,63 @@ font-weight: bold;
     text-align: center;
 }
 
+
+
+.multiselect {
+    width: 100%;
+    cursor: pointer;
+    color: #17004C;
+    border: 1px solid #17004C;
+}
+  
+  .selectBox {
+    position: relative;
+  }
+  
+  .selectBox select {
+    width: 100%;
+  }
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  #checkboxes {
+    display: none;
+
+    input{
+        width:unset;
+        margin-right: 5px;
+    }
+  }
+  
+  #checkboxes label {
+    display: block;
+    padding: 2px 12px;
+    cursor: pointer;
+  }
+
+
+  #checkboxes_2 {
+    display: none;
+
+    input{
+        width:unset;
+        margin-right: 5px;
+    }
+  }
+  
+  #checkboxes_2 label {
+    display: block;
+    padding: 2px 12px;
+    cursor: pointer;
+  }
+  
+ 
 
 
 

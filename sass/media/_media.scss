@@ -261,6 +261,10 @@
         padding: 9px 15px
     }
 
+    .subscribe_box .top-form {
+        flex-wrap: wrap;
+    }
+
 .insights_subscribe .subscribe_box{
     max-width: 100%;
     flex-direction: column;
@@ -386,6 +390,11 @@
 
 .subscribe_fluid {
     padding: 29px 20px 30px 15px;
+}
+
+.subscribe_fluid .subscribe_box {
+    max-width: unset;
+    width: 100%;
 }
 .latest_news .d_flex .news_section .news {
  

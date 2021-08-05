@@ -327,7 +327,7 @@ body {
   background-size: cover; }
 
 .subscribe_box {
-  max-width: 450px;
+  max-width: 570px;
   width: 100%; }
   .subscribe_box .subscribe_text {
     margin: 5px 0 20px; }
@@ -337,6 +337,8 @@ body {
   .subscribe_box .sub-bottom {
     display: flex;
     justify-content: space-between; }
+    .subscribe_box .sub-bottom .multiselect {
+      border: 1px solid #E6E6E6; }
     .subscribe_box .sub-bottom select {
       width: 100%;
       background-image: url(../../images/arrow_down.svg);
@@ -346,12 +348,16 @@ body {
       background-position-y: center;
       cursor: pointer; }
   .subscribe_box .top-form {
-    border: unset; }
+    border: unset;
+    display: flex; }
     .subscribe_box .top-form input {
-      border-bottom: 1px solid #17004C; }
+      border: 1px solid #17004C; }
+    .subscribe_box .top-form .sub-form-input {
+      width: 100%; }
   .subscribe_box .sub-top {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 100%; }
     .subscribe_box .sub-top select {
       width: 100%;
       background-image: url(../../images/arrow_down.svg);
@@ -370,7 +376,7 @@ body {
     outline: none; }
   .subscribe_box input {
     color: #17004C;
-    padding: 5px 5px 11px 15px;
+    padding: 6px 5px 11px 15px;
     border-bottom: 1px solid #E6E6E6;
     width: 100%;
     background-color: transparent; }
@@ -634,6 +640,47 @@ body {
     min-height: unset !important; } }
 .product_section .main_title {
   text-align: center; }
+
+.multiselect {
+  width: 100%;
+  cursor: pointer;
+  color: #17004C;
+  border: 1px solid #17004C; }
+
+.selectBox {
+  position: relative; }
+
+.selectBox select {
+  width: 100%; }
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+#checkboxes {
+  display: none; }
+  #checkboxes input {
+    width: unset;
+    margin-right: 5px; }
+
+#checkboxes label {
+  display: block;
+  padding: 2px 12px;
+  cursor: pointer; }
+
+#checkboxes_2 {
+  display: none; }
+  #checkboxes_2 input {
+    width: unset;
+    margin-right: 5px; }
+
+#checkboxes_2 label {
+  display: block;
+  padding: 2px 12px;
+  cursor: pointer; }
 
 .slider_content {
   width: 100%;
@@ -2523,6 +2570,9 @@ s
   .subscribe_box button {
     padding: 9px 15px; }
 
+  .subscribe_box .top-form {
+    flex-wrap: wrap; }
+
   .insights_subscribe .subscribe_box {
     max-width: 100%;
     flex-direction: column;
@@ -2615,6 +2665,10 @@ s
 
   .subscribe_fluid {
     padding: 29px 20px 30px 15px; }
+
+  .subscribe_fluid .subscribe_box {
+    max-width: unset;
+    width: 100%; }
 
   .latest_news .d_flex .news_section .news {
     padding-left: 20px; }

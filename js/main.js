@@ -279,6 +279,42 @@ var vac = true;
 
 
 
+var expanded = false;
+
+function showCheckboxes() {
+  var checkboxes = document.getElementById("checkboxes");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+};
+
+
+var expanded = false;
+
+function showCheckboxes_2() {
+  var checkboxes = document.getElementById("checkboxes_2");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+};
+
+
+
+
+
+
+
+
+
+
 
  
 
