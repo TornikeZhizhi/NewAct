@@ -332,11 +332,36 @@ body {
   .subscribe_box .subscribe_text {
     margin: 5px 0 20px; }
   .subscribe_box form {
-    position: relative; }
+    position: relative;
+    border: 1px solid #E6E6E6; }
+  .subscribe_box .sub-bottom {
+    display: flex;
+    justify-content: space-between; }
+    .subscribe_box .sub-bottom select {
+      width: 100%;
+      background-image: url(../../images/arrow_down.svg);
+      background-repeat: no-repeat;
+      padding: 8px 14px;
+      background-position-x: 95%;
+      background-position-y: center;
+      cursor: pointer; }
+  .subscribe_box .top-form {
+    border: unset; }
+    .subscribe_box .top-form input {
+      border-bottom: 1px solid #17004C; }
+  .subscribe_box .sub-top {
+    display: flex;
+    justify-content: space-between; }
+    .subscribe_box .sub-top select {
+      width: 100%;
+      background-image: url(../../images/arrow_down.svg);
+      background-repeat: no-repeat;
+      padding: 8px 14px;
+      background-position-x: 95%;
+      background-position-y: center;
+      cursor: pointer;
+      background-color: transparent; }
   .subscribe_box button {
-    position: absolute;
-    top: -3px;
-    right: 0;
     z-index: 10;
     background-color: #17004C;
     border: none;
@@ -346,7 +371,7 @@ body {
   .subscribe_box input {
     color: #17004C;
     padding: 5px 5px 11px 15px;
-    border-bottom: 1px solid #17004C;
+    border-bottom: 1px solid #E6E6E6;
     width: 100%;
     background-color: transparent; }
     .subscribe_box input::placeholder {

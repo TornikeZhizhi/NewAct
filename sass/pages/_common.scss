@@ -251,6 +251,9 @@
 
    
 }
+
+
+
 .subscribe_box {
 
     max-width: 450px;
@@ -260,12 +263,54 @@
     }
     form {
         position: relative;
+        border: 1px solid #E6E6E6;
+    }
+
+    .sub-bottom{
+        display: flex;
+        justify-content: space-between;
+
+        select{
+            width: 100%;
+            background-image: url(../../images/arrow_down.svg);
+            background-repeat: no-repeat;
+            padding: 8px 14px;
+            background-position-x: 95%;
+            background-position-y: center;
+            cursor: pointer;
+        }
+    }
+
+
+    .top-form{
+        border: unset;
+
+        input{
+            border-bottom: 1px solid #17004C;
+        }
+        
+    }
+
+    .sub-top{
+        
+        display: flex;
+        justify-content: space-between;
+
+        select{
+            width: 100%;
+            background-image: url(../../images/arrow_down.svg);
+            background-repeat: no-repeat;
+            padding: 8px 14px;
+            background-position-x: 95%;
+            background-position-y: center;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        
     }
 
 button {
-      position: absolute;
-    top: -3px;
-    right: 0;
+  
     z-index: 10;
     background-color: #17004C;
     border: none;
@@ -276,7 +321,7 @@ button {
     input{
         color: $text-color;
         padding: 5px 5px 11px 15px;
-        border-bottom: 1px solid $text-color;
+        border-bottom: 1px solid #E6E6E6;
         width: 100%;
         background-color: transparent;
 
