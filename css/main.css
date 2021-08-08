@@ -959,7 +959,7 @@ body {
     .d_flex .news_section .news_date {
       display: flex;
       justify-content: space-between;
-      padding: 30px; }
+      padding: 0 30px 15px; }
     .d_flex .news_section .news_img {
       position: relative; }
       .d_flex .news_section .news_img .news_main_img img {
