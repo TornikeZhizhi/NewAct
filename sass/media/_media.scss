@@ -273,7 +273,7 @@
 }
 
 .insights_subscribe .subscribe_box .subscribe_form {
-    width: 90%;
+    width: 100%;
 }
 
 .mobile_nav li a {
@@ -512,6 +512,8 @@ height: 200px;
 
 .main_news_img {
     order: -1;
+    width: 100%;
+    overflow: hidden;
 }
 .news_container {
     display: flex;

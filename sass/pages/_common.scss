@@ -697,17 +697,12 @@ font-weight: bold;
     margin: 20px auto 70px !important;
 }
 
-.news_container .main_news_text p img{
-    width: 100% !important;
-}
-
-
 .main_title h1 {
     font-size: 29px !important;
 }
 
 .d_flex .news_section .news .main_title{
-    min-height:180px;
+    min-height:115px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -778,6 +773,9 @@ font-weight: bold;
   }
   
  
+  .news_container .main_news_text p img {
+    width: unset !important;
+}
 
 
 
