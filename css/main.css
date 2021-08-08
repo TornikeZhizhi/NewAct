@@ -341,7 +341,7 @@ body {
       border: 1px solid #E6E6E6; }
     .subscribe_box .sub-bottom select {
       width: 100%;
-      background-image: url(../images/arrow_down.svg);
+      background-image: url("https://act-global.com/themes/act/assets/images/arrow_down.svg");
       background-repeat: no-repeat;
       padding: 8px 14px;
       background-position-x: 95%;
@@ -360,7 +360,7 @@ body {
     width: 100%; }
     .subscribe_box .sub-top select {
       width: 100%;
-      background-image: url(../../images/arrow_down.svg);
+      background-image: url("https://act-global.com/themes/act/assets/images/arrow_down.svg");
       background-repeat: no-repeat;
       padding: 8px 14px;
       background-position-x: 95%;
@@ -879,7 +879,7 @@ body {
         border: 1px solid white; }
         .insights_subscribe .subscribe_box .bg_form .multiselect select {
           color: white;
-          background-image: url(../../images/arrow_down_white.svg); }
+          background-image: url("https://act-global.com/themes/act/assets/images/arrow_down_white.svg"); }
         .insights_subscribe .subscribe_box .bg_form .multiselect label {
           color: white; }
       .insights_subscribe .subscribe_box .bg_form button {
@@ -2370,7 +2370,7 @@ s
           right: -26px;
           width: 22px;
           height: 22px;
-          background-image: url(../images/arrow_down.svg);
+          background-image: url("https://act-global.com/themes/act/assets/images/arrow_down.svg");
           background-repeat: no-repeat;
           background-position: center center;
           background-size: 12px;
