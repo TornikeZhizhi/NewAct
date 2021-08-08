@@ -341,7 +341,7 @@ body {
       border: 1px solid #E6E6E6; }
     .subscribe_box .sub-bottom select {
       width: 100%;
-      background-image: url(../../images/arrow_down.svg);
+      background-image: url(../images/arrow_down.svg);
       background-repeat: no-repeat;
       padding: 8px 14px;
       background-position-x: 95%;
@@ -630,14 +630,11 @@ body {
   font-size: 29px !important; }
 
 .d_flex .news_section .news .main_title {
-  min-height: 115px; }
+  min-height: 120px; }
 
 @media only screen and (max-width: 992px) {
   .d_flex .news_section .news .main_title {
     min-height: unset !important; } }
-.product_section .main_title {
-  text-align: center; }
-
 .multiselect {
   width: 100%;
   cursor: pointer;
@@ -950,8 +947,9 @@ body {
       position: relative;
       padding-left: 30px; }
       .d_flex .news_section .news .bold {
-        max-height: 70px;
-        overflow: hidden; }
+        min-height: 70px;
+        overflow: hidden;
+        max-height: 72px; }
       .d_flex .news_section .news .share {
         position: absolute;
         bottom: -14px; }

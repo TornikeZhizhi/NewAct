@@ -276,7 +276,7 @@
 
         select{
             width: 100%;
-            background-image: url(../../images/arrow_down.svg);
+            background-image: url(../images/arrow_down.svg);
             background-repeat: no-repeat;
             padding: 8px 14px;
             background-position-x: 95%;
@@ -702,18 +702,13 @@ font-weight: bold;
 }
 
 .d_flex .news_section .news .main_title{
-    min-height:115px;
+    min-height:120px;
 }
 
 @media only screen and (max-width: 992px) {
     .d_flex .news_section .news .main_title{
         min-height:unset !important;
     }    
-}
-
-
-.product_section .main_title {
-    text-align: center;
 }
 
 

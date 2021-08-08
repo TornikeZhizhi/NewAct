@@ -270,8 +270,9 @@
 
             
             .bold{
-                max-height: 70px;
+                min-height: 70px;
                 overflow: hidden;
+                max-height: 72px;
             }
             
 
