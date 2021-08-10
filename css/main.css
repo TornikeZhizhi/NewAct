@@ -327,7 +327,7 @@ body {
   background-size: cover; }
 
 .subscribe_box {
-  max-width: 570px;
+  max-width: 700px;
   width: 100%; }
   .subscribe_box .subscribe_text {
     margin: 5px 0 20px; }
@@ -676,9 +676,6 @@ body {
   padding: 2px 12px;
   cursor: pointer; }
 
-.news_container .main_news_text p img {
-  width: unset !important; }
-
 .slider_content {
   width: 100%;
   position: relative; }
@@ -839,8 +836,6 @@ body {
     padding-top: 30px;
     color: #17004C; }
     .news_container .main_news_text h4 {
-      text-align: inherit !important; }
-    .news_container .main_news_text p {
       text-align: inherit !important; }
 
 .main_news_text {
