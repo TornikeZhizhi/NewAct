@@ -341,11 +341,7 @@ body {
       border: 1px solid #E6E6E6; }
     .subscribe_box .sub-bottom select {
       width: 100%;
-      background-image: url("https://act-global.com/themes/act/assets/images/arrow_down.svg");
-      background-repeat: no-repeat;
       padding: 8px 14px;
-      background-position-x: 95%;
-      background-position-y: center;
       cursor: pointer; }
   .subscribe_box .top-form {
     border: unset;
@@ -353,14 +349,13 @@ body {
     .subscribe_box .top-form input {
       border: 1px solid #17004C; }
     .subscribe_box .top-form .sub-form-input {
-      width: 100%; }
+      width: 90%; }
   .subscribe_box .sub-top {
     display: flex;
     justify-content: space-between;
     width: 100%; }
     .subscribe_box .sub-top select {
       width: 100%;
-      background-image: url("https://act-global.com/themes/act/assets/images/arrow_down.svg");
       background-repeat: no-repeat;
       padding: 8px 14px;
       background-position-x: 95%;
@@ -676,6 +671,16 @@ body {
   padding: 2px 12px;
   cursor: pointer; }
 
+.select-arrow {
+  position: absolute;
+  top: 8px;
+  right: 15px; }
+  .select-arrow img {
+    transition: .3s; }
+
+.rotate {
+  transform: rotate(180deg); }
+
 .slider_content {
   width: 100%;
   position: relative; }
@@ -873,8 +878,7 @@ body {
       .insights_subscribe .subscribe_box .bg_form .multiselect {
         border: 1px solid white; }
         .insights_subscribe .subscribe_box .bg_form .multiselect select {
-          color: white;
-          background-image: url("https://act-global.com/themes/act/assets/images/arrow_down_white.svg"); }
+          color: white; }
         .insights_subscribe .subscribe_box .bg_form .multiselect label {
           color: white; }
       .insights_subscribe .subscribe_box .bg_form button {

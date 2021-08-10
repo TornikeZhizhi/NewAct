@@ -253,6 +253,13 @@ $(document).ready(function(){
 });
 
 
+$(".multiselect").on("click", function () {
+	$(this)
+	  .find($("img"))
+	  .toggleClass("rotate");
+  });
+
+
 
 
 $(document).on('change','.up', function(){
@@ -305,6 +312,9 @@ function showCheckboxes_2() {
     expanded = false;
   }
 };
+
+
+
 
 
 

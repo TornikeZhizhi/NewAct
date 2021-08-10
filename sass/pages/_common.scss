@@ -275,12 +275,8 @@
         }
 
         select{
-            width: 100%;
-            background-image: url('https://act-global.com/themes/act/assets/images/arrow_down.svg');
-            background-repeat: no-repeat;
+            width: 100%;    
             padding: 8px 14px;
-            background-position-x: 95%;
-            background-position-y: center;
             cursor: pointer;
         }
     }
@@ -295,7 +291,7 @@
         }
 
         .sub-form-input{
-            width:100%;
+            width:90%;
         }
         
     }
@@ -303,20 +299,19 @@
 
 
     .sub-top{
-        
         display: flex;
         justify-content: space-between;
         width: 100%;
 
         select{
             width: 100%;
-            background-image: url('https://act-global.com/themes/act/assets/images/arrow_down.svg');
             background-repeat: no-repeat;
             padding: 8px 14px;
             background-position-x: 95%;
             background-position-y: center;
             cursor: pointer;
             background-color: transparent;
+
         }
         
     }
@@ -766,8 +761,23 @@ font-weight: bold;
     padding: 2px 12px;
     cursor: pointer;
   }
+
+
+  .select-arrow{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+
+    img{
+        transition: .3s;
+    }
+  }
   
- 
+  
+  .rotate{
+    transform: rotate(180deg);
+
+}
 
 
 
