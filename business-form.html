@@ -372,56 +372,127 @@
 </header>
 
 
-    <div class="form_container">
+    <div class="form_container business_form">
         <form action="" id="main_form ">
 
             <div class="main_title unborder">
-                <span class="bold">Apply Now</span>
+                <span class="bold">Business Form</span>
             </div>
 
             <div class="text ">
-                <input type="text" placeholder="Project Manager" disabled>
-              
+                <input type="text" placeholder="Company Name" required >
+
+                <div class="error_text">
+                    <span>The field is required.</span>
+                </div>
+            </div>
+
+         
+            <div class="multiselect  form-select">
+                <div class="selectBox" onclick="showCheckboxes_3()">
+                    <select >
+                    <option>Select an option</option>
+                    </select>
+
+                    <div class="select-arrow">
+                    <img src="https://act-global.com/themes/act/assets/images/arrow_down.svg" alt="">
+                    </div>
+
+
+                    <div class="overSelect"></div>
+                </div>
+                <div id="checkboxes_3">
+                    <label for="one_3">
+                    <input type="checkbox" id="one_3" />First checkbox</label>
+                    <label for="two_3">
+                    <input type="checkbox" id="two_3" />Second checkbox</label>
+                    <label for="three_3">
+                    <input type="checkbox" id="three_3" />Third checkbox</label>
+                </div>
+            </div>
+            
+
+            <div class="text">
+                <input type="text"  placeholder="Country" required>
+
+                <div class="error_text">
+                    <span>The field is required.</span>
+                </div>
+            </div>
+
+            <div class="text">
+                <input type="text"  placeholder="City" required>
+
+                <div class="error_text">
+                    <span>The field is required.</span>
+                </div>
+            </div>
+
+            <div class="text">
+                <input type="text"  placeholder="Address" required>
+
+                <div class="error_text">
+                    <span>The field is required.</span>
+                </div>
+            </div>
+
+            <div class="text">
+                <input type="text"  placeholder="Website" required>
+
+                <div class="error_text">
+                    <span>The field is required.</span>
+                </div>
+            </div>
+
+
+            <div class="d-flex">
+                <div class="text ">
+                    <input type="text" placeholder="Name" required>
+    
+                    <div class="error_text">
+                        <span>The field is required.</span>
+                    </div>
+                </div>
+
+                <div class="text ">
+                    <input type="text" placeholder="Surname" required>
+    
+                    <div class="error_text">
+                        <span>The field is required.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text">
+                <input type="text"  placeholder="Current Occupation" required>
+
+                <div class="error_text">
+                    <span>The field is required.</span>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="text">
+                    <input type="number" placeholder="Phone" required>
+    
+                    <div class="error_text">
+                        <span>The field is required.</span>
+                    </div>
+                </div>
+
+                <div class="text ">
+                    <input type="email" placeholder="Mail" required>
+    
+                    <div class="error_text">
+                        <span>The field is required.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <textarea name="" id="" placeholder="Type your message here" ></textarea>
              
-            </div>
-
-            <div class="text">
-                <input type="text"  placeholder="Full Time" disabled>
-            </div>
-
-            <div class="text ">
-                <input type="text" placeholder="Full name" required>
-
-				<div class="error_text">
-					<span>The field is required.</span>
-				</div>
-            </div>
-
-            <div class="text">
-                <input type="number" placeholder="Phone" required>
-
-				<div class="error_text">
-					<span>The field is required.</span>
-				</div>
-            </div>
-
-			<div class="form-group">
-				<div class="input-group">
-				  <input type="text" class="form-control" readonly placeholder="File Upload" required>
-					<div class="input-group-btn">
-						<span class="fileUpload btn btn-success">
-							<span class="upl" id="upload">Browse</span>
-							<input type="file" class="upload up" id="up" onchange="readURL(this);" placeholder="" />
-						</span>
-					</div>
-				 </div>
-			</div>
-
-
-            <div class="form_text">
-                <span>
-                    * Your resume submitted to ACT may contain personal data as required by the Law of Georgia on Personal Data Protection, including data of a special category. Please be informed that your personal data will be processed by ACT for your contractual purposes, including for the purposes of deciding to establish an employment relationship. Also, the resume you submitted may not be considered for this vacancy and may be reserved for other relevant vacancies for a period not exceeding 3 years. If you agree with the above, please send us your resume.
-                </span>
+               
             </div>
 
            
@@ -434,13 +505,6 @@
             
         </form>
     </div>
-
-
-
-
-
-
-
 
   <footer class="footer">
     <div class="footer_wrapper">

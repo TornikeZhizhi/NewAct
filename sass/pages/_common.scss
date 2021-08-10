@@ -673,6 +673,24 @@ content: "";
 }
 
 
+.error{
+
+    input{
+        border: 1px solid #FFB4BB !important;
+    }
+
+    .error_text{
+        width: 65%;
+        text-align: left;
+        margin: 0 auto;
+        color: #FF243A;
+        font-size: 14px;              
+        padding-bottom: 8px;
+        display: block !important;
+    }
+}
+
+
 
 .main_large_title {
     font-size: 75px !important;
@@ -714,6 +732,29 @@ font-weight: bold;
     color: #17004C;
     border: 1px solid #17004C;
 }
+
+.form-select{
+    width: 70%;
+    margin: 5px auto;
+    color: #17004C;
+    border: 1px solid #D1D1D1;
+        
+    select{
+        padding: 15px;
+    }
+
+    .select-arrow{
+        top:13px;
+    }
+
+    #checkboxes_3{
+        display: none;
+        text-align: left;
+    }
+
+   
+    
+}
   
   .selectBox {
     position: relative;
@@ -747,7 +788,7 @@ font-weight: bold;
   }
 
 
-  #checkboxes_2 {
+  #checkboxes_2, #checkboxes_3 {
     display: none;
 
     input{
@@ -757,6 +798,12 @@ font-weight: bold;
   }
   
   #checkboxes_2 label {
+    display: block;
+    padding: 2px 12px;
+    cursor: pointer;
+  }
+
+  #checkboxes_3 label {
     display: block;
     padding: 2px 12px;
     cursor: pointer;
@@ -779,6 +826,40 @@ font-weight: bold;
 
 }
 
+
+.business_form{
+
+    input::placeholder{
+        color: #17004C;
+    }
+
+    textarea{
+        width: 70%;
+        border: 1px solid #D1D1D1;
+        max-height: 150px;
+        padding: 15px;
+        min-height: 130px;
+        resize: none;
+        margin-top: 10px;
+    }
+
+    .d-flex{
+        margin: 0 auto;
+        width: 70%;
+        justify-content: space-between;
+
+        .text{
+            width: 49%;
+            input{
+                width: 100% !important;
+            }
+
+            
+        }
+
+
+    }
+}
 
 
 

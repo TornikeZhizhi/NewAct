@@ -79,6 +79,31 @@
 }
 @media only screen and (max-width: 992px) {
 
+    .business_form{
+
+        .form-select {
+            width: 100%;
+
+        label input{
+                width:unset !important;
+            }
+
+        }
+
+        .d-flex{
+            flex-direction: column;
+            width: 100%;
+
+            .text {
+                width: 100%;
+            }
+        }
+
+        textarea{
+            width: 100%;
+        }
+    }
+
     .main_news_text {
         p {
             img {

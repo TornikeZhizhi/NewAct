@@ -314,19 +314,19 @@ function showCheckboxes_2() {
 };
 
 
+function showCheckboxes_3() {
+  var checkboxes = document.getElementById("checkboxes_3");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+};
 
 
 
 
 
 
-
-
-
-
-
-
- 
-
-
-  
