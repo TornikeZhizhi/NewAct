@@ -630,7 +630,7 @@ body {
 
 .team_member_container .biography {
   width: 85%;
-  margin: 20px auto 70px !important; }
+  margin: 0 auto 70px !important; }
 
 .main_title h1 {
   font-size: 29px !important; }
@@ -728,6 +728,35 @@ body {
     width: 49%; }
     .business_form .d-flex .text input {
       width: 100% !important; }
+
+.project-container .insight_tab {
+  position: relative;
+  padding-bottom: 80px;
+  border: 1px solid #17004C;
+  margin-bottom: 20px; }
+  .project-container .insight_tab:hover .bottom-text {
+    color: white;
+    border-top: 1px solid white; }
+.project-container .insight_tab_wrapper .insight_tab .insight_tab_title {
+  margin-top: 20px;
+  min-height: 100px;
+  overflow: hidden; }
+.project-container .insight_tab_text {
+  word-break: break-word;
+  min-height: 100px;
+  max-height: 100px;
+  overflow: hidden;
+  line-height: 20px; }
+.project-container .bottom-text {
+  width: 100%;
+  position: absolute;
+  padding: 20px 30px;
+  border-top: 1px solid #17004C;
+  bottom: 0;
+  left: 0px;
+  color: #17004C; }
+  .project-container .bottom-text .bold {
+    font-weight: bold; }
 
 .slider_content {
   width: 100%;
@@ -884,7 +913,8 @@ body {
           transform: translate(-12px, 11px);
           background-color: #17004C; }
   .news_container .main_news_img img {
-    max-height: 440px; }
+    max-height: 440px;
+    width: 100%; }
   .news_container .main_news_text {
     padding-top: 30px;
     color: #17004C; }
@@ -2941,7 +2971,14 @@ s
     padding: 3%; }
 
   .slider_content > div {
-    height: 60vh; } }
+    height: 60vh; }
+
+  .project-container {
+    margin-top: 30px; }
+    .project-container .insight_tab {
+      margin-bottom: 20px; }
+      .project-container .insight_tab .insight_tab_title {
+        min-height: unset !important; } }
 @media only screen and (max-width: 576px) {
   .pagination a {
     padding: 4px 12px; }
@@ -2965,6 +3002,10 @@ s
     padding: 20px;
     width: 100%;
     transition: .3s;
-    background-color: #fff; } }
+    background-color: #fff; }
+
+  .project-container .insight_tab {
+    padding-bottom: 80px;
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

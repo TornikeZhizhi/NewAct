@@ -707,7 +707,7 @@ font-weight: bold;
 
 .team_member_container .biography {
     width: 85%;
-    margin: 20px auto 70px !important;
+    margin: 0 auto 70px !important;
 }
 
 .main_title h1 {
@@ -859,8 +859,61 @@ font-weight: bold;
 
 
     }
+
+   
 }
 
 
+
+.project-container{
+
+    .insight_tab{
+        position: relative;
+        padding-bottom: 80px;
+        border: 1px solid #17004C;
+        margin-bottom: 20px;
+
+        &:hover{
+            .bottom-text{
+                color: white;
+                border-top: 1px solid white;
+            }
+        }
+    }
+    
+    .insight_tab_wrapper .insight_tab .insight_tab_title{
+        margin-top: 20px;
+        min-height: 100px;
+        overflow: hidden;
+    }
+
+    .insight_tab_text {
+        word-break: break-word;
+        min-height: 100px;
+        max-height: 100px;
+        overflow: hidden;
+        line-height: 20px;
+
+        
+    }
+
+    .bottom-text{
+        width: 100%;
+        position: absolute;
+        padding: 20px 30px;
+        border-top: 1px solid #17004C;
+        bottom: 0;
+        left: 0px;
+        color: #17004C;
+
+        .bold{
+            font-weight: bold;
+        }
+       
+    }
+
+  
+    
+}
 
 

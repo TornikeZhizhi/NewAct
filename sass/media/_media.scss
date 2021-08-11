@@ -687,6 +687,19 @@ height: 100%;
 
 
 
+    .project-container{
+        margin-top: 30px;
+
+        .insight_tab{
+            margin-bottom: 20px;
+
+            .insight_tab_title {
+              min-height: unset !important;
+            }
+        }
+    }
+
+
 
 }
 
@@ -723,6 +736,14 @@ height: 100%;
     width: 100%;
     transition: .3s;
     background-color: #fff;
+}
+
+
+.project-container{
+    .insight_tab{
+        padding-bottom: 80px;
+        margin-bottom: 20px;
+    }
 }
 
 }
