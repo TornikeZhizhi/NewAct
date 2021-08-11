@@ -809,3 +809,121 @@
             height: unset;
         }
     }
+
+
+    .project-page{
+        .common_share_boxes {
+            margin-top: 0;
+            margin-left: 20px;
+
+            .share_box_inner{
+                background: #F1F1F1;
+                max-width: unset;
+                top: -110px;
+                left:80%;
+
+
+                span:before{
+                    display: none;
+                }
+
+                &:after {
+                    content: "";
+                    background-color: #F1F1F1;
+                    top: calc(100% - 7px);
+                    left: 55px;
+                   
+                }
+            
+            }
+        }
+
+        .project-page-title{
+            
+            margin: 15px 0 ;
+
+
+            h3{
+                font-size: 28px;
+                font-weight: bold;
+                color: #17004C;
+            }
+          
+        }
+
+        .nav-tabs{
+            margin-left: unset;
+            border-bottom:unset;
+            color: #17004C;
+
+            .nav-tab-li{
+                color: #17004C;
+                padding-right: 10px;
+            }
+
+            .nav-button{
+                padding: 5px 10px;
+                background-color: white;
+                border: 1px solid #17004C;
+                border-radius: 0;
+                outline: none;
+
+            }
+
+            .active{
+                background-color: #17004C;
+                color: white;
+               
+            }
+        }
+
+
+        .tab-content{
+            display: flex;
+            margin-top: 15px;
+
+            .tab-left{
+                position: relative;
+                padding-right: 15px;
+
+                .tab-text{
+                    margin-bottom: 20px;
+                }
+            }
+
+            .tab-left:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0px;
+                width: 4px;
+                height: 100%;
+                background-color: #17004C;
+            }
+
+
+            .tab-right{
+                width: 80%;
+                padding: 30px 20px;
+
+
+                .tab-right-text{
+                    padding: 10px 0;
+                }
+
+                .bold{
+                    font-weight: bold;
+                }
+            }
+            
+            
+            
+        }
+
+      
+        .page-textbox{
+            margin-top: 30px;
+        }
+
+    }

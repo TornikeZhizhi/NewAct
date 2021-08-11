@@ -1377,6 +1377,70 @@ s
 @media only screen and (max-width: 992px) {
   .team_member_container .team_slider2 .slick-slide {
     height: unset; } }
+.project-page .common_share_boxes {
+  margin-top: 0;
+  margin-left: 20px; }
+  .project-page .common_share_boxes .share_box_inner {
+    background: #F1F1F1;
+    max-width: unset;
+    top: -110px;
+    left: 80%; }
+    .project-page .common_share_boxes .share_box_inner span:before {
+      display: none; }
+    .project-page .common_share_boxes .share_box_inner:after {
+      content: "";
+      background-color: #F1F1F1;
+      top: calc(100% - 7px);
+      left: 55px; }
+.project-page .project-page-title {
+  margin: 15px 0; }
+  .project-page .project-page-title h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #17004C; }
+.project-page .nav-tabs {
+  margin-left: unset;
+  border-bottom: unset;
+  color: #17004C; }
+  .project-page .nav-tabs .nav-tab-li {
+    color: #17004C;
+    padding-right: 10px; }
+  .project-page .nav-tabs .nav-button {
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #17004C;
+    border-radius: 0;
+    outline: none; }
+  .project-page .nav-tabs .active {
+    background-color: #17004C;
+    color: white; }
+.project-page .tab-content {
+  display: flex;
+  margin-top: 15px; }
+  .project-page .tab-content .tab-left {
+    position: relative;
+    padding-right: 15px; }
+    .project-page .tab-content .tab-left .tab-text {
+      margin-bottom: 20px; }
+  .project-page .tab-content .tab-left:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    width: 4px;
+    height: 100%;
+    background-color: #17004C; }
+  .project-page .tab-content .tab-right {
+    width: 80%;
+    padding: 30px 20px; }
+    .project-page .tab-content .tab-right .tab-right-text {
+      padding: 10px 0; }
+    .project-page .tab-content .tab-right .bold {
+      font-weight: bold; }
+.project-page .page-textbox {
+  margin-top: 30px; }
+
 .team_container {
   position: relative;
   z-index: 10;
