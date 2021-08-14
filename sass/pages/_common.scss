@@ -167,6 +167,12 @@
             }
         }
 
+        .case_studies_img{
+           img{
+            height: 150px;
+           }
+        }
+
         .share_img {
             transition: all .3s
         }
@@ -223,9 +229,14 @@
 .common_share_boxes {
     display: flex;
     margin-top: 15px;
+    align-items: center;
 
     &>div:first-child{
-        margin-right:15px   ;
+        margin-right:5px;
+
+        svg{
+            margin-right: 5px;
+        }
     }
 }
 
@@ -864,8 +875,20 @@ font-weight: bold;
 }
 
 
+.common_share_boxes{
+    svg{
+        width: 28px;
+    }
+}
+
+
+
+
 
 .project-container{
+    padding-top: 20px !important;
+
+
 
     .insight_tab{
         position: relative;
@@ -879,6 +902,14 @@ font-weight: bold;
                 border-top: 1px solid white;
             }
         }
+    }
+
+    .product_bottom{
+        padding-bottom: unset!important;
+    }
+
+    .case_studies{
+        padding-bottom: 20px !important;
     }
     
     .insight_tab_wrapper .insight_tab .insight_tab_title{

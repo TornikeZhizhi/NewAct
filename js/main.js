@@ -68,6 +68,14 @@ $(document).ready(function(){
 	 	$(".language_container").toggleClass("active")
 	 })
 
+
+	 $(".language_dropdown").click(function(e){
+		e.preventDefault()
+		e.stopPropagation()
+
+		$("span").toggleClass("disabled")
+	})
+
 $(".language_dropdown").click(function(){
 
 $(".nav_dropdown").removeClass("active")

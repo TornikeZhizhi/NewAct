@@ -239,34 +239,27 @@
 			<div class="language_bar">
 
 				<div class="language_dropdown">
-					<img src="images/world.svg">
-					<span>Eng</span>
-					<img class="language_dropdown_img" src="images/drop-down-arrow.svg">
+					<img src="https://act-global.com/themes/act/assets/images/world.svg" alt="world icon">
+					<span>
+										eng
+								</span>
+					<img class="language_dropdown_img" src="https://act-global.com/themes/act/assets/images/drop-down-arrow.svg" alt="drop down arrow">
 				</div>
-
 				<div class="language_container">
-
-					<div class="language_container_title">
-						<span>Choose your country & Language</span>
-					</div>
-					<div>
-						<select>
-							<option disabled>Select country</option>
-							<option>Georgia</option>
-							<option>Select country</option>
-							<option>Select country</option>
-						</select>
-					</div>
-					<div>
-						<select>
-							<option disabled>Select language</option>
-							<option>Italy</option>
-							<option>Select language</option>
-							<option>Select language</option>
-						</select>
-					</div>
 					<div class="language_link">
-						<a href="">Continue</a>
+						<form>
+											<a href="https://act-global.com/ka/main/georgia">Geo</a>
+											<a href="https://act-global.com/en/main/georgia">Eng</a>
+											<select name="language" data-request="onChange" hidden="">
+														<option value="ka">Geo</option>
+														<option selected="" value="en">Eng</option>
+												</select>
+							<select name="country" data-request="onChange" hidden="">
+														<option selected="" value="georgia">Georgia</option>
+														<option value="azerbaijan">Azerbaijan</option>
+														<option value="kazakhstan">Kazakhstan</option>
+												</select>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -401,7 +394,7 @@
         </div>
 
         
-        <div class="main_title slider_title">
+        <div class="main_title center slider_title">
             <span class="bold">Leaders</span>
             <span>ACT</span>
         </div>

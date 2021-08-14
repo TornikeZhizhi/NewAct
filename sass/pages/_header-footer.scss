@@ -25,6 +25,7 @@
 		    flex-grow: 1;
 		    	padding: 20px 10px;
     justify-content: flex-end;
+	position: relative;
 
     sup {
 			font-size: 25px;
@@ -194,7 +195,7 @@
 		}
 
 		.header_search {
-			margin: 0 15px 0 30px;
+			margin: 0 95px 0 30px;
 			cursor: pointer;
 		}
 
@@ -202,22 +203,37 @@
 	}
 }
 .language_bar {
-			position: relative;
+
+			border: 1px solid #D1D1D1;
+			position: absolute;
+			border-radius: 20px;
+			box-shadow: 0px 0px 0px 5px #00000009;
+			top: 25px;
+
+
+
 			.language_dropdown {
 
 				/*border: 1px solid $border-color;*/
-				border-radius: 20px;
+				
 				padding: 6px 9px 7px 6px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				/*background: #fff;*/
 				cursor: pointer;
+				
 
 				span {
 					margin: 0 10px;
 					@include family(text);
 					font-size: 16px;
+				}
+
+				.disabled{
+					opacity: .5;
+					pointer-events: none;
+					cursor: default;
 				}
 
 				.language_dropdown_img {
@@ -226,45 +242,52 @@
 				}
 			}
 
+			.disable{
+				opacity: .5;
+
+			}
+
 
 			.language_container {
-				position: absolute;
-    top: 59px;
-    right: -20px;
-    z-index: 10;
-    width: 100%;
-    min-width: 164px;
-    padding: 25px 19px;
-    background-color: #F1F1F1;
-    visibility: hidden;
-    opacity: 0;
-    transition: all .3s;
-    box-shadow: -2px 3px 5px 0px #00000017;
-    border: 1px solid #17004C;
+				border-radius: 20px;
+				z-index: 10;
+				width: 100%;
+				background-color: #F1F1F1;
+				visibility: hidden;
+				opacity: 0;
+				transition: all .3s;
+				// box-shadow: -2px 3px 5px 0px #00000017;
+				display: none;
+				
 					
 
-				&:after{
-					  position: absolute;
-				    top: -2px;
-				    right: 56px;
-				    content: "";
-				    width: 10px;
-				    height: 10px;
-   				    transform: rotate(45deg) translateX(-50%);
-				    border-left: 1px solid #17004C;
-				    border-top: 1px solid #17004C;
-				    background-color: #F1F1F1;
-				    z-index: 100;
-				    transition: all .3s;
-				}
+				// &:after{
+				// 	  position: absolute;
+				//     top: -2px;
+				//     right: 56px;
+				//     content: "";
+				//     width: 10px;
+				//     height: 10px;
+   				//     transform: rotate(45deg) translateX(-50%);
+				//     border-left: 1px solid #17004C;
+				//     border-top: 1px solid #17004C;
+				//     background-color: #F1F1F1;
+				//     z-index: 100;
+				//     transition: all .3s;
+				// }
 
 				&.active {
 					   opacity: 1;
 					   visibility: visible; 
+					   display: block;
 				}
 
 				.language_link {
 					width: 100%;
+
+					form{
+						border-radius: 20px;
+					}
 
 					a,button {
 					
@@ -660,58 +683,44 @@
     .language_bar {
     position: relative;
     max-width: 100px;
-    margin: 25px auto;
+    margin: 25px auto 40px;
 
 
 
-     .language_container {
-    position: absolute;
-    top: 47px;
-    right: unset;
-    transform: translateX(-50%);
-    left: 50%;
-    width: 100%;
-    max-width: 100%;
-    z-index: 10;
-    border: 1px solid $text-color;
-    width: 100%;
-    min-width: 243px;
-    padding: 22px 20px 25px 16px;
-    background-color: #F1F1F1;
-    visibility: hidden;
-    opacity: 0;
-    transition: all .3s;
-    box-shadow: -2px 3px 5px 0px #00000017;
+    .language_container {
+		.language_container {
+			/* position: absolute; */
+			/* top: 47px; */
+			/* right: unset; */
+			/* transform: translateX(-50%); */
+			/* left: 50%; */
+			/* width: 100%; */
+			/* max-width: 100%; */
+			z-index: 10;
+			/* border: 1px solid #17004C; */
+			width: 100%;
+			/* min-width: 243px; */
+			padding: 0px 10px 8px 9px;
+			/* background-color: #F1F1F1; */
+			visibility: hidden;
+			opacity: 0;
+			transition: all .3s;
+			/* box-shadow: -2px 3px 5px 0px #00000017; */
+		}
 
 
-    &.active {
-    	    opacity: 1 !important;
-    visibility: visible !important;
-    }
+		&.active {
+				opacity: 1 !important;
+		visibility: visible !important;
+		}
 
 
- * {
-    font-size: 18px;
-    
-}
+			* {
+				font-size: 18px;
+				
+			}
 
-    &:after{
-    	    position: absolute;
-    top: -3px;
-    left: 50%;
-    transform: translateX(-50%);
-    content: "";
-    width: 15px;
-    height: 15px;
-    transform: rotate(
-45deg
-) translateX(-50%);
-    border-left: 1px solid $text-color;
-    border-top: 1px solid $text-color;
-    background-color: #F1F1F1;
-    z-index: 100;
-    transition: all .3s;
-    }
+  
 }
 }
 
