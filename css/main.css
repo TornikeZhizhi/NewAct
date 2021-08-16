@@ -196,7 +196,7 @@ body {
   display: none; }
 
 .main_title {
-  padding: 30px 0 15px; }
+  padding: 30px 0 5px; }
   .main_title .bold {
     font-family: "Mark-Bold", sans-serif;
    /*  @if($name == "lestudio"){
@@ -915,6 +915,8 @@ body {
       display: flex;
       align-items: center;
       padding-bottom: 15px; }
+      .news_container .main_news .news_info .common_share_boxes {
+        margin-top: unset; }
       .news_container .main_news .news_info span {
         padding: 0 20px;
         position: relative; }
@@ -1033,6 +1035,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    .d_flex .news_section .common_share_boxes {
+      margin-top: 0; }
     .d_flex .news_section .news {
       position: relative;
       padding-left: 30px; }

@@ -20,6 +20,10 @@
             align-items: center;
             padding-bottom: 15px;
 
+            .common_share_boxes{
+                margin-top: unset;
+            }
+
 
             span{
                 padding: 0 20px;
@@ -258,6 +262,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        .common_share_boxes{
+            margin-top: 0;
+        }
 
         .news{
             position: relative;
