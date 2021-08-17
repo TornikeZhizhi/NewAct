@@ -953,7 +953,7 @@ body {
   background: #41AD49;
   position: fixed;
   bottom: 0;
-  z-index: 99; }
+  z-index: 999; }
   .insights_subscribe .subscribe_box {
     max-width: 60%;
     width: 100%;
@@ -1394,6 +1394,38 @@ s
 @media only screen and (max-width: 992px) {
   .team_member_container .team_slider2 .slick-slide {
     height: unset; } }
+.project-page .project-bottom {
+  margin: 40px 0; }
+  .project-page .project-bottom .d-flex {
+    display: flex; }
+    .project-page .project-bottom .d-flex .pb-image {
+      width: 60%;
+      overflow: hidden; }
+      .project-page .project-bottom .d-flex .pb-image img {
+        width: 100%;
+        object-fit: contain; }
+    .project-page .project-bottom .d-flex .pb-text {
+      width: 100%;
+      padding-left: 15px; }
+.project-page .links ul {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 40px;
+  list-style: none;
+  margin-left: unset; }
+  .project-page .links ul a {
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #17004C;
+    border-radius: 0;
+    outline: none;
+    color: 17004C;
+    color: #17004C;
+    transition: .3s;
+    margin-right: 5px; }
+    .project-page .links ul a:hover {
+      color: white;
+      background-color: #17004C; }
 .project-page .common_share_boxes {
   margin-top: 0;
   margin-left: 20px; }
@@ -2102,6 +2134,8 @@ s
       width: 100%; }
       .language_bar .language_container .language_link form {
         border-radius: 20px; }
+        .language_bar .language_container .language_link form a {
+          border-radius: 25px; }
       .language_bar .language_container .language_link a, .language_bar .language_container .language_link button {
         border: none;
         text-align: left;
@@ -2607,6 +2641,14 @@ s
 @media only screen and (max-width: 992px) {
   .latest_news {
     padding: 0; }
+
+  .project-page .project-bottom .d-flex {
+    flex-direction: column; }
+    .project-page .project-bottom .d-flex .pb-image {
+      width: 100%; }
+    .project-page .project-bottom .d-flex .pb-text {
+      padding-left: unset;
+      padding-top: 15px; }
 
   .business_form .form-select {
     width: 100%; }

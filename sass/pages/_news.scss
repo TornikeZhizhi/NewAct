@@ -90,7 +90,7 @@
     background: #41AD49;
     position: fixed;
     bottom: 0;
-    z-index: 99;
+    z-index: 999;
     
 
     .subscribe_box{
@@ -819,6 +819,63 @@
 
 
     .project-page{
+
+        .project-bottom{
+            margin: 40px 0;
+
+
+            .d-flex{
+                display: flex;
+
+                .pb-image{
+
+                    width: 60%;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        object-fit: contain;
+                    }
+
+                }
+
+                .pb-text{
+                    width: 100%;
+                    padding-left: 15px;
+                }
+            }
+
+
+        }
+
+        .links{
+
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                line-height: 40px;
+                list-style: none;
+                margin-left: unset;
+
+                a{
+                    padding: 5px 10px;
+                    background-color: white;
+                    border: 1px solid #17004C;
+                    border-radius: 0;
+                    outline: none;
+                    color: 17004C;
+                    color: #17004C;
+                    transition: .3s;
+                    margin-right:5px;
+    
+                    &:hover{
+                        color: white;
+                        background-color: #17004C;
+                    }
+                }
+            }
+           
+        }
         .common_share_boxes {
             margin-top: 0;
             margin-left: 20px;
