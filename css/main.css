@@ -195,6 +195,10 @@ body {
 .bordered_title:after, .center:after {
   display: none; }
 
+.case_studies_bottom {
+  width: 90%;
+  margin: 0 auto; }
+
 .main_title {
   padding: 30px 0 5px; }
   .main_title .bold {
@@ -1404,13 +1408,13 @@ s
     display: flex; }
     .project-page .project-bottom .d-flex .pb-image {
       width: 60%;
-      overflow: hidden; }
+      overflow: hidden;
+      margin-right: 15px; }
       .project-page .project-bottom .d-flex .pb-image img {
         width: 100%;
         object-fit: contain; }
     .project-page .project-bottom .d-flex .pb-text {
-      width: 100%;
-      padding-left: 15px; }
+      width: 100%; }
 .project-page .links ul {
   display: flex;
   flex-wrap: wrap;
