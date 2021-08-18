@@ -1137,6 +1137,8 @@ s
           flex: 0 0 50%;
           max-width: 50%;
           font-weight: bold; }
+          .team_member_container .team_member .main_news .competence .comp_text span a {
+            color: #17004C; }
       .team_member_container .team_member .main_news .competence h3 {
         font-family: "Mark-Bold", sans-serif;
      /*  @if($name == "lestudio"){
@@ -1213,6 +1215,8 @@ s
         font-family: "Mark-Bold", sans-serif; }
       .team_member_container .competence_mobile span:lang(ka) {
         font-family: "Mark-Bold", sans-serif; }
+      .team_member_container .competence_mobile span a {
+        color: #17004C; }
     .team_member_container .competence_mobile .competence_text {
       display: flex;
       flex-direction: column;
@@ -1576,7 +1580,8 @@ s
   background-color: white; }
 
 .team_member_container .team_member .member_link, .main_news {
-  z-index: 99; }
+  z-index: 99;
+  overflow: hidden; }
 
 .team_container .team_section .team_member .main_news .news_info {
   max-height: 43px;
