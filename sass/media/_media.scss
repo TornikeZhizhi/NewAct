@@ -82,6 +82,16 @@
         padding: 0;
     }
 
+    .project-page{
+        .tab-content{
+            flex-direction: column;
+
+            .tab-right{
+                margin-top: 20px;
+            }
+        }
+    }
+
     .project-page .project-bottom .d-flex {
         flex-direction: column;
 

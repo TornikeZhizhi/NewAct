@@ -2654,6 +2654,11 @@ s
   .latest_news {
     padding: 0; }
 
+  .project-page .tab-content {
+    flex-direction: column; }
+    .project-page .tab-content .tab-right {
+      margin-top: 20px; }
+
   .project-page .project-bottom .d-flex {
     flex-direction: column; }
     .project-page .project-bottom .d-flex .pb-image {
