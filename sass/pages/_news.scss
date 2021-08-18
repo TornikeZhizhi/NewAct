@@ -958,27 +958,20 @@
             .tab-left{
                 position: relative;
                 padding-right: 15px;
+               
 
                 .tab-text{
                     margin-bottom: 20px;
                 }
             }
 
-            .tab-left:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 0px;
-                width: 4px;
-                height: 100%;
-                background-color: #17004C;
-            }
 
 
             .tab-right{
                 width: 80%;
-                padding: 30px 20px;
+                padding:  20px;
+                position: relative;
+                height:fit-content;
 
 
                 .tab-right-text{
@@ -988,6 +981,17 @@
                 .bold{
                     font-weight: bold;
                 }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0px;
+                    width: 4px;
+                    height: 100%;
+                    background-color: #17004C;
+                }
             }
             
             
@@ -996,7 +1000,7 @@
 
       
         .page-textbox{
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
     }

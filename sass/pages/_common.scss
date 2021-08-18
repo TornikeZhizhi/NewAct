@@ -411,8 +411,8 @@ button {
     }
 }
 
-  .share_box_inner {
- position: absolute;
+.share_box_inner {
+    position: absolute;
     top: -99px;
     left: 50%;
     background: #fff;
@@ -423,6 +423,13 @@ button {
     border-radius: 5px;
     line-height: 25px;
     max-width: 110px;
+
+
+    a{
+        span{
+            font-size: 16px !important;
+        }
+    }
 
     span:hover{
         border-bottom: 1px solid #643695;

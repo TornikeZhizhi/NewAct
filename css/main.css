@@ -439,6 +439,8 @@ body {
   border-radius: 5px;
   line-height: 25px;
   max-width: 110px; }
+  .share_box_inner a span {
+    font-size: 16px !important; }
   .share_box_inner span:hover {
     border-bottom: 1px solid #643695;
     cursor: pointer;
@@ -1479,24 +1481,26 @@ s
     padding-right: 15px; }
     .project-page .tab-content .tab-left .tab-text {
       margin-bottom: 20px; }
-  .project-page .tab-content .tab-left:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0px;
-    width: 4px;
-    height: 100%;
-    background-color: #17004C; }
   .project-page .tab-content .tab-right {
     width: 80%;
-    padding: 30px 20px; }
+    padding: 20px;
+    position: relative;
+    height: fit-content; }
     .project-page .tab-content .tab-right .tab-right-text {
       padding: 10px 0; }
     .project-page .tab-content .tab-right .bold {
       font-weight: bold; }
+    .project-page .tab-content .tab-right:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0px;
+      width: 4px;
+      height: 100%;
+      background-color: #17004C; }
 .project-page .page-textbox {
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 .team_container {
   position: relative;
@@ -1584,8 +1588,7 @@ s
   background-color: white; }
 
 .team_member_container .team_member .member_link, .main_news {
-  z-index: 99;
-  overflow: hidden; }
+  z-index: 99; }
 
 .team_container .team_section .team_member .main_news .news_info {
   max-height: 43px;
