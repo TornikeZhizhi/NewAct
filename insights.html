@@ -738,51 +738,64 @@
 
 	<div class="insights_subscribe">
 		<div class="subscribe_box">
+
+			<div class="exit">
+				<img src="images/cclose.svg" alt="">
+			</div>
+
 			<div class="subscribe_box_title">
 				<span>Subscribe</span>
 			</div>
 
 
 			<div class="subscribe_form  bg_form">
-				<form class="top-form">
+				<form data-request="onSubscribe" method="post" id="subscribe" data-request-validate="" data-request-success="success();" data-request-flash="" class="top-form">
 
+                    <div class="sub-form-input">
+                        <input type="email" name="mail" placeholder="Type your e-mail here" id="email">
+                    </div>
 
-					<div class="sub-form-input">
-						<input type="email" name="" placeholder="Type your e-mail here...">
-					</div>
+                    <div class="input-message input-fail">
+                        <span data-validate-for="mail"></span>
+                    </div>
+                    <div class="sub-top">
+                        <div class="multiselect">
+                            <div class="selectBox" onclick="showCheckboxes()">
+                                <select>
+                                    <option>Select an option</option>
+                                </select>
+                                <div class="overSelect"></div>
+                                <div class="select-arrow">
+                                    <img src="https://act-global.com/themes/act/assets/images/arrow_down.svg" alt="arrow_down">
+                                </div>
 
-
-					<div class="sub-top">
-						<div class="multiselect">
-							<div class="selectBox" onclick="showCheckboxes()">
-							  <select>
-								<option>Select an option</option>
-							  </select>
-
-							  <div class="select-arrow">
-								<img src="https://act-global.com/themes/act/assets/images/arrow_down_white.svg" alt="">
-							  </div>
-
-
-
-							  <div class="overSelect"></div>
-							</div>
-							<div id="checkboxes">
-							  <label for="one">
-								<input type="checkbox" id="one" />First checkbox</label>
-							  <label for="two">
-								<input type="checkbox" id="two" />Second checkbox</label>
-							  <label for="three">
-								<input type="checkbox" id="three" />Third checkbox</label>
-							</div>
-						  </div>
-						<button>
-							<img src="images/Group 14.svg">
-						</button>
-					</div>
-					
-				
-				</form>
+                            </div>
+                            <div id="checkboxes">
+                                                                    <label for="one_1">
+                                        <input type="checkbox" name="direction[]" value="1" id="one_1">news_translate
+                                    </label>
+                                                                    <label for="one_2">
+                                        <input type="checkbox" name="direction[]" value="2" id="one_2">research_translate
+                                    </label>
+                                                                    <label for="one_3">
+                                        <input type="checkbox" name="direction[]" value="3" id="one_3">development_translate
+                                    </label>
+                                                                    <label for="one_4">
+                                        <input type="checkbox" name="direction[]" value="4" id="one_4">business_translate
+                                    </label>
+                                                                    <label for="one_5">
+                                        <input type="checkbox" name="direction[]" value="5" id="one_5">management_translate
+                                    </label>
+                                                            </div>
+                        </div>
+                        <button>
+                            <img src="https://act-global.com/themes/act/assets/images/Group 14.svg" alt="group">
+                        </button>
+                    </div>
+                    <div class="input-message input-fail">
+                        <span data-validate-for="direction"></span>
+                    </div>
+                </form>
 
 			</div>
 

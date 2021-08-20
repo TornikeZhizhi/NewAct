@@ -225,15 +225,20 @@ body {
   flex: 0 0 33%;
   transition: all .3s; }
   .insight_tab_wrapper .insight_tab .insight_tab_text {
-    word-break: break-word; }
+    word-break: break-word;
+    min-height: 104px;
+    max-height: 104px;
+    overflow: hidden; }
     .insight_tab_wrapper .insight_tab .insight_tab_text * {
       color: #17004C;
       transition: all .3s; }
   .insight_tab_wrapper .insight_tab .insight_tab_title {
     padding-left: 30px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    min-height: 108px; }
     .insight_tab_wrapper .insight_tab .insight_tab_title h3 {
-      position: relative; }
+      position: relative;
+      min-height: 72px; }
       .insight_tab_wrapper .insight_tab .insight_tab_title h3:after {
         position: absolute;
         top: 50%;
@@ -358,7 +363,7 @@ body {
     .subscribe_box .top-form input {
       border: 1px solid #17004C; }
     .subscribe_box .top-form .sub-form-input {
-      width: 90%; }
+      width: 100%; }
   .subscribe_box .sub-top {
     display: flex;
     justify-content: space-between;
@@ -760,7 +765,13 @@ body {
   .project-container .insight_tab_wrapper .insight_tab .insight_tab_title {
     margin-top: 20px;
     min-height: 100px;
-    overflow: hidden; }
+    overflow: hidden;
+    max-height: 130px; }
+    .project-container .insight_tab_wrapper .insight_tab .insight_tab_title h3 {
+      min-height: 108px; }
+      @media only screen and (max-width: 992px) {
+        .project-container .insight_tab_wrapper .insight_tab .insight_tab_title h3 {
+          min-height: unset; } }
   .project-container .insight_tab_text {
     word-break: break-word;
     min-height: 100px;
@@ -966,7 +977,14 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 30px 10px; }
+    padding: 30px 10px;
+    position: relative; }
+    .insights_subscribe .subscribe_box .exit {
+      position: absolute;
+      top: 35px;
+      right: -25px;
+      cursor: pointer;
+      padding: 3px; }
     .insights_subscribe .subscribe_box input {
       padding: 8px 5px 11px 15px; }
     .insights_subscribe .subscribe_box .subscribe_box_title span {
@@ -1478,11 +1496,12 @@ s
   margin-top: 15px; }
   .project-page .tab-content .tab-left {
     position: relative;
-    padding-right: 15px; }
+    padding-right: 15px;
+    max-width: 70%; }
     .project-page .tab-content .tab-left .tab-text {
       margin-bottom: 20px; }
   .project-page .tab-content .tab-right {
-    width: 80%;
+    min-width: 240px;
     padding: 20px;
     position: relative;
     height: fit-content; }

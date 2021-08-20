@@ -101,6 +101,16 @@
         display: flex;
         justify-content: space-between;
         padding: 30px 10px;
+        position: relative;
+
+        .exit{
+            position: absolute;
+            top: 35px;
+            right: -25px;
+            cursor: pointer;
+            padding: 3px;
+
+        }
 
 
         input{
@@ -954,10 +964,12 @@
         .tab-content{
             display: flex;
             margin-top: 15px;
+           
 
             .tab-left{
                 position: relative;
                 padding-right: 15px;
+                max-width: 70%;
                
 
                 .tab-text{
@@ -968,7 +980,7 @@
 
 
             .tab-right{
-                width: 80%;
+                min-width: 240px;
                 padding:  20px;
                 position: relative;
                 height:fit-content;

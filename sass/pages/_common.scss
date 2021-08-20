@@ -97,10 +97,14 @@
         max-width: 33%;
         flex:0 0 33%;
         transition: all .3s;
+       
 
         .insight_tab_text {
 
             word-break: break-word;
+            min-height: 104px;
+            max-height: 104px;
+            overflow: hidden;
 
             * {
                 color: $text-color;
@@ -111,8 +115,11 @@
         .insight_tab_title {
             padding-left: 30px;
             margin-bottom: 30px;
+            min-height: 108px;
+
             h3 {
             position: relative;
+            min-height: 72px;
 
           
 
@@ -307,7 +314,7 @@
         }
 
         .sub-form-input{
-            width:90%;
+            width:100%;
         }
         
     }
@@ -928,6 +935,15 @@ font-weight: bold;
         margin-top: 20px;
         min-height: 100px;
         overflow: hidden;
+        max-height: 130px;
+
+        h3{
+            min-height: 108px;
+
+            @media only screen and (max-width: 992px){
+                min-height: unset; 
+            }
+        }
     }
 
     .insight_tab_text {
