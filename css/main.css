@@ -771,6 +771,8 @@ body {
       @media only screen and (max-width: 992px) {
         .project-container .insight_tab_wrapper .insight_tab .insight_tab_title h3 {
           min-height: unset; } }
+    .project-container .insight_tab_wrapper .insight_tab .insight_tab_title .common_share_boxes .share_click span {
+      color: #17004C !important; }
   .project-container .insight_tab_text {
     word-break: break-word;
     min-height: 100px;
