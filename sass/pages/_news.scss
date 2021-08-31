@@ -759,6 +759,30 @@
 }
 
 
+.company_button{
+    padding-top: 40px;
+    background-color: #F1F1F1;
+    padding-bottom: 14px;
+    text-align: center;
+
+
+    a{
+        color: $text-color;
+        border: 1px solid $text-color;
+        padding: 15px 25px;
+        font-size: 18px;
+        background: white;
+        transition: .3s;
+
+        &:hover{
+            background: $light-purple;
+            color:white
+        }
+    }
+}
+
+
+
 .search_result{
     transform: unset !important;
     position: unset !important;

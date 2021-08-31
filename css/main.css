@@ -346,8 +346,9 @@ body {
   .subscribe_box .subscribe_text {
     margin: 5px 0 20px; }
   .subscribe_box form {
-    position: relative;
-    border: 1px solid #E6E6E6; }
+    position: relative; }
+    .subscribe_box form input {
+      border: 1px solid #E6E6E6; }
   .subscribe_box .sub-bottom {
     display: flex;
     justify-content: space-between; }
@@ -377,6 +378,7 @@ body {
       cursor: pointer;
       background-color: transparent; }
   .subscribe_box button {
+    height: 41px;
     z-index: 10;
     background-color: #17004C;
     border: none;
@@ -1381,6 +1383,22 @@ s
     right: -60px; }
     .error_page .b_img img {
       height: 60vh; }
+
+.company_button {
+  padding-top: 40px;
+  background-color: #F1F1F1;
+  padding-bottom: 14px;
+  text-align: center; }
+  .company_button a {
+    color: #17004C;
+    border: 1px solid #17004C;
+    padding: 15px 25px;
+    font-size: 18px;
+    background: white;
+    transition: .3s; }
+    .company_button a:hover {
+      background: #643695;
+      color: white; }
 
 .search_result {
   transform: unset !important;

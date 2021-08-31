@@ -286,7 +286,11 @@
     }
     form {
         position: relative;
-        border: 1px solid #E6E6E6;
+
+        input{
+            border: 1px solid #E6E6E6;
+        }
+        
     }
 
     .sub-bottom{
@@ -340,7 +344,7 @@
     }
 
 button {
-  
+    height: 41px;
     z-index: 10;
     background-color: #17004C;
     border: none;
