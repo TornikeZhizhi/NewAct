@@ -81,7 +81,7 @@
 
 
 .main_title{
-            padding: 30px 0 5px;
+            padding: 30px 0 25px;
 
             .bold{
                 @include family(title);
@@ -102,8 +102,7 @@
         .insight_tab_text {
 
             word-break: break-word;
-            min-height: 104px;
-            max-height: 104px;
+            height: 42px;
             overflow: hidden;
 
             * {
@@ -354,7 +353,7 @@ button {
 }
     input{
         color: $text-color;
-        padding: 6px 5px 11px 15px;
+        padding: 8px 5px 11px 15px;
         border-bottom: 1px solid #E6E6E6;
         width: 100%;
         background-color: transparent;
@@ -984,3 +983,93 @@ font-weight: bold;
 }
 
 
+.form-page{
+    background: #F1F1F1;
+    padding: 100px 100px 40px;
+
+    .news_container {
+        padding: 0% 4% 20px;
+     
+    }
+
+    .main_news_text{
+        padding-top: unset;
+        margin-left: unset;
+    }
+
+    .main_news {
+        margin: 10px auto !important;
+
+       
+    }
+
+    .cont-right{
+        .main_title h1 {
+            font-size: 18px !important;
+        }
+    }
+
+    .company_button {
+        margin-top: 30px;
+        background-color: unset;
+
+        a{
+            padding: 15px 100px;
+        }
+      
+    }
+
+    .cont-right{
+        flex-direction: column;
+    }
+
+   
+}
+
+.header-bottom{
+    padding: 0 100px;
+    background: #f1f1f1;
+   
+
+
+    .form-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f1f1f1;
+        border-top: 1px solid #261157;
+
+    }
+
+    .main_news_text{
+        padding-bottom: 15px;
+        border-bottom: 1px solid #261157;
+    }
+}
+
+.form-footer{
+    background: #f1f1f1;
+    padding: 50px;
+    border: unset;
+    color: #17004C;
+
+
+
+    .footer-text{
+        background: #E9E9E9;
+        padding: 70px;
+        color: #17004C;
+
+        p{
+            width: 73%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        a{
+            text-decoration: underline;
+            color: #17004C;
+        }
+    }
+}

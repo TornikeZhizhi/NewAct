@@ -200,7 +200,7 @@ body {
   margin: 0 auto; }
 
 .main_title {
-  padding: 30px 0 5px; }
+  padding: 30px 0 25px; }
   .main_title .bold {
     font-family: "Mark-Bold", sans-serif;
    /*  @if($name == "lestudio"){
@@ -226,8 +226,7 @@ body {
   transition: all .3s; }
   .insight_tab_wrapper .insight_tab .insight_tab_text {
     word-break: break-word;
-    min-height: 104px;
-    max-height: 104px;
+    height: 42px;
     overflow: hidden; }
     .insight_tab_wrapper .insight_tab .insight_tab_text * {
       color: #17004C;
@@ -387,7 +386,7 @@ body {
     outline: none; }
   .subscribe_box input {
     color: #17004C;
-    padding: 6px 5px 11px 15px;
+    padding: 8px 5px 11px 15px;
     border-bottom: 1px solid #E6E6E6;
     width: 100%;
     background-color: transparent; }
@@ -791,6 +790,56 @@ body {
     color: #17004C; }
     .project-container .bottom-text .bold {
       font-weight: bold; }
+
+.form-page {
+  background: #F1F1F1;
+  padding: 100px 100px 40px; }
+  .form-page .news_container {
+    padding: 0% 4% 20px; }
+  .form-page .main_news_text {
+    padding-top: unset;
+    margin-left: unset; }
+  .form-page .main_news {
+    margin: 10px auto !important; }
+  .form-page .cont-right .main_title h1 {
+    font-size: 18px !important; }
+  .form-page .company_button {
+    margin-top: 30px;
+    background-color: unset; }
+    .form-page .company_button a {
+      padding: 15px 100px; }
+  .form-page .cont-right {
+    flex-direction: column; }
+
+.header-bottom {
+  padding: 0 100px;
+  background: #f1f1f1; }
+  .header-bottom .form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f1f1f1;
+    border-top: 1px solid #261157; }
+  .header-bottom .main_news_text {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #261157; }
+
+.form-footer {
+  background: #f1f1f1;
+  padding: 50px;
+  border: unset;
+  color: #17004C; }
+  .form-footer .footer-text {
+    background: #E9E9E9;
+    padding: 70px;
+    color: #17004C; }
+    .form-footer .footer-text p {
+      width: 73%;
+      margin: 0 auto;
+      text-align: center; }
+    .form-footer .footer-text a {
+      text-decoration: underline;
+      color: #17004C; }
 
 .slider_content {
   width: 100%;
@@ -2378,6 +2427,31 @@ s
   .footer_wrapper .footer_subscribe, .footer_wrapper .footer_contact {
     max-width: 40%; }
 
+.footer_social {
+  display: flex;
+  margin-top: 15px; }
+  .footer_social a {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #17004C;
+    border-radius: 50%;
+    transition: all .3s; }
+    .footer_social a:not(:last-child) {
+      margin-right: 5px; }
+    .footer_social a:hover {
+      background-color: #fff;
+      border: 1px solid #17004C; }
+      .footer_social a:hover svg {
+        fill: #17004C; }
+  .footer_social svg {
+    fill: #fff;
+    transition: all .3s;
+    width: 50%;
+    height: 57%; }
+
 .footer_subscribe .subscribe_box .subscribe_text {
   margin: 5px 0 8px; }
 .footer_subscribe button {
@@ -2647,6 +2721,16 @@ s
 .header .header_right nav ul li a:lang(ka) {
   font-family: "Mark", sans-serif !important;
   font-weight: normal; }
+
+.form-header {
+  background: white;
+  max-width: unset !important;
+  padding: 25px; }
+  .form-header .footer_social {
+    margin-top: unset; }
+    .form-header .footer_social a {
+      width: 38px;
+      height: 38px; }
 
 @media only screen and (min-width: 992px) {
   .f_hide {

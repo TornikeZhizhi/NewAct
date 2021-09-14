@@ -488,6 +488,44 @@
 }
 
 
+.footer_social {
+	display: flex;
+	margin-top: 15px;
+	a {
+		width: 28px;
+		height: 28px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $text-color;
+		border-radius: 50%;
+		transition: all .3s;
+
+		&:not(:last-child){
+			margin-right: 5px;
+		}
+
+		&:hover{
+			background-color: #fff;
+			border: 1px solid $text-color;
+
+			svg {
+				fill: $text-color;
+			}
+		}
+	}
+
+ svg{
+	 fill: #fff;
+		transition: all .3s;
+	 width: 50%;
+	 height: 57%;
+	 }	
+}
+
+
+
+
 .footer_subscribe {
 .subscribe_box .subscribe_text {
     margin: 5px 0 8px;
@@ -831,4 +869,20 @@
   
     font-family: "Mark", sans-serif !important;
     font-weight: normal;
+}
+
+
+.form-header{
+	background: white;
+    max-width: unset !important;
+    padding: 25px;
+
+	.footer_social{
+		margin-top: unset;
+
+		a{
+			width: 38px;
+			height: 38px;
+		}
+	}
 }
