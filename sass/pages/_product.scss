@@ -49,6 +49,89 @@
   
 }
 
+.product-slider{
+    // content:url('../images/arr-next.png ');
+
+
+    .slick-next {
+       
+        padding: unset;
+        border-radius: unset;
+        position: absolute;
+        top: -70px;
+        right: 20px;
+        transition: .3s;
+
+        &:before {
+            content: url(../images/nav-right.svg);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #17004C;
+            transition: .3s;
+
+        }
+
+        &:hover{
+
+            &:before{
+                background: #17004C;
+                content: url(../images/nav-w-left.svg);
+            }
+           
+        }
+
+        
+    }
+
+    .slick-prev {
+       
+        padding: unset;
+        border-radius: unset;
+        position: absolute;
+        top: -70px;
+        right: 70px;
+        left: unset;
+        transition: .3s;
+
+        &:before {
+            content: url(../images/nav-left.svg);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #17004C;
+            transition: .3s;
+
+        }
+
+        &:hover{
+
+            &:before{
+                background: #17004C;
+                content: url(../images/nav-w-right.svg);
+            }
+           
+        }
+    }
+
+   .slick-disabled:before, .slick-next.slick-disabled:before {
+        opacity: .15;
+        pointer-events: none;
+    }
+}
+
 
 
 .office_info{

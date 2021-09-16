@@ -388,6 +388,20 @@ button {
     }
 }
 
+.vac-share{
+    margin-top: unset;
+    position: absolute;
+
+    .share_box_inner{
+        z-index: 100000;
+
+        span{
+            font-size: 16px;
+        }
+    }
+  
+}
+
 
 .bordered_title {
 
@@ -403,7 +417,9 @@ button {
  
 
   .main_title.unborder {
-
+    position: relative;
+ 
+   
 
     &:after{
         content:unset !important;
@@ -419,6 +435,10 @@ button {
             display:block !important;
         }
     }
+}
+
+.bold-title{
+    padding: 0 110px;
 }
 
 .share_box_inner {
