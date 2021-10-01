@@ -278,18 +278,17 @@ $(".exit").click(function () {
 
 $(document).ready(function(){
 
-	$(".main_box").on("click", function () {
-		$(this)
-		  .find($(".office_info"))
+	$(".office_box").on("click", function () {
+		$(".office_info")
 		  .slideToggle();
 
 	
 	});
 
 
-	$(".main_box").on("click", function () {
+	$(".office_box").on("click", function () {
 		$(this)
-		  .find($("img"))
+		  .find($(".dropdown"))
 		  .toggleClass("rotate");
 	  });
 
