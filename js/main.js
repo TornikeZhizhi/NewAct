@@ -278,11 +278,17 @@ $(".exit").click(function () {
 
 $(document).ready(function(){
 
-	$(".office_box").on("click", function () {
-		$(".office_info")
-		  .slideToggle();
+	// $(".main_box").on("click", function () {
+	// 	$(this)
+	// 	  .find($(".office_info"))
+	// 	  .slideToggle();
 
 	
+	// });
+
+
+	$('.office_box').click(function(){
+		$(this).parent().next('.office_info').slideToggle();
 	});
 
 
